@@ -1,10 +1,23 @@
 #mailing-list-link {
-    background-color: $pcworange2;
+    background-color: $pcwblue;
     color: $white;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $pcwdarkblue;
+        text-decoration: underline;
+    }
 }
 
-#footer-social-link {
+ul#footer-social-link {
     margin-top: 10px;
+
+    li {
+        float: left;
+
+        a {}
+    }
+
 }
 
 .social-link {
@@ -21,7 +34,7 @@ img#gov-footer-logo {
 }
 
 #contact-us-footer-heading {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: $grey;
 }
 
