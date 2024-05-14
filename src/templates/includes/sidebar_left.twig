@@ -1,0 +1,64 @@
+<div class="col-12 col-lg-2 text-start" id="left-sidebar">
+    <nav class="navbar d-lg-none">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#left-sidebar-content" aria-controls="left-sidebar-content" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="collapse d-lg-block" id="left-sidebar-content">
+        <div class="facetContent">
+
+            <!-- Section 1: Items, Collections, Stories -->
+            <div class="discover-filter__item">
+                <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
+                    type="button" aria-expanded="true" aria-controls="contentTypes">
+                    Content Types
+                </button>
+                <ul class="show discover-filter__level-2" id="contentTypes">
+                    <li class="discover-filter__sub-item">
+                        <a tabindex="0" class="discover-filter__link" href="/discover/content_type/item">Items <span
+                                class="facet-count">(156,657)</span></a>
+                    </li>
+                    <li class="discover-filter__sub-item">
+                        <a tabindex="0" class="discover-filter__link"
+                            href="/discover/content_type/collection">Collections <span
+                                class="facet-count">(3,228)</span></a>
+                    </li>
+                    <li class="discover-filter__sub-item">
+                        <a tabindex="0" class="discover-filter__link" href="/discover/content_type/story">Stories
+                            <span class="facet-count">(735)</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- facets -->
+            {% for item in data %}
+            <div class="discover-filter__item border-top">
+                <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#id-{{ item.id }}" aria-expanded="false"
+                    aria-controls="mediaType">
+                    {{ item.name }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                    </svg>
+                </button>
+                <ul class="collapse discover-filter__level-2" id="id-{{ item.id }}">
+                    {% for v in item.sub %}
+                    <li class="discover-filter__sub-item">
+                        <a class="discover-filter__link" href="#">{{ v.name
+                            }}
+                            <span class="facet-count">({{ v.value }})</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

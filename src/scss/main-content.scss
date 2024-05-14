@@ -11,13 +11,44 @@
 }
 
 #left-sidebar {
-    background-color: rgb(235, 226, 128);
+    // background-color: rgb(235, 226, 128);
 }
 
 #center-content {
-    background-color: rgb(129, 181, 129);
+    // background-color: rgb(129, 181, 129);
 }
 
 #right-sidebar {
-    background-color: rgb(178, 178, 254);
+    // background-color: rgb(178, 178, 254);
+    border-left: 1px solid #dcdcdc;
+}
+
+.discover-filter__level-2 {
+    transition: height 0.35s ease;
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+.discover-filter__sub-item {
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+
+.discover-filter__item {
+    // margin-bottom: 0.5rem;
+
+    button {
+        text-align: left;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: $grey;
+        // background: red;
+    }
+}
+
+.arrow-icon-rotate {
+    transform: rotate(-180deg);
+    transition: transform 0.3s;
 }
