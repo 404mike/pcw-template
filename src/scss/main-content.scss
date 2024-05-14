@@ -1,0 +1,23 @@
+#main-content {
+    margin-top: 10px;
+}
+
+#left-sidebar,
+#center-content,
+#right-sidebar {
+    margin: 0;
+    padding: 10px;
+    // height: 100vh;
+}
+
+#left-sidebar {
+    background-color: rgb(235, 226, 128);
+}
+
+#center-content {
+    background-color: rgb(129, 181, 129);
+}
+
+#right-sidebar {
+    background-color: rgb(178, 178, 254);
+}

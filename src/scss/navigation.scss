@@ -1,0 +1,121 @@
+#pcw-logo {
+    width: 283px;
+    height: 80px;
+}
+
+#nav-top-right {
+    padding: 0;
+
+    div {
+        ul {
+            li {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+ul#main-nav {
+    margin-left: 8px;
+
+    li {
+        padding-right: 25px;
+
+        a {
+            font-size: 1.4em;
+            color: $black;
+            padding: 0;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+.nav-link {
+    border-bottom: 8px solid $white;
+    max-width: 8em;
+}
+
+#nav-about {
+    .nav-active {
+        border-bottom: 8px solid $pcwred;
+    }
+}
+
+#nav-discover {
+    .nav-active {
+        border-bottom: 8px solid $pcwlightblue;
+    }
+}
+
+#nav-locate {
+    .nav-active {
+        border-bottom: 8px solid $pcworange;
+    }
+}
+
+#nav-learn {
+    .nav-active {
+        border-bottom: 8px solid $pcwgreen;
+    }
+}
+
+a.navbar-brand {
+    padding: 0;
+    margin: -9px 0 0 0;
+}
+
+#header-top-left-nav,
+#header-bottom-left-breadcrumb {
+    padding: 0;
+}
+
+#nav-top-right {
+    .justify-content-end {
+        margin-right: 10px;
+    }
+}
+
+ol.breadcrumb {
+    padding: 0 8px;
+
+    li {
+        a {
+            color: $pcwlightgrey;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    #header-top-left-nav {
+        padding-left: 20px;
+    }
+
+    #header-bottom-left-breadcrumb {
+        display: none;
+    }
+
+    #nav-bottom {
+        .justify-content-md-end {
+            margin-left: 10px;
+        }
+    }
+}
+
+#nav-bottom {
+    margin-top: 5px;
+}
+
+input#nav-search {
+    background-color: #dcdcdc;
+
+    &::placeholder {
+        color: #696969;
+    }
+}
+
+#sign-in-button {
+    min-width: 65px;
+}
