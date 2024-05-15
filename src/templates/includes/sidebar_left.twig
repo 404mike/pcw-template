@@ -13,10 +13,6 @@
 
             <!-- Section 1: Items, Collections, Stories -->
             <div class="discover-filter__item">
-                <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
-                    type="button" aria-expanded="true" aria-controls="contentTypes">
-                    Content Types
-                </button>
                 <ul class="show discover-filter__level-2" id="contentTypes">
                     <li class="discover-filter__sub-item">
                         <a tabindex="0" class="discover-filter__link" href="/discover/content_type/item">Items <span
@@ -35,23 +31,24 @@
             </div>
 
             <!-- facets -->
-            {% for item in data %}
+            {% for facet in facets %}
             <div class="discover-filter__item border-top">
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#id-{{ item.id }}" aria-expanded="false"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#id-{{ facet.id }}" aria-expanded="false"
                     aria-controls="mediaType">
-                    {{ item.name }}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">{{ facet.name }}</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
-                <ul class="collapse discover-filter__level-2" id="id-{{ item.id }}">
-                    {% for v in item.sub %}
+                <ul class="collapse discover-filter__level-2" id="id-{{ facet.id }}">
+                    {% for v in facet.sub %}
                     <li class="discover-filter__sub-item">
-                        <a class="discover-filter__link" href="#">{{ v.name
-                            }}
+                        <a class="discover-filter__link" href="#">{{ v.name }}
                             <span class="facet-count">({{ v.value }})</span></a>
                     </li>
                     {% endfor %}

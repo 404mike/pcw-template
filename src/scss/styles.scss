@@ -1,7 +1,7 @@
 // Import all of Bootstrap's CSS
-@import "_main.scss";
-@import "variables.scss";
 @import "bootstrap/scss/bootstrap";
+@import "variables.scss";
+@import "_main.scss";
 @import "navigation.scss";
 @import "main-content.scss";
 @import "footer.scss";

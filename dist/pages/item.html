@@ -107,7 +107,7 @@
 
         <div class="row w-100" id="nav-bottom">
             <div class="col justify-content-md-start" id="header-bottom-left-breadcrumb">
-                <nav aria-label="breadcrumb">
+                <nav aria-label="breadcrumb" id="header-breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Library</a></li>
@@ -150,10 +150,6 @@
 
             <!-- Section 1: Items, Collections, Stories -->
             <div class="discover-filter__item">
-                <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
-                    type="button" aria-expanded="true" aria-controls="contentTypes">
-                    Content Types
-                </button>
                 <ul class="show discover-filter__level-2" id="contentTypes">
                     <li class="discover-filter__sub-item">
                         <a tabindex="0" class="discover-filter__link" href="/discover/content_type/item">Items <span
@@ -176,12 +172,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-ArtsandCrafts" aria-expanded="false"
                     aria-controls="mediaType">
-                    Arts and Crafts
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">Arts and Crafts</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-ArtsandCrafts">
                                         <li class="discover-filter__sub-item">
@@ -238,12 +236,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-CommunityandSocial" aria-expanded="false"
                     aria-controls="mediaType">
-                    Community and Social
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">Community and Social</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-CommunityandSocial">
                                         <li class="discover-filter__sub-item">
@@ -328,12 +328,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-CulturalHeritage" aria-expanded="false"
                     aria-controls="mediaType">
-                    Cultural Heritage
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">Cultural Heritage</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-CulturalHeritage">
                                         <li class="discover-filter__sub-item">
@@ -366,12 +368,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-IndustryandCommerce" aria-expanded="false"
                     aria-controls="mediaType">
-                    Industry and Commerce
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">Industry and Commerce</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-IndustryandCommerce">
                                         <li class="discover-filter__sub-item">
@@ -456,12 +460,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-Natureandtheenvironment" aria-expanded="false"
                     aria-controls="mediaType">
-                    Nature and the environment
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">Nature and the environment</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-Natureandtheenvironment">
                                         <li class="discover-filter__sub-item">
@@ -514,12 +520,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-PhysicalEnvironment" aria-expanded="false"
                     aria-controls="mediaType">
-                    Physical Environment
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">Physical Environment</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-PhysicalEnvironment">
                                         <li class="discover-filter__sub-item">
@@ -588,12 +596,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-ReligionandBelief" aria-expanded="false"
                     aria-controls="mediaType">
-                    Religion and Belief
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">Religion and Belief</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-ReligionandBelief">
                                         <li class="discover-filter__sub-item">
@@ -662,12 +672,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-Sports" aria-expanded="false"
                     aria-controls="mediaType">
-                    Sports
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">Sports</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-Sports">
                                         <li class="discover-filter__sub-item">
@@ -704,12 +716,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-WarProtestandPolitics" aria-expanded="false"
                     aria-controls="mediaType">
-                    War, Protest and Politics
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">War, Protest and Politics</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-WarProtestandPolitics">
                                         <li class="discover-filter__sub-item">
@@ -758,12 +772,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-21stcentury" aria-expanded="false"
                     aria-controls="mediaType">
-                    21st century
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">21st century</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-21stcentury">
                                         <li class="discover-filter__sub-item">
@@ -784,12 +800,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-20thcentury" aria-expanded="false"
                     aria-controls="mediaType">
-                    20th century
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">20th century</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-20thcentury">
                                         <li class="discover-filter__sub-item">
@@ -838,12 +856,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-19thcentury" aria-expanded="false"
                     aria-controls="mediaType">
-                    19th century
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">19th century</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-19thcentury">
                                         <li class="discover-filter__sub-item">
@@ -892,12 +912,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-18thcentury" aria-expanded="false"
                     aria-controls="mediaType">
-                    18th century
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">18th century</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-18thcentury">
                                         <li class="discover-filter__sub-item">
@@ -910,12 +932,14 @@
                 <button class="discover-filter__heading btn btn-link d-flex justify-content-between align-items-center"
                     type="button" data-bs-toggle="collapse" data-bs-target="#id-17thcenturyandearlier" aria-expanded="false"
                     aria-controls="mediaType">
-                    17th century and earlier
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
+                    <span class="flex-grow-1 text-start">17th century and earlier</span>
+                    <span class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right arrow-icon"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </span>
                 </button>
                 <ul class="collapse discover-filter__level-2" id="id-17thcenturyandearlier">
                                         <li class="discover-filter__sub-item">
