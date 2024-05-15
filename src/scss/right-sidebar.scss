@@ -14,8 +14,9 @@
     }
 
     .discover-profile-result {
-        width: 20%;
         margin: 0 10px;
+        max-width: 120px;
+        word-wrap: break-word;
     }
 
     .img-fluid {
