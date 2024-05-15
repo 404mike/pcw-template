@@ -4,6 +4,18 @@
     h1 {
         font-size: 1.7em;
     }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
 }
 
 #left-sidebar,
@@ -11,7 +23,6 @@
 #right-sidebar {
     margin: 0;
     padding: 10px;
-    // height: 100vh;
 }
 
 #left-sidebar {
@@ -75,8 +86,6 @@
 }
 
 .discover-filter__item {
-    // margin-bottom: 0.5rem;
-
     button {
         text-align: left;
         padding: 10px 0;
@@ -84,7 +93,6 @@
         width: 100%;
         text-decoration: none;
         color: $grey;
-        // background: red;
     }
 }
 
@@ -182,4 +190,65 @@ span.close-facet {
 
 #pagination {
     margin: 10px 0;
+}
+
+.separator {
+    border-top: 2px solid $pcworange;
+    width: 20rem;
+    margin-bottom: 20px;
+}
+
+
+.metadata-info-list {
+    li {
+        border: none;
+    }
+}
+
+.metadata-info-title {
+    font-weight: bold;
+}
+
+.follow-user {
+    position: relative;
+    top: -1px;
+}
+
+#node-metadata-details {
+    margin-top: 20px;
+}
+
+.heading-underline {
+    position: relative;
+    padding-bottom: 4px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $pcworange;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+        width: 30px;
+        height: 2px;
+        background-color: $pcworange;
+    }
+}
+
+.facet-button {
+    background-color: $pcwblue;
+    color: white;
+}
+
+.tag-button {
+    background-color: $pcwpurple;
+    color: white;
 }
