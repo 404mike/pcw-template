@@ -1,0 +1,23 @@
+.discover-profile-result-name {
+    display: block;
+}
+
+.discover-profile-result {
+    margin: 10px 0;
+}
+
+@media (max-width: 991.98px) {
+    #right-sidebar .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .discover-profile-result {
+        width: 20%;
+    }
+
+    .img-fluid {
+        max-height: 6rem;
+    }
+}

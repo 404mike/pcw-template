@@ -1,0 +1,54 @@
+<div class="col-12 col-lg" id="center-content">
+    <div class="row justify-content-center g-0">
+        <h2 class="text-start" id="search-result-count">160,000 results</h2>
+
+        <div class="d-inline-flex gap-2 text-start" id="discover-search-result-filters">
+            <button class="btn btn-primary btn-sm" type="button">Search term <span class="close-facet">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg></span>
+            </button>
+            <button class="btn btn-primary btn-sm" type="button">Facet term <span class="close-facet">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg></span>
+            </button>
+            <button class="btn btn-primary btn-sm" type="button">Fact term <span class="close-facet">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg></span>
+            </button>
+        </div>
+
+
+        <div class="container mt-4">
+            <div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5 g-4">
+                {% for d in discover %}
+                <div class="col d-flex align-items-stretch">
+                    <div class="card text-center w-100 discover-resulst-node">
+                        <a href="#">
+                            <img src="{{ d.thumb }}" class="card-img-top fixed-size-img mx-auto" alt="{{ d.title }}">
+                        </a>
+                        <div class="card-body discover-result-details">
+                            <h5 class="card-title discover-result-title text-start mt-1"><a href="#">{{ d.title
+                                    }}</a></h5>
+                            <p class="card-text discover-result-author">
+                                <a href="#">{{ d.author }}</a>
+                            </p>
+                            {% if d.type %}
+                            <p class="card-text discover-result-type">{{ d.type }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
