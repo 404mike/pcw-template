@@ -195,7 +195,7 @@ span.close-facet {
 .separator {
     border-top: 2px solid $pcworange;
     width: 20rem;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 
@@ -215,7 +215,7 @@ span.close-facet {
 }
 
 #node-metadata-details {
-    margin-top: 20px;
+    // margin-top: 20px;
 }
 
 .heading-underline {
@@ -246,9 +246,31 @@ span.close-facet {
 .facet-button {
     background-color: $pcwblue;
     color: white;
+
+    &:hover {
+        background-color: $pcwdarkblue;
+        color: white;
+    }
 }
 
 .tag-button {
     background-color: $pcwpurple;
     color: white;
+
+    &:hover {
+        background-color: $pcwdarkpurple;
+        color: white;
+    }
+}
+
+.comment-form-label {
+    font-weight: bold;
+}
+
+#uploader-details {
+    margin-right: 15px;
+
+    p {
+        line-height: 0.9em;
+    }
 }

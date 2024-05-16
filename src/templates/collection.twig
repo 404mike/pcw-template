@@ -56,14 +56,23 @@
         <div class="col">
             {% include 'includes/metadata/user.twig' %}
         </div>
-        <div class="col">
-            {% include 'includes/metadata/collection_info.twig' %}
-        </div>
 
         {% include 'includes/metadata/separator.twig' %}
 
         <div class="col">
             {% include 'includes/metadata/tags_facets.twig' %}
+        </div>
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/comments.twig' %}
+        </div>
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/cta.twig' %}
         </div>
 
     </div>

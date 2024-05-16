@@ -371,43 +371,33 @@
     </div>
 </div>
         <div class="col">
-            <div class="container mt-4">
-    <div class="row">
-        <!-- user profile image -->
-        <div class="col-12 col-lg-2 d-flex justify-content-center justify-content-lg-start">
+            <div class="container">
+    <div class="row d-flex flex-column flex-md-row align-items-center align-items-md-start">
+        <div class="col-12 col-md-auto mb-3 mb-md-0">
             <img src="https://www.peoplescollection.wales/sites/default/files/styles/user_profile_thumbnail/public/pictures/picture-1437-1408452057.jpg?itok=1fpTRNr8"
-                class="img-fluid" alt="User profile image">
+                alt="User profile image" style="max-width: 100%; height: auto;">
         </div>
 
-        <!-- user details -->
-        <div class="col-12 col-lg-8">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="text-start content-uploader">Uploaded by <a href="#">Newport Museum & Art Gallery</a> on
-                        05/05/2016</h3>
-                </div>
-                <div class="col-12">
-                    <p class="text-start">1,088 views</p>
-                </div>
-                <div class="col-12">
-                    <p class="text-start">7 Favourites</p>
-                </div>
-                <div class="col-12 text-start">
-                    <button type="button" class="btn btn-success">Follow <span class="follow-user"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-person-add" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
-                                <path
-                                    d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
-                            </svg></span></button>
-                </div>
+        <div class="col-12 col-md d-flex flex-column flex-md-row">
+            <div class="col-12 col-md-4 mb-3 mb-md-0 text-start" id="uploader-details">
+                <h3 class="content-uploader">Uploaded by <a href="#">Newport Museum & Art Gallery</a> on 05/05/2016</h3>
+                <p>1,088 views</p>
+                <p>7 Favourites</p>
+                <button type="button" class="btn btn-success">
+                    Follow <span class="follow-user">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-add" viewBox="0 0 16 16">
+                            <path
+                                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                            <path
+                                d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+                        </svg>
+                    </span>
+                </button>
             </div>
-        </div>
-    </div>
-</div>        </div>
-        <div class="col">
-            <div class="row" id="node-metadata-details">
+
+            <div class="col-12 col-md-6">
+                                <div class="row" id="node-metadata-details">
     <h3 class="text-start">Collection Information</h3>
     <ul class="list-group text-start metadata-info-list">
         <li class="list-group-item"><span class="metadata-info-title">Creator:</span> <a href="#">Unknown</a></li>
@@ -420,6 +410,9 @@
             Licence
         </li>
     </ul>
+</div>                            </div>
+        </div>
+    </div>
 </div>        </div>
 
         <div class="row">
@@ -451,6 +444,68 @@
             <a href="#" class="btn facet-button me-2 mb-2">Food and Drink (900)</a>
             <a href="#" class="btn facet-button me-2 mb-2">Cities, Town and Villages (12,000)</a>
             <a href="#" class="btn facet-button me-2 mb-2">Customs and Practices (49)</a>
+        </div>
+    </div>
+</div>        </div>
+
+        <div class="row">
+    <div class="col-auto mx-auto">
+        <div class="separator"></div>
+    </div>
+</div>
+        <div class="col">
+            <!-- bootstrap 5 comment form -->
+<div class="row justify-content-center">
+    <div class="col-6 mx-auto">
+        <form>
+            <div class="mb-3 text-start">
+                <label for="comment" class="form-label comment-form-label heading-underline ">Comment</label>
+                <textarea class="form-control" id="comment" rows="3" placeholder="Leave a Comment"></textarea>
+            </div>
+            <div class="text-start">
+                <button type="submit" class="btn btn-success">Submit <span><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-chat-square-dots"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg></span></button>
+            </div>
+        </form>
+    </div>
+</div>        </div>
+
+        <div class="row">
+    <div class="col-auto mx-auto">
+        <div class="separator"></div>
+    </div>
+</div>
+        <div class="col">
+            <div class="container d-flex justify-content-center align-items-center mb-2">
+    <div class="row w-100 justify-content-center align-items-stretch">
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card m-3 shadow h-100">
+                <div class="card-body pcw-cta-lower">
+                    <h5 class="card-title">Register and tell your story</h5>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                    </ul>
+                    <a href="#" class="btn mt-3 w-100">Tell your story</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card m-3 shadow h-100">
+                <div class="card-body pcw-cta-lower">
+                    <h5 class="card-title">Report Item</h5>
+                    <p>
+                        Contact us to request takedown or report racist, offensive or otherwise harmful content.
+                    </p>
+                    <a href="#" class="btn mt-3 w-100">Contact us</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>        </div>

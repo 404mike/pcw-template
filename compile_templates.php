@@ -44,16 +44,20 @@ foreach($whenFacet as $whenK => $whenV) {
 
 $discover = json_decode(file_get_contents('src/templates/data/discover-items.json'), true);
 $collection = json_decode(file_get_contents('src/templates/data/collection.json'), true);
+$story = json_decode(file_get_contents('src/templates/data/story.json'), true);
 
 if (!file_exists('dist/pages')) {
     mkdir('dist/pages', 0777, true);
 }
 
 foreach ($pages as $page => $template) {
+    
     $html = $twig->render($template, [
         'facets' => $data,
         'discover' => $discover,
         'collection' => $collection,
+        'story' => $story,
+        'page' => $page
     ]);
     file_put_contents("dist/pages/{$page}.html", $html);
 }
