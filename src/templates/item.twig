@@ -1,17 +1,73 @@
 {% include 'includes/header.twig' %}
 
 <div class="container text-center" id="main-content">
-    <div class="row">
-        <!-- Left Sidebar -->
-        {% include 'includes/sidebar_left.twig' %}
 
-        <!-- Center Content -->
-        <div class="col-12 col-lg" id="center-content">
-            One of three columns
+    <div class="row" id="node-metadata-details">
+        <h1 class="text-start">Title</h1>
+
+        <div class="row">
+            <div class="col">
+                <img src="https://www.peoplescollection.wales/sites/default/files/images/2024/May/Photo%2018%20Charles%20Pope%20WW2%20Winston%20Churchill%20%26%20Louis%20Mountbatten%20aboard%20HMS%20Oribi%2C%20bound%20for%20Scapa%20Flow%204th%20August%201941..jpeg?itok=-L83w0vs"
+                    style="max-width: 70%;" alt="Title">
+            </div>
         </div>
 
-        <!-- Right Sidebar -->
-        {% include 'includes/sidebar_right.twig' %}
+        <p class="text-start">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            voluptatum deleniti
+            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
+            facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
+            repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+            voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
+            ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+    </div>
+
+    <div class="row mt-4">
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/user.twig' %}
+        </div>
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/tags_facets.twig' %}
+        </div>
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/map.twig' %}
+        </div>
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/appears_in.twig' %}
+        </div>
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/comments.twig' %}
+        </div>
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/more_items.twig' %}
+        </div>
+
+
+        {% include 'includes/metadata/separator.twig' %}
+
+        <div class="col">
+            {% include 'includes/metadata/cta.twig' %}
+        </div>
+
     </div>
 </div>
 
