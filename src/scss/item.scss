@@ -1,8 +1,7 @@
 .uv {
-    margin: 10px 0;
-
-    div {
-        padding-left: 0;
+    iframe {
+        height: 600px;
+        width: 100%;
     }
 }
 
@@ -16,4 +15,35 @@
 
 .more-items {
     padding: 0 10px 10px 0 !important;
+}
+
+
+@include media-breakpoint-down(xxl) {
+    iframe {
+        height: 600px;
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    iframe {
+        height: 600px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    iframe {
+        height: 600px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    iframe {
+        height: 300px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    iframe {
+        height: 300px;
+    }
 }
