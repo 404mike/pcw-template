@@ -32,18 +32,18 @@
 
 @include media-breakpoint-down(lg) {
     iframe {
-        height: 600px;
+        height: 400px;
     }
 }
 
 @include media-breakpoint-down(md) {
     iframe {
-        height: 300px;
+        height: 200px;
     }
 }
 
 @include media-breakpoint-down(sm) {
     iframe {
-        height: 300px;
+        height: 200px;
     }
 }
