@@ -19,31 +19,41 @@
 
 
 @include media-breakpoint-down(xxl) {
-    iframe {
-        height: 600px;
+    .uv {
+        iframe {
+            height: 600px;
+        }
     }
 }
 
 @include media-breakpoint-down(xl) {
-    iframe {
-        height: 600px;
+    .uv {
+        iframe {
+            height: 600px;
+        }
     }
 }
 
 @include media-breakpoint-down(lg) {
-    iframe {
-        height: 300px;
+    .uv {
+        iframe {
+            height: 400px;
+        }
     }
 }
 
 @include media-breakpoint-down(md) {
-    iframe {
-        height: 200px;
+    .uv {
+        iframe {
+            height: 300px;
+        }
     }
 }
 
 @include media-breakpoint-down(sm) {
-    iframe {
-        height: 200px;
+    .uv {
+        iframe {
+            height: 300px;
+        }
     }
 }
