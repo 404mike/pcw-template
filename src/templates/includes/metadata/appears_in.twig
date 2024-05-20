@@ -6,7 +6,7 @@
 
     <div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
         {% for d in discover|slice(0, 2) %}
-        <div class="col d-flex align-items-stretch">
+        <div class="col d-flex align-items-stretch mb-4">
             <div class="card text-center w-100 discover-resulst-node">
                 <a href="#">
                     <img src="{{ d.thumb }}" class="card-img-top fixed-size-img mx-auto" alt="{{ d.title }}">
