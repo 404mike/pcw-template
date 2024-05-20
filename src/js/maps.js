@@ -43,7 +43,6 @@ function initMap() {
 }
 
 function addMarker(AdvancedMarkerElement, location) {
-  console.log('addMarker');
   const marker = new AdvancedMarkerElement({
     map: map,
     position: location,
@@ -52,9 +51,7 @@ function addMarker(AdvancedMarkerElement, location) {
 }
 
 function mapLayerEventListeners() {
-  console.log('mapLayerEventListeners');
   const mapLayerButtons = document.querySelectorAll('.historical-map-layer');
-  console.log(mapLayerButtons);
   mapLayerButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
       let layer = e.target.id;
@@ -94,8 +91,6 @@ function setLayer(layerId) {
       map.setMapTypeId(id);
     }
 
-    console.log('setLayer');
-    console.log(layerId);
     const mapLayerButtons = document.querySelectorAll('.historical-map-layer');
     mapLayerButtons.forEach((button) => {
         button.classList.remove('btn-success');
@@ -105,7 +100,6 @@ function setLayer(layerId) {
     const selectedLayerButton = document.getElementById(`map-layer-${layerId}`);
     selectedLayerButton.classList.remove('map-layer-button');
     selectedLayerButton.classList.add('btn-success');
-
   }
 
   function isWalesInView(map) {
