@@ -21,27 +21,6 @@
 // //     .catch(error => console.error('Error loading the style: ', error));
 // // }
 
-// function initMap() {
-//     const loader = new Loader({
-//         apiKey: "AIzaSyD2IjeESJzSXKrTzkHZVsxtkVTgXBSMW8M",
-//         version: "weekly",
-//       });
-      
-//       loader.importLibrary().then(async () => {
-//         const { Map } = await google.maps.importLibrary("maps");
-//         console.log("Map");
-      
-//         map = new Map(document.getElementById("map"), {
-//           center: { lat: -34.397, lng: 150.644 },
-//           zoom: 8,
-//         });
-//       });
-
-//       console.log('initMap');
-// }
-
-
-
 
 import { Loader } from "@googlemaps/js-api-loader";
 let map;
@@ -53,13 +32,23 @@ const loader = new Loader({
   ...additionalOptions,
 });
 
+const wales = {lat: 52.1307, lng: -3.7837};
+
 function initMap(){
+    console.log('initMap');
     loader.load().then(async () => {
         const { Map } = await google.maps.importLibrary("maps");
       
         map = new Map(document.getElementById("map"), {
-          center: { lat: -34.397, lng: 150.644 },
+          center: wales,
           zoom: 8,
+          styles: [
+            {
+              featureType: "poi",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+          ],
         });
       });
 }
