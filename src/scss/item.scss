@@ -5,7 +5,7 @@
     }
 }
 
-.action-button {
+.map-layer-button {
     background-color: $pcwbuttongrey !important;
 }
 
@@ -56,4 +56,9 @@
             height: 300px;
         }
     }
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
