@@ -9,9 +9,13 @@ function handleButtonClick(event) {
     const buttonId = event.target.id;
     // console.log('Button with ID:', buttonId, 'was clicked');
     if(buttonId === 'add-to-story-button') {
+        document.getElementById('add-to-collection-button').classList.remove('active');
+        document.getElementById('add-to-story-button').classList.add('active');
         document.getElementById('add-to-collection-container').classList.add('d-none');
         document.getElementById('add-to-story-container').classList.remove('d-none');
     }else{
+        document.getElementById('add-to-story-button').classList.remove('active');
+        document.getElementById('add-to-collection-button').classList.add('active');
         document.getElementById('add-to-collection-container').classList.remove('d-none');
         document.getElementById('add-to-story-container').classList.add('d-none');
     }
