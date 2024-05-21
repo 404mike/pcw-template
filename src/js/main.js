@@ -5,7 +5,10 @@ import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 import { initFacets } from '../js/leftsidebar/facets.js';
 import { initMap } from '../js/maps.js';
+import { addToCollectionStory } from '../js/add-to-collection-story.js';
 
 
 initFacets();
 initMap();
+
+addToCollectionStory();
