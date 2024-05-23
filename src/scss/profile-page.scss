@@ -11,4 +11,17 @@
 
 #profile-weblink {
     margin-left: 25px;
+
+    a {
+        color: #0248B1;
+    }
+}
+
+input#user-profile-search {
+    background-color: #dcdcdc;
+    border: 1px solid #c1c1c1;
+
+    &::placeholder {
+        color: #696969;
+    }
 }

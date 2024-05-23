@@ -139,20 +139,16 @@
 .discover-result-title {
     font-size: 0.9em;
     font-weight: bold;
-    text-align: left;
     margin: 0;
     padding: 0 5px;
+    color: $grey;
+    text-decoration: none;
+    display: block;
 
-    a {
-        color: $grey;
-        text-decoration: none;
-
-        &:hover {
-            color: $pcwblue;
-            text-decoration: underline;
-        }
+    &:hover {
+        color: $pcwblue;
+        text-decoration: underline;
     }
-
 }
 
 .discover-result-author {

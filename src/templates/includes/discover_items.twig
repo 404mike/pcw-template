@@ -28,6 +28,21 @@
 
 
         <div class="container mt-4">
+
+            {% if page == 'profile' %}
+            <form class="d-flex mb-3 col-12 col-sm-12 col-md-8">
+                <input class="form-control me-2" type="search" placeholder="Search Wales for Peace items"
+                    aria-label="Search" id="user-profile-search" />
+                <button class="btn btn-secondary" type="submit" aria-label="Search user content">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </button>
+            </form>
+            {% endif %}
+
             <div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5 g-4">
                 {% for d in discover %}
                 <div class="col d-flex align-items-stretch">
@@ -36,8 +51,8 @@
                             <img src="{{ d.thumb }}" class="card-img-top fixed-size-img mx-auto" alt="{{ d.title }}">
                         </a>
                         <div class="card-body discover-result-details">
-                            <h5 class="card-title discover-result-title text-start mt-1"><a href="#">{{ d.title
-                                    }}</a></h5>
+                            <a class="card-title discover-result-title text-start mt-1" href="#">{{ d.title
+                                }}</a>
                             <p class="card-text discover-result-author">
                                 <a href="#">{{ d.author }}</a>
                             </p>
