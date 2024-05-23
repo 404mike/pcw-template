@@ -212,7 +212,11 @@ span.close-facet {
 }
 
 #node-metadata-details {
+
     // margin-top: 20px;
+    .item-information-heading {
+        font-size: 1.3em;
+    }
 }
 
 .heading-underline {
@@ -270,4 +274,20 @@ span.close-facet {
     p {
         line-height: 0.9em;
     }
+}
+
+.tags-heading,
+.facets-heading {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.item-also-appears-in-heading {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.cta-heading {
+    font-weight: bold;
+    font-size: 1.25rem;
 }
