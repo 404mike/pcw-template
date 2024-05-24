@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="mt-1 navbar navbar-expand-lg container" id="header-nav">
+    <nav class="mt-1 navbar navbar-expand-lg container" id="header-nav" role="navigation">
     <span class="svg-xml">
         <svg width="0" height="0" class="hidden">
             <symbol viewBox="0 0 0 0" id="sprite-logo">
@@ -159,7 +159,7 @@
     
     <div class="row">
         <!-- Left Sidebar -->
-        <div class="col-12 col-lg-2 text-start" id="left-sidebar">
+        <div class="col-12 col-lg-2 text-start" id="left-sidebar" aria-label="Search Filters">
     <nav class="navbar d-lg-none">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -1013,7 +1013,7 @@
     </div>
 </div>
         <!-- Center Content -->
-        <div class="col-12 col-lg" id="center-content">
+        <div class="col-12 col-lg" id="center-content" tabindex="-1">
     <div class="row justify-content-center g-0">
         <h2 class="text-start" id="search-result-count">160,000 results</h2>
 
@@ -1460,7 +1460,7 @@
 </div>    </div>
 
     <!-- Pagination -->
-    <nav aria-label="pagination" id="pagination">
+    <nav aria-label="Page Navigation" id="pagination">
     <ul class="pagination pagination-md justify-content-center">
         <li class="page-item disabled">
             <a class="page-link">Previous</a>
