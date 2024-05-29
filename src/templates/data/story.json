@@ -1,35 +1,41 @@
 [
     {
-        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/pcw_entity_glance/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh",
+        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh",
         "title": "Protest held in Liverpool against the flooding...",
-        "author": "Gathering The Jewels"
+        "author": "Gathering The Jewels",
+        "nid": 24
     }, 
     {
-        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/pcw_entity_glance/public/images/2014/February/GTJ11808_2.jpg?itok=VXawmZHb",
+        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn",
         "title": "Protest held in Liverpool against the flooding of Capel Celyn...",
-        "author": "Gathering The Jewels"
+        "author": "Gathering The Jewels",
+        "nid": 30
     }, 
     {
-        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/pcw_entity_glance/public/images/2014/February/GTJ11788_2.jpg?itok=xND5SVF8",
+        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11788_2.jpg?itok=QcmxetUB",
         "title": "A bleak view of Capel Celyn (Cwm Tryweryn), 14...",
         "author": "Gathering The Jewels",
-        "type": "Multipart (24 images)"
+        "type": "Multipart (24 images)",
+        "nid": 14
     }, 
     {
-        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/pcw_entity_glance/public/images/2014/February/GTJ11789_2.jpg?itok=FqeITNUN",
+        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11789_2.jpg?itok=KI1rp0aq",
         "title": "Interior of the derelict chapel at Capel Celyn,...",
-        "author": "Gathering The Jewels"
+        "author": "Gathering The Jewels",
+        "nid": 15
     }, 
     {
-        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/pcw_entity_glance/public/images/2014/February/GTJ11815_2.jpg?itok=vFfeXGig",
+        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11815_2.jpg?itok=xdsN90ak",
         "title": "The last sale at Gwerngenau Farm, Capel Celyn,...",
         "author": "Gathering The Jewels",
-        "type": "Multipart (44 images)"
+        "type": "Multipart (44 images)",
+        "nid": 66
     }, 
     {
-        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/pcw_entity_glance/public/images/2014/February/GTJ11845_2.jpg?itok=tMdkK-Hn",
+        "thumb": "https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11845_2.jpg?itok=KQCJHJLy",
         "title": "The last days of Capel Celyn School, October 1962",
         "author": "Gathering The Jewels",
-        "type": "Audio"
+        "type": "Audio",
+        "nid": 58
     }
 ]

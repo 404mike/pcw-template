@@ -123,13 +123,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 13rem;
+    // max-width: 13rem;
     min-height: 11rem;
     max-height: 11rem;
 }
 
 .discover-resulst-node {
-    // border: none;
+    border: none;
 }
 
 .discover-result-details {
@@ -140,7 +140,7 @@
     font-size: 0.9em;
     font-weight: bold;
     margin: 0;
-    padding: 0 5px;
+    // padding: 0 5px;
     color: $grey;
     text-decoration: none;
     display: block;
@@ -154,7 +154,7 @@
 .discover-result-author {
     font-size: 0.9em;
     text-align: left;
-    padding: 0 5px;
+    // padding: 0 5px;
     margin: 0;
 
     a {
@@ -171,7 +171,7 @@
 .discover-result-type {
     font-size: 0.7em;
     text-align: left;
-    padding: 0 5px 5px 5px;
+    // padding: 0 5px 5px 5px;
     color: $grey;
     margin-bottom: 5px;
 }
