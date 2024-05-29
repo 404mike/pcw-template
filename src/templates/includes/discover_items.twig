@@ -46,9 +46,14 @@
             <div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5 g-4">
                 {% for d in discover %}
                 <div class="col d-flex align-items-stretch">
-                    <div class="card text-center w-100 discover-resulst-node">
+                    <div class="card text-center w-100 discover-result-node">
                         <a href="#">
+                            {% if page == 'discover2' %}
+                            <img src="{{ d.thumb }}" class="card-img-top fixed-size-img-alt mx-auto"
+                                alt="{{ d.title }}">
+                            {% else %}
                             <img src="{{ d.thumb }}" class="card-img-top fixed-size-img mx-auto" alt="{{ d.title }}">
+                            {% endif %}
                         </a>
                         <div class="card-body discover-result-details">
                             <a class="card-title discover-result-title text-start mt-1" href="#">{{ d.title

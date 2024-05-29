@@ -128,7 +128,21 @@
     max-height: 11rem;
 }
 
-.discover-resulst-node {
+.fixed-size-img-alt {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // max-width: 13rem;
+    min-height: 11rem;
+    max-height: 11rem;
+}
+
+.discover-result-node {
     border: none;
 }
 

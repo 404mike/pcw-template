@@ -3,6 +3,7 @@ require_once 'bootstrap.php';
 
 $pages = [
     'discover'   => 'discover.twig',
+    'discover2'   => 'discover.twig',
     'discover_user'   => 'discover_user.twig',
     'item'       => 'item.twig',
     'collection' => 'collection.twig',
