@@ -23,12 +23,8 @@
         </div>
 
         <div class="col-12 col-md-6">
-            {% if page == 'collection' %}
-            {% include 'includes/metadata/collection_info.twig' %}
-            {% elseif page == 'item' %}
+            {% if page == 'item' %}
             {% include 'includes/metadata/item_info.twig' %}
-            {% elseif page == 'story' %}
-            {% include 'includes/metadata/story_info.twig' %}
             {% endif %}
         </div>
     </div>
