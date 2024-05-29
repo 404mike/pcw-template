@@ -17,6 +17,9 @@ const loader = new Loader({
 });
 
 function initMap() {
+
+  if (!document.getElementById("map")) return;
+
   loader.load().then(async () => {
     const { Map } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
