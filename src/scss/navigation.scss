@@ -12,6 +12,10 @@
 #nav-top-right {
     padding: 0;
 
+    @include media-breakpoint-down(lg) {
+        margin: -7px 0;
+    }
+
     div {
         ul {
             li {
@@ -36,6 +40,13 @@ ul#main-nav {
                 font-size: 1.1em;
             }
         }
+    }
+}
+
+.top-right-nav {
+    a {
+        // padding: 5px;
+        // height: 10px;
     }
 }
 
@@ -117,6 +128,10 @@ ol.breadcrumb {
 input#nav-search {
     background-color: #dcdcdc;
     border: 1px solid #c1c1c1;
+
+    @include media-breakpoint-down(lg) {
+        margin-left: 4px;
+    }
 
     &::placeholder {
         color: #696969;
