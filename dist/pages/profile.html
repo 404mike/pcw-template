@@ -8,11 +8,17 @@
     <title>Casgliad y Werin</title>
     <script defer="defer" src="../main.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <link href="../main.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="mt-1 navbar navbar-expand-lg container" id="header-nav" role="navigation">
+    <nav class="navbar navbar-expand-lg container" id="header-nav" role="navigation">
     <span class="svg-xml">
         <svg width="0" height="0" class="hidden">
             <symbol viewBox="0 0 0 0" id="sprite-logo">
@@ -91,17 +97,9 @@
             </div>
         </div>
 
-        <div class="row w-100" id="nav-bottom">
-            <div class="col justify-content-md-start" id="header-bottom-left-breadcrumb">
-                <nav aria-label="breadcrumb" id="header-breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="col justify-content-md-end">
+        <div class="row w-100 justify-content-md-end" id="nav-bottom">
+
+            <div class="col-3">
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                         id="nav-search" />
@@ -118,6 +116,22 @@
     </div>
 
 </nav>
+
+<!-- <div class="col justify-content-md-start" id="header-bottom-left-breadcrumb">
+    <nav aria-label="breadcrumb" id="header-breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+</div> -->
+
+<div class="row">
+    <div class="col-auto mx-auto">
+        <div class="separator"></div>
+    </div>
+</div>
 <div class="container text-center" id="main-content">
 
     <div class="row">

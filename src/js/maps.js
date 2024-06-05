@@ -56,8 +56,14 @@ function addMarker(AdvancedMarkerElement, location) {
 function mapLayerEventListeners() {
   const mapLayerButtons = document.querySelectorAll('.historical-map-layer');
   mapLayerButtons.forEach((button) => {
+
     button.addEventListener('click', (e) => {
-      let layer = e.target.id;
+      let target = e.target;
+      if (target.tagName === 'P') {
+        target = target.parentElement;
+      }
+
+      let layer = target.id;
       layer = layer.replace('map-layer-', '');
       setLayer(layer);
     });
@@ -96,13 +102,11 @@ function setLayer(layerId) {
 
     const mapLayerButtons = document.querySelectorAll('.historical-map-layer');
     mapLayerButtons.forEach((button) => {
-        button.classList.remove('btn-success');
-        button.classList.add('map-layer-button');
+        button.classList.remove('layer-button-active');
     });
 
     const selectedLayerButton = document.getElementById(`map-layer-${layerId}`);
-    selectedLayerButton.classList.remove('map-layer-button');
-    selectedLayerButton.classList.add('btn-success');
+    selectedLayerButton.classList.add('layer-button-active');
   }
 
   function isWalesInView(map) {
