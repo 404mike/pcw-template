@@ -77,10 +77,18 @@
             </div>
         </div>
 
-        <div class="row w-100 justify-content-md-end" id="nav-bottom">
-
-            <div class="col-3">
-                <form class="d-flex">
+        <div class="row w-100" id="nav-bottom">
+            <!-- <div class="col justify-content-md-start" id="header-bottom-left-breadcrumb">
+                <nav aria-label="breadcrumb" id="header-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+            </div> -->
+            <div class="col">
+                <form class="d-flex justify-content-md-end">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                         id="nav-search" />
                     <button class="btn btn-secondary" type="submit" aria-label="Site Search">
@@ -96,15 +104,3 @@
     </div>
 
 </nav>
-
-<!-- <div class="col justify-content-md-start" id="header-bottom-left-breadcrumb">
-    <nav aria-label="breadcrumb" id="header-breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-    </nav>
-</div> -->
-
-{% include 'includes/metadata/separator.twig' %}

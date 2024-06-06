@@ -30,10 +30,9 @@ ul#main-nav {
 
     li {
         padding-right: 25px;
-        margin-top: 1px;
 
         a {
-            font-size: 1.4em;
+            font-size: 1.2em;
             color: $black;
             padding: 0;
 
@@ -52,31 +51,31 @@ ul#main-nav {
 }
 
 .nav-link {
-    border-top: 4px solid $white;
+    border-bottom: 8px solid $white;
     max-width: 8em;
 }
 
 #nav-about {
     .nav-active {
-        border-top: 4px solid $pcwred;
+        border-bottom: 8px solid $pcwred;
     }
 }
 
 #nav-discover {
     .nav-active {
-        border-top: 4px solid $pcwlightblue;
+        border-bottom: 8px solid $pcwlightblue;
     }
 }
 
 #nav-locate {
     .nav-active {
-        border-top: 4px solid $pcworange;
+        border-bottom: 8px solid $pcworange;
     }
 }
 
 #nav-learn {
     .nav-active {
-        border-top: 4px solid $pcwgreen;
+        border-bottom: 8px solid $pcwgreen;
     }
 }
 
@@ -122,13 +121,10 @@ ol.breadcrumb {
     }
 }
 
-#nav-bottom {
-    margin-top: 5px;
-}
-
 input#nav-search {
     background-color: #dcdcdc;
     border: 1px solid #c1c1c1;
+    width: 20%;
 
     @include media-breakpoint-down(lg) {
         margin-left: 4px;
