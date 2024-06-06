@@ -4,8 +4,8 @@
 
 
 #pcw-logo {
-    width: 283px;
-    height: 80px;
+    width: 291px;
+    height: 81px;
 }
 
 
@@ -51,31 +51,31 @@ ul#main-nav {
 }
 
 .nav-link {
-    border-bottom: 8px solid $white;
+    border-top: 8px solid $white;
     max-width: 8em;
 }
 
 #nav-about {
     .nav-active {
-        border-bottom: 8px solid $pcwred;
+        border-top: 8px solid $pcwred;
     }
 }
 
 #nav-discover {
     .nav-active {
-        border-bottom: 8px solid $pcwlightblue;
+        border-top: 8px solid $pcwlightblue;
     }
 }
 
 #nav-locate {
     .nav-active {
-        border-bottom: 8px solid $pcworange;
+        border-top: 8px solid $pcworange;
     }
 }
 
 #nav-learn {
     .nav-active {
-        border-bottom: 8px solid $pcwgreen;
+        border-top: 8px solid $pcwgreen;
     }
 }
 
@@ -97,8 +97,13 @@ a.navbar-brand {
 
 ol.breadcrumb {
     padding: 0 8px;
+    border-bottom: 1px solid gray;
+    margin-left: 8px;
+    background: #f0f0f0;
 
     li {
+        padding: 5px;
+
         a {
             color: $pcwlightgrey;
         }
@@ -137,8 +142,4 @@ input#nav-search {
 
 #sign-in-button {
     min-width: 65px;
-}
-
-#header-breadcrumb {
-    margin-top: 10px;
 }
