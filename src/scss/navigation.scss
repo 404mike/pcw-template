@@ -30,6 +30,10 @@ ul#main-nav {
     li {
         padding-right: 25px;
 
+        @media screen and (max-width: 561px) {
+            padding-right: 12px;
+        }
+
         a {
             font-size: 1.2em;
             color: $black;
