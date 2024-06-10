@@ -24,7 +24,7 @@ foreach($whatFacet as $whatK => $whatV) {
     foreach($whatV as $whatK2 => $whatV2) {
         $data[$whatK]['sub'][] = [
             'name' => $whatK2,
-            'value' => $whatV2
+            'value' => number_format($whatV2)
         ];
     }
 }
