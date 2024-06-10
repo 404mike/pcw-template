@@ -7,11 +7,11 @@
     }
 
     h2 {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     h3 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     h4 {
@@ -26,16 +26,11 @@
     padding: 10px;
 }
 
-#left-sidebar {
-    // background-color: rgb(235, 226, 128);
-}
+#left-sidebar {}
 
-#center-content {
-    // background-color: rgb(129, 181, 129);
-}
+#center-content {}
 
 #right-sidebar {
-    // background-color: rgb(178, 178, 254);
     border-left: 1px solid #dcdcdc;
 }
 
@@ -137,7 +132,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // max-width: 13rem;
     min-height: 11rem;
     max-height: 11rem;
 }
@@ -154,7 +148,6 @@
     font-size: 0.9em;
     font-weight: bold;
     margin: 0;
-    // padding: 0 5px;
     color: $grey;
     text-decoration: none;
     display: block;
@@ -168,7 +161,6 @@
 .discover-result-author {
     font-size: 0.9em;
     text-align: left;
-    // padding: 0 5px;
     margin: 0;
 
     a {
@@ -189,7 +181,6 @@
 .discover-result-type {
     font-size: 0.7em;
     text-align: left;
-    // padding: 0 5px 5px 5px;
     color: $grey;
     margin-bottom: 5px;
 }
@@ -213,7 +204,6 @@ span.close-facet {
     margin: 20px 0;
 }
 
-
 .metadata-info-list {
     li {
         border: none;
@@ -231,8 +221,6 @@ span.close-facet {
 }
 
 #node-metadata-details {
-
-    // margin-top: 20px;
     .item-information-heading {
         font-size: 1.3em;
     }
