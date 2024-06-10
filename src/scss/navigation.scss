@@ -16,11 +16,11 @@ ul#main-nav {
     margin-left: 8px;
 
     li {
-        padding-right: 25px;
+        margin-right: 20px;
 
-        @media screen and (max-width: 561px) {
-            padding-right: 12px;
-        }
+        // @media screen and (max-width: 561px) {
+        //     // padding-right: 12px;
+        // }
 
         a {
             font-size: 1.2em;

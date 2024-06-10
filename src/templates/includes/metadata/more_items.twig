@@ -1,28 +1,25 @@
-<div class="row">
+<div class="col-12 text-start">
+    <h4 class="d-inline-block heading-underline">More Welsh history</h4>
+</div>
 
-    <div class="col-12 text-start">
-        <h4 class="d-inline-block heading-underline">More Welsh history</h4>
-    </div>
-
-    <div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
-        {% for d in discover|slice(0, 2) %}
-        <div class="col d-flex align-items-stretch">
-            <div class="card text-center w-100 discover-resulst-node">
-                <a href="#">
-                    <img src="{{ d.thumb }}" class="card-img-top fixed-size-img mx-auto" alt="{{ d.title }}">
-                </a>
-                <div class="card-body discover-result-details">
-                    <a class="card-title discover-result-title text-start mt-1" href="#">{{ d.title
-                        }}</a>
-                    <p class="card-text discover-result-author">
-                        <a href="#">{{ d.author }}</a>
-                    </p>
-                    {% if d.type %}
-                    <p class="card-text discover-result-type">{{ d.type }}</p>
-                    {% endif %}
-                </div>
+<div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
+    {% for d in discover|slice(0, 2) %}
+    <div class="col d-flex align-items-stretch">
+        <div class="card text-center w-100 discover-resulst-node">
+            <a href="#">
+                <img src="{{ d.thumb }}" class="card-img-top fixed-size-img mx-auto" alt="{{ d.title }}">
+            </a>
+            <div class="card-body discover-result-details">
+                <a class="card-title discover-result-title text-start mt-1" href="#">{{ d.title
+                    }}</a>
+                <p class="card-text discover-result-author">
+                    <a href="#">{{ d.author }}</a>
+                </p>
+                {% if d.type %}
+                <p class="card-text discover-result-type">{{ d.type }}</p>
+                {% endif %}
             </div>
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
 </div>
