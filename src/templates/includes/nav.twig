@@ -1,6 +1,6 @@
 <nav class="container px-4 text-center navbar navbar-expand-lg" id="header-nav" role="navigation">
     <div class="row w-100 h-100">
-        <!-- Red div on the left -->
+
         <div class="
             col-xs-12
             col-sm-12
@@ -16,11 +16,13 @@
             justify-content-lg-start
             justify-content-xl-start
             justify-content-xxl-start
+            mb-2
             ">
-            <!-- Adjust height as needed -->
+
             {% include 'includes/svg.twig' %}
         </div>
-        <!-- Yellow div and Pink grid in the same column -->
+
+
         <div class="
             col-xs-12
             col-md-12
@@ -31,14 +33,10 @@
             flex-column 
             justify-content-between">
             <div class="row">
-                <!-- Yellow div on top -->
+
+
                 <div class="
-                    col-xs-12
-                    col-sm-12
-                    col-md-12
-                    col-lg-12
-                    col-xl-12
-                    col-xxl-12
+                    col-12
                     d-flex 
                     justify-content-center
                     justify-content-xs-center
@@ -48,13 +46,16 @@
                     ">
                     <ul class="navbar-nav d-flex flex-row" id="top-nav-links">
                         <li class="nav-item top-right-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Cymraeg</a>
+                            <!-- <a class="nav-link active" aria-current="page" href="#">Cymraeg</a> -->
+                            <a class="nav-link active" aria-current="page" href="#">Seasneg</a>
                         </li>
                         <li class="nav-item top-right-nav">
-                            <a class="nav-link" href="#" id="sign-in-button">Sign in</a>
+                            <!-- <a class="nav-link" href="#" id="sign-in-button">Sign in</a> -->
+                            <a class="nav-link" href="#" id="sign-in-button">Mewngofnodi</a>
                         </li>
                         <li class="nav-item top-right-nav">
-                            <a class="btn btn-dark" href="#" role="button">Register</a>
+                            <!-- <a class="btn btn-dark" href="#" role="button">Register</a> -->
+                            <a class="btn btn-dark" href="#" role="button">Cofrestru</a>
                         </li>
                     </ul>
                     <button id="top-nav-hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -64,44 +65,29 @@
                     </button>
                 </div>
             </div>
-            <!-- Pink div beneath the yellow div -->
+
+
             <div class="row">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="
-                            col-xs-12
-                            col-sm-12
-                            col-md-12
-                            col-lg-12
-                            col-xl-12
-                            col-xxl-9
-                            collapse 
-                            navbar-collapse 
-                            pcw-nav-menu
-                            ">
-                            <ul class="navbar-nav d-flex flex-row justify-content-center" id="main-nav">
-                                <li class="nav-item" id="nav-about">
-                                    <a class="nav-link nav-active" aria-current="page" href="#">Amdanom Ni</a>
-                                </li>
-                                <li class="nav-item" id="nav-upload">
-                                    <a class="nav-link" href="#">Rhannu</a>
-                                </li>
-                                <li class="nav-item" id="nav-discover">
-                                    <a class="nav-link" href="#">Y Casgliad</a>
-                                </li>
-                                <li class="nav-item" id="nav-locate">
-                                    <a class="nav-link" href="#">Mapiau</a>
-                                </li>
-                                <li class="nav-items" id="nav-learn">
-                                    <a class="nav-link" href="#">Addysg</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-12 collapse navbar-collapse pcw-nav-menu">
+                    <ul class="navbar-nav flex-column flex-sm-row justify-content-center text-center" id="main-nav">
+                        <li class="nav-item" id="nav-about">
+                            <a class="nav-link nav-active text-sm-start" aria-current="page" href="#">Amdanom Ni</a>
+                        </li>
+                        <li class="nav-item" id="nav-upload">
+                            <a class="nav-link text-sm-start" href="#">Rhannu</a>
+                        </li>
+                        <li class="nav-item" id="nav-discover">
+                            <a class="nav-link text-sm-start" href="#">Y Casgliad</a>
+                        </li>
+                        <li class="nav-item" id="nav-locate">
+                            <a class="nav-link text-sm-start" href="#">Mapiau</a>
+                        </li>
+                        <li class="nav-item" id="nav-learn">
+                            <a class="nav-link text-sm-start" href="#">Addysg</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-
 
         </div>
 

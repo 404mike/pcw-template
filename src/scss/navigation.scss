@@ -57,7 +57,23 @@ ul#main-nav {
 #nav-locate {
     a {
         border-bottom: 8px solid $white;
-        max-width: 8em;
+        // max-width: 8em;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 577px) {
+    .navbar-nav .nav-link {
+        text-align: start;
     }
 }
 
