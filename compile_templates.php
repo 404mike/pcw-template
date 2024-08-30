@@ -8,7 +8,9 @@ $pages = [
     'item'       => 'item.twig',
     'collection' => 'collection.twig',
     'story'      => 'story.twig',
-    'profile'    => 'profile.twig'
+    'profile'    => 'profile.twig',
+    'upload'     => 'upload.twig',
+    'edit'       => 'edit.twig',
 ];
 
 $data = [];

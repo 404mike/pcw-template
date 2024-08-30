@@ -1,0 +1,13 @@
+.dropzone .dz-message {
+    background: url("../images/droptext.png") center no-repeat;
+    // @include breakpoint(phone-only) {
+    //   background: url("/sites/default/themes/custom/pcw/assets/js/dropzone/images/droptext-mobile.png") center no-repeat;
+    // }
+}
+
+.dz-message {
+    margin: 0 0 15px;
+    height: 250px;
+    width: 100%;
+    background-size: contain !important;
+}

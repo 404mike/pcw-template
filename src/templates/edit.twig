@@ -1,0 +1,65 @@
+{% include 'includes/header.twig' %}
+
+<div class="container text-start" id="contribute-form" role="main">
+    <div class="row justify-content-center">
+        <div class="col-8">
+
+            <div>
+                <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94"
+                    class="img-thumbnail" alt="...">
+            </div>
+
+            {% include 'includes/metadata/separator.twig' %}
+
+            <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" role="switch" id="contribute-switch-advanced">
+                <label class="form-check-label" for="contribute-switch-advanced">Advanced Options</label>
+            </div>
+
+            <form>
+                {% include 'includes/components/title.twig' %}
+                {% include 'includes/components/description.twig' %}
+                {% include 'includes/components/owner.twig' %}
+                {% include 'includes/components/creator.twig' %}
+                {% include 'includes/components/publisher_ref.twig' %}
+                {% include 'includes/components/link.twig' %}
+                {% include 'includes/components/date.twig' %}
+                {% include 'includes/components/facets.twig' %}
+                {% include 'includes/components/tags.twig' %}
+                {% include 'includes/components/map.twig' %}
+                {% include 'includes/components/licence.twig' %}
+                {% include 'includes/components/manage_items.twig' %}
+
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-danger mx-2">Delete</button>
+                    <button type="button" class="btn btn-primary mx-2">Save as Draft</button>
+                    <button type="button" class="btn btn-success mx-2">Publish</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade " id="contributeModalToolip" tabindex="-1" aria-labelledby="contributeModalToolip"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="contributeModalToolipTitle"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="contributeModalToolipBody"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+{% include 'includes/modal.twig' %}
+
+{% include 'includes/footer.twig' %}

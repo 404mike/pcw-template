@@ -179,335 +179,453 @@
     </div>
 </nav>
 <div class="container text-center" id="main-content" role="main">
+    <div class="row justify-content-center">
+        <div class="col-8">
 
-    <div class="row" id="node-metadata-details">
-        <h1 class="text-start">Lone cottage</h1>
+            <h2 class="text-start">Upload new items or edit your unpublished items</h2>
 
+            <div class="text-start">
+                <!-- Inline display for label and list -->
+                <div class="d-flex align-items-center">
+                    <p class="mb-0 me-2"><small> file types:</small></p>
+                    <ul class="list-unstyled d-flex flex-row mb-0">
+                        <li class="me-3"><small>.jpg</small></li>
+                        <li class="me-3"><small>.png</small></li>
+                        <li class="me-3"><small>.mp3</small></li>
+                        <li class="me-3"><small>.mp4</small></li>
+                        <li><small>.pdf</small></li>
+                    </ul>
+                </div>
+                <p class="m-0"><small>Maximum upload size 100MB</small></p>
+            </div>
 
-        <div class="col-12 position-relative uv">
-            <!-- Example UV in an iFrame -->
-            <iframe
-                src="https://viewer.library.wales/uv.html#?manifest=https://damsssl.llgc.org.uk/iiif/2.0/4622774/manifest.json&c=0&m=0&cv=0&config=/uv-config/standalone.json&locales=en-GB:English (GB),cy-GB:Cymraeg,fr-FR:Français (FR),pl-PL:Polski,sv-SE:Svenska&xywh=-127,-753,5460,4897&r=0"
-                allowfullscreen frameborder="0"></iframe>
-        </div>
+            <div id="dropzone" class="dropzone"></div>
 
-        <div class="col-12 d-flex flex-wrap flex-column flex-sm-row justify-content-sm-end mb-2">
-            <button class="btn btn-dark me-sm-2 mb-2 mb-sm-1 action-button">Favourite <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-heart" viewBox="0 0 16 16">
-                        <path
-                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                    </svg></span>
-            </button>
-            <button data-bs-toggle="modal" data-bs-target="#addToCollectionStory"
-                class="btn btn-dark me-sm-2 mb-2 mb-sm-1 action-button">Add to a Collection or Story <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-book" viewBox="0 0 16 16">
-                        <path
-                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
-                    </svg></span>
-            </button>
-            <button data-bs-toggle="modal" data-bs-target="#downloadMedia"
-                class="btn btn-dark me-sm-2 mb-2 mb-sm-1 action-button">Download (non-commercial use only)<span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-download" viewBox="0 0 16 16">
-                        <path
-                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-                        <path
-                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
-                    </svg></span>
-            </button>
-        </div>
+            <!-- Place the button container inside the same col-8 -->
+            <div class="mt-3 d-flex justify-content-start">
+                <button type="button" id="dropzone-single-file" class="btn btn-primary me-2 d-none">Next</button>
+                <button type="button" id="dropzone-multipart-file" class="btn btn-primary d-none">Merge all files into
+                    single item</button>
+            </div>
 
-        <p class="text-start">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-            voluptatum deleniti
-            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-            similique
-            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum
-            facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-            repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-            ut et
-            voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
-            delectus,
-            ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-        </p>
-    </div>
+            <div id="external-resource-upload-form">
+                <h3 class="mt-3 text-start">Embed a Youtube, Vimeo or Sketchfab link</h3>
+                <!-- Form with input and button on the same line -->
+                <form class="d-flex justify-content-start align-items-end">
+                    <div class="flex-grow-1 me-2">
+                        <label for="link" class="form-label visually-hidden">Link</label>
+                        <input type="text" class="form-control" id="link" name="link"
+                            placeholder="https://www.youtube.com/watch?v=123456">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
 
-
-    <div class="row">
-
-        <div class="row">
+            <div class="row">
     <div class="col-auto mx-auto">
         <div class="separator"></div>
     </div>
 </div>
-        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start">
-    <div class="col-12 col-md-auto mb-3 mb-md-0">
-        <img src="https://www.peoplescollection.wales/sites/default/files/styles/user_profile_thumbnail/public/pictures/picture-1437-1408452057.jpg?itok=1fpTRNr8"
-            alt="User profile image" style="max-width: 100%; height: auto;">
-    </div>
+            <h3 class="mt-3 text-start">Your uploads - saved but not published</h3>
 
-    <div class="col-12 col-md d-flex flex-column flex-md-row">
-        <div class="col-12 col-md-4 mb-3 mb-md-0 text-start" id="uploader-details">
-            <h2 id="content-uploader">Uploaded by <a href="#">Newport Museum & Art Gallery</a> on 05/05/2016</h2>
-            <p>1,088 views</p>
-            <p>7 Favourites</p>
-            <button type="button" class="btn btn-success">
-                Follow <span class="follow-user">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-person-add" viewBox="0 0 16 16">
-                        <path
-                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
-                        <path
-                            d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
-                    </svg>
-                </span>
-            </button>
-        </div>
+            <div class="container">
+                <div class="row">
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh" class="img-fluid rounded-start" alt="Protest held in Liverpool against the flooding...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">Protest held in Liverpool against the flooding...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn" class="img-fluid rounded-start" alt="Protest held in Liverpool against the flooding of Capel Celyn...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">Protest held in Liverpool against the flooding of Capel Celyn...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11788_2.jpg?itok=QcmxetUB" class="img-fluid rounded-start" alt="A bleak view of Capel Celyn (Cwm Tryweryn), 14...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">A bleak view of Capel Celyn (Cwm Tryweryn), 14...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11789_2.jpg?itok=KI1rp0aq" class="img-fluid rounded-start" alt="Interior of the derelict chapel at Capel Celyn,...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">Interior of the derelict chapel at Capel Celyn,...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11815_2.jpg?itok=xdsN90ak" class="img-fluid rounded-start" alt="The last sale at Gwerngenau Farm, Capel Celyn,...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">The last sale at Gwerngenau Farm, Capel Celyn,...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11845_2.jpg?itok=KQCJHJLy" class="img-fluid rounded-start" alt="The last days of Capel Celyn School, October 1962">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">The last days of Capel Celyn School, October 1962</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11837_2.jpg?itok=QbOvi3Rk" class="img-fluid rounded-start" alt="Moving out of Garnedd Llwyd, Ciltalgarth, Capel...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">Moving out of Garnedd Llwyd, Ciltalgarth, Capel...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94" class="img-fluid rounded-start" alt="Residents of Capel Celyn (Tryweryn), 1961">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">Residents of Capel Celyn (Tryweryn), 1961</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11832_2.jpg?itok=yFae4Pve" class="img-fluid rounded-start" alt="Resident of Capel Celyn (Tryweryn), 1961">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">Resident of Capel Celyn (Tryweryn), 1961</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11828_2.jpg?itok=g1x_dnNI" class="img-fluid rounded-start" alt="Dismantling the railway at Capel Celyn ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">Dismantling the railway at Capel Celyn ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
 
-        <div class="col-12 col-md-6">
-                        <div class="row" id="node-metadata-details">
-    <h2 class="text-start" id="item-informatio-heading">Item Information</h2>
-    <ul class="list-group text-start metadata-info-list">
-        <li class="list-group-item"><span class="metadata-info-title">Creator:</span> <a href="#">Unknown</a></li>
-        <li class="list-group-item"><span class="metadata-info-title">Owner:</span> <a href="#">Newport Museum & Art
-                Gallert</a></li>
-        <li class="list-group-item"><span class="metadata-info-title">Publisher Reference:</span> N6734B/7</li>
-        <li class="list-group-item"><span class="metadata-info-title">Copyright Details:</span> Example Copyright
-            Details
+                <!-- Pagination -->
+                <nav aria-label="Page Navigation" id="pagination">
+    <ul class="pagination pagination-md justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
         </li>
-        <li class="list-group-item"><span class="metadata-info-title">Licence Information:</span> Creative Archive
-            Licence
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">6</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
         </li>
     </ul>
-</div>                    </div>
-    </div>
-</div>
-        <div class="row">
-    <div class="col-auto mx-auto">
-        <div class="separator"></div>
-    </div>
-</div>
-        <div class="col-12 text-start">
-    <span class="d-inline-block heading-underline tags-heading">Tags</span>
-</div>
-<div class="col-12 text-start mt-2">
-    <a href="#" class="btn tag-button me-2 mb-2">Bridge (300)</a>
-    <a href="#" class="btn tag-button me-2 mb-2">Gallery (1,200)</a>
-    <a href="#" class="btn tag-button me-2 mb-2">Education (987)</a>
-    <a href="#" class="btn tag-button me-2 mb-2">Museum (12,343)</a>
-    <a href="#" class="btn tag-button me-2 mb-2">Travel (12)</a>
-    <a href="#" class="btn tag-button me-2 mb-2">Newport (452)</a>
-</div>
+</nav>            </div>
 
-<div class="col-12 text-start mt-2">
-    <span class="d-inline-block heading-underline facets-heading">Topics</span>
-</div>
-<div class="col-12 text-start mt-2">
-    <a href="#" class="btn facet-button me-2 mb-2">Food and Drink (900)</a>
-    <a href="#" class="btn facet-button me-2 mb-2">Cities, Town and Villages (12,000)</a>
-    <a href="#" class="btn facet-button me-2 mb-2">Customs and Practices (49)</a>
-</div>
-        <div class="row">
-    <div class="col-auto mx-auto">
-        <div class="separator"></div>
-    </div>
-</div>
-        <div class="col-12 col-md-10 col-lg-8 text-start item-map">
-    <div id="map"></div>
-</div>
 
-<div class="row row-cols-auto">
-    <div class="col map-layer-buttons">
-        <div class="mb-2 map-layer-button map-layer-button historical-map-layer layer-button-active"
-            id="map-layer-google">
-            <p class="map-button-date">2024</p>
-            <p class="map-button-type">Modern Map</p>
-        </div>
-    </div>
 
-    <div class="col map-layer-buttons">
-        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-tithe">
-            <p class="map-button-date">1838-1850</p>
-            <p class="map-button-type">Tithe Map</p>
-        </div>
-    </div>
 
-    <div class="col map-layer-buttons">
-        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-1staddition">
-            <p class="map-button-date">1868-1892</p>
-            <p class="map-button-type">1st Edition</p>
-        </div>
-    </div>
-
-    <div class="col map-layer-buttons">
-        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-2ndaddition">
-            <p class="map-button-date">1899-1908</p>
-            <p class="map-button-type">2nd Edition</p>
-        </div>
-    </div>
-
-    <div class="col map-layer-buttons">
-        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-3rdaddition">
-            <p class="map-button-date">1920-1932</p>
-            <p class="map-button-type">3rd Edition</p>
-        </div>
-    </div>
-
-    <div class="col map-layer-buttons">
-        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-4thaddition">
-            <p class="map-button-date">1938-1954</p>
-            <p class="map-button-type">4th Edition</p>
         </div>
     </div>
 </div>
-        <div class="row">
-    <div class="col-auto mx-auto">
-        <div class="separator"></div>
-    </div>
-</div>
-        <div class="col-12 text-start">
-    <h3 class="d-inline-block heading-underline">Item also appears in</h3>
-</div>
-
-<div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
-        <div class="col d-flex align-items-stretch mb-4">
-        <div class="card text-center w-100 discover-resulst-node">
-            <a href="#">
-                <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh" class="card-img-top fixed-size-img mx-auto" alt="Protest held in Liverpool against the flooding...">
-            </a>
-            <div class="card-body discover-result-details">
-                <a class="card-title discover-result-title text-start mt-1" href="#">Protest held in Liverpool against the flooding...</a>
-                <p class="card-text discover-result-author">
-                    <a href="#">Gathering The Jewels</a>
-                </p>
-                            </div>
-        </div>
-    </div>
-        <div class="col d-flex align-items-stretch mb-4">
-        <div class="card text-center w-100 discover-resulst-node">
-            <a href="#">
-                <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn" class="card-img-top fixed-size-img mx-auto" alt="Protest held in Liverpool against the flooding of Capel Celyn...">
-            </a>
-            <div class="card-body discover-result-details">
-                <a class="card-title discover-result-title text-start mt-1" href="#">Protest held in Liverpool against the flooding of Capel Celyn...</a>
-                <p class="card-text discover-result-author">
-                    <a href="#">Gathering The Jewels</a>
-                </p>
-                            </div>
-        </div>
-    </div>
-    </div>
-        <div class="row">
-    <div class="col-auto mx-auto">
-        <div class="separator"></div>
-    </div>
-</div>
-        <div class="justify-content-center">
-    <div class="col col-md-8 col-lg-6 col-sm-10 mx-auto">
-        <form>
-            <div class="mb-3 text-start">
-                <label for="comment" class="form-label comment-form-label heading-underline ">Comment</label>
-                <textarea class="form-control" id="comment" rows="3" placeholder="Leave a Comment"></textarea>
-            </div>
-            <div class="text-start">
-                <button type="submit" class="btn btn-success">Submit <span><svg xmlns="http://www.w3.org/2000/svg"
-                            width="16" height="16" fill="currentColor" class="bi bi-chat-square-dots"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                            <path
-                                d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
-                        </svg></span></button>
-            </div>
-        </form>
-    </div>
-</div>
-        <div class="row">
-    <div class="col-auto mx-auto">
-        <div class="separator"></div>
-    </div>
-</div>
-        <div class="col-12 text-start">
-    <h4 class="d-inline-block heading-underline">More Welsh history</h4>
-</div>
-
-<div class="row row-cols-2 row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
-        <div class="col d-flex align-items-stretch">
-        <div class="card text-center w-100 discover-resulst-node">
-            <a href="#">
-                <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh" class="card-img-top fixed-size-img mx-auto" alt="Protest held in Liverpool against the flooding...">
-            </a>
-            <div class="card-body discover-result-details">
-                <a class="card-title discover-result-title text-start mt-1" href="#">Protest held in Liverpool against the flooding...</a>
-                <p class="card-text discover-result-author">
-                    <a href="#">Gathering The Jewels</a>
-                </p>
-                            </div>
-        </div>
-    </div>
-        <div class="col d-flex align-items-stretch">
-        <div class="card text-center w-100 discover-resulst-node">
-            <a href="#">
-                <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn" class="card-img-top fixed-size-img mx-auto" alt="Protest held in Liverpool against the flooding of Capel Celyn...">
-            </a>
-            <div class="card-body discover-result-details">
-                <a class="card-title discover-result-title text-start mt-1" href="#">Protest held in Liverpool against the flooding of Capel Celyn...</a>
-                <p class="card-text discover-result-author">
-                    <a href="#">Gathering The Jewels</a>
-                </p>
-                            </div>
-        </div>
-    </div>
-    </div>
-        <div class="row">
-    <div class="col-auto mx-auto">
-        <div class="separator"></div>
-    </div>
-</div>
-        <div class="row w-100 justify-content-center align-items-stretch" id="cta-container">
-    <div class="
-        col-xs-12
-        col-sm-12 
-        col-md-12 
-        col-lg-6
-        col-xl-4
-        col-xxl-4
-        mb-4">
-        <div class="card m-3 shadow h-100">
-            <div class="card-body pcw-cta-lower">
-                <span class="card-title cta-heading">Register and tell your story</span>
-                <p>
-                    Feature 1<br>
-                    Feature 2
-                </p>
-                <a href="#" class="btn mt-3 w-100">Tell your story</a>
-            </div>
-        </div>
-    </div>
-    <div class="
-        col-xs-12
-        col-sm-12 
-        col-md-12 
-        col-lg-6
-        col-xl-4
-        col-xxl-4
-        mb-4">
-        <div class="card m-3 shadow h-100">
-            <div class="card-body pcw-cta-lower">
-                <span class="card-title cta-heading">Report Item</span>
-                <p>
-                    Contact us to request takedown or report racist, offensive or otherwise harmful content.
-                </p>
-                <a href="#" class="btn mt-3 w-100">Contact us</a>
-            </div>
-        </div>
-    </div>
-</div>
-    </div>
-</div>
-
 
 <!-- Modal -->
 <!-- modal-dialog modal-dialog-centered modal-dialog-scrollable -->
@@ -659,7 +777,6 @@
         </div>
     </div>
 </div>
-
 <footer class="container text-center py-3 my-3 border-top">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-center">
         <div class="col mb-3">

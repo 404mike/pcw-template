@@ -1,0 +1,109 @@
+{% include 'includes/header.twig' %}
+
+<div class="container text-center" id="main-content" role="main">
+    <div class="row justify-content-center">
+        <div class="col-8">
+
+            <h2 class="text-start">Upload new items or edit your unpublished items</h2>
+
+            <div class="text-start">
+                <!-- Inline display for label and list -->
+                <div class="d-flex align-items-center">
+                    <p class="mb-0 me-2"><small> file types:</small></p>
+                    <ul class="list-unstyled d-flex flex-row mb-0">
+                        <li class="me-3"><small>.jpg</small></li>
+                        <li class="me-3"><small>.png</small></li>
+                        <li class="me-3"><small>.mp3</small></li>
+                        <li class="me-3"><small>.mp4</small></li>
+                        <li><small>.pdf</small></li>
+                    </ul>
+                </div>
+                <p class="m-0"><small>Maximum upload size 100MB</small></p>
+            </div>
+
+            <div id="dropzone" class="dropzone"></div>
+
+            <!-- Place the button container inside the same col-8 -->
+            <div class="mt-3 d-flex justify-content-start">
+                <button type="button" id="dropzone-single-file" class="btn btn-primary me-2 d-none">Next</button>
+                <button type="button" id="dropzone-multipart-file" class="btn btn-primary d-none">Merge all files into
+                    single item</button>
+            </div>
+
+            <div id="external-resource-upload-form">
+                <h3 class="mt-3 text-start">Embed a Youtube, Vimeo or Sketchfab link</h3>
+                <!-- Form with input and button on the same line -->
+                <form class="d-flex justify-content-start align-items-end">
+                    <div class="flex-grow-1 me-2">
+                        <label for="link" class="form-label visually-hidden">Link</label>
+                        <input type="text" class="form-control" id="link" name="link"
+                            placeholder="https://www.youtube.com/watch?v=123456">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            {% include 'includes/metadata/separator.twig' %}
+
+            <h3 class="mt-3 text-start">Your uploads - saved but not published</h3>
+
+            <div class="container">
+                <div class="row">
+                    {% for d in discover|slice(0, 10) %}
+                    <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-3">
+                                    <a href="#">
+                                        <img src="{{ d.thumb }}" class="img-fluid rounded-start" alt="{{ d.title }}">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">{{
+                                                d.title
+                                                }}</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Pagination -->
+                {% include 'includes/pagination.twig' %}
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+{% include 'includes/modal.twig' %}
+
+{% include 'includes/footer.twig' %}

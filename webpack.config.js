@@ -1,9 +1,8 @@
 "use strict";
 
 const path = require("path");
-const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const miniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
@@ -19,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "./src/index.html" }),
-    new miniCssExtractPlugin(),
+    new MiniCssExtractPlugin(),
   ],
   module: {
     rules: [
@@ -36,25 +35,23 @@ module.exports = {
         use: [
           {
             // Adds CSS to the DOM by injecting a `<style>` tag
-            loader: miniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader,
           },
           {
-            // Interprets `@import` and `url()` like `import/require()` and will resolve them
-            loader: "css-loader",
+            loader: "css-loader", // translates CSS into CommonJS
           },
           {
-            // Loader for webpack to process CSS with PostCSS
-            loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                plugins: [autoprefixer],
-              },
-            },
+            loader: "sass-loader", // compiles Sass to CSS
           },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
           {
-            // Loads a SASS/SCSS file and compiles it to CSS
-            loader: "sass-loader",
+            loader: MiniCssExtractPlugin.loader,
           },
+          "css-loader",
         ],
       },
     ],
