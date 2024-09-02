@@ -1,41 +1,25 @@
 const contributeTranslate = () => {
 
     // Example usage:
-    translateText('Hello, how are you?').then(translation => console.log(translation));
+    let text = translateText('Hello, how are you?', 'en', 'cy').then(translation => console.log(translation));
+    return text;
 };
 
+async function translateText(text, sourceLanguage, targetLanguage) {    
+    // make post request to https://peoplescollection.wales/embed/sites/translate.php
+    // with text and targetLanguage as parameters
+    // return the translated text
 
-async function translateText(text) {
-    const apiKey = 'AIzaSyD2IjeESJzSXKrTzkHZVsxtkVTgXBSMW8M';  // Replace YOUR_API_KEY with your actual Google Cloud API key
-    const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+    const response = await fetch('https://peoplescollection.wales/embed/sites/translate.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({text, sourceLanguage, targetLanguage})
+    });
 
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-                q: text,
-                source: 'en',
-                target: 'cy',  // ISO 639-1 code for Welsh
-                format: 'text'
-            })
-        });
-
-        const data = await response.json();
-        if (response.ok) {
-            console.log('Translation:', data.data.translations[0].translatedText);
-            return data.data.translations[0].translatedText;
-        } else {
-            console.error('Translation API Error:', data.error.message);
-            throw new Error(data.error.message);
-        }
-    } catch (error) {
-        console.error('Fetch Error:', error);
-        throw error;
-    }
+    const data = await response.json
+    return data.translatedText;
 }
 
 export {contributeTranslate};

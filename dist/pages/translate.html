@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Translate Text</title>
+</head>
+
+<body>
+    <h1>Text Translation</h1>
+    <p id="translation">Translating...</p>
+
+    <script>
+        async function translateText(text, source, targetLanguage) {
+            const apiKey = 'AIzaSyD2IjeESJzSXKrTzkHZVsxtkVTgXBSMW8M'; // Use your actual API key
+            const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        q: [text],
+                        source: source,
+                        target: targetLanguage
+                    })
+                });
+
+                const data = await response.json();
+                if (response.ok) {
+                    console.log('Translation:', data.data.translations[0].translatedText);
+                    return data.data.translations[0].translatedText;
+                } else {
+                    console.error('API Error:', data.error.message);
+                    throw new Error(data.error.message);
+                }
+            } catch (error) {
+                console.error('Network or other error:', error.message);
+                return 'Translation failed or invalid API response.';
+            }
+        }
+
+        // Example usage
+        document.addEventListener('DOMContentLoaded', () => {
+            translateText('Hello, how are you?', 'en', 'es').then(translation => {
+                document.getElementById('translation').textContent = translation;
+            }).catch(error => {
+                document.getElementById('translation').textContent = 'Error: ' + error.message;
+            });
+        });
+    </script>
+</body>
+
+</html>
