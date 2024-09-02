@@ -13,6 +13,7 @@ const initContribute = () => {
     contributeTooltips();
     contributeTranslate();
     metadataQualityChecker();
+    toggleTranslateForms();
 };
 
 const addEventListenerToAdvancedToggle = () => {
@@ -25,6 +26,23 @@ const addEventListenerToAdvancedToggle = () => {
             } else {
                 element.classList.add('d-none');     // Hide element
                 element.classList.remove('d-block'); // Ensure it's not shown
+            }
+        });
+    });
+};
+
+const toggleTranslateForms = () => {
+    document.querySelectorAll('.translate-buttons').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const suffix = e.target.id.split('-').pop(); // 'english' or 'welsh'
+            const type = e.target.id.replace(`-${suffix}`, ''); // e.g., 'contribute-description'
+            const toggleSuffix = suffix === 'english' ? 'welsh' : 'english';
+            const toggleId = `${type}-${toggleSuffix}`;
+            const elementToToggle = document.getElementById(toggleId);
+    
+            if (elementToToggle) {
+                elementToToggle.classList.toggle('d-none');
+                elementToToggle.classList.toggle('d-block');
             }
         });
     });
