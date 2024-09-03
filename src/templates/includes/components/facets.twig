@@ -33,35 +33,7 @@
                 {% endfor %}
             </div>
 
-            <div class="accordion mt-3" id="accordionPanelsStayOpenExample2">
-                {% for facet in whenFacet %}
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingWhen{{ facet.id }}">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpenWhen-{{ facet.id }}" aria-expanded="false"
-                            aria-controls="panelsStayOpenWhen-{{ facet.id }}">
-                            {{ facet.name }}
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpenWhen-{{ facet.id }}" class="accordion-collapse collapse"
-                        aria-labelledby="headingWhen{{ facet.id }}">
-                        <div class="accordion-body contribute-facet-accordion">
-                            <ul>
-                                {% for v in facet.sub %}
-                                <li class="contrib_input_validate form-check">
-                                    <input class="form-check-input" data-parent="{{ v.nameClean }}"
-                                        name="field_what_facet[]" value="{{ v.nameClean }}" type="checkbox"
-                                        id="facet_select_{{ v.nameClean }}">
-                                    <label for="facet_select_{{ v.nameClean }}" class="form-check-label">{{ v.name
-                                        }}</label>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
+
 
         </div>
 
