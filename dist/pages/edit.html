@@ -288,10 +288,10 @@
             <div class="row">
                 <div class="col-10">
                     <input type="text" class="form-control" id="content-owner" placeholder="">
+                    <div id="ownerHelp" class="form-text">Current owner of the original item.</div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>                <div class="card mb-3">
     <div class="card-body">
@@ -310,7 +310,8 @@
                 <div class="col-10">
                     <input type="text" class="form-control" id="content-creator" placeholder=""
                         aria-describedby="creatorHelp">
-                    <div id="creatorHelp" class="form-text">Some additional information for the user.</div>
+                    <div id="creatorHelp" class="form-text">Creator of the original item, such as the name of
+                        photographer, author, artist etc.</div>
                 </div>
             </div>
         </div>
@@ -434,7 +435,7 @@
     <div class="card-body">
         <div class="mb-3">
 
-            <label for="my-autocomplete" class="form-label fs-5">Facets</label>
+            <label for="my-autocomplete" class="form-label fs-5">Select relevant categories below</label>
 
             <div class="accordion" id="accordionPanelsStayOpenExample">
                                 <div class="accordion-item">
@@ -1563,22 +1564,126 @@
 </div>                <div class="card mb-3">
     <div class="card-body">
         <div class="mb-3">
-            <label for="map" class="form-label fs-5">
+            <label for="itemLocation" class="form-label fs-5">
                 Map
             </label>
+
+            
+<div class="card-body p-0">
+    <div class="mb-2">
+        <label for="contributeMapSearch" class="form-label fs-6">
+            Enter a city, town or village name here or use the +/- buttons on the map:
+        </label>
+        <div class="row">
+            <div class="col-10">
+                <input type="text" class="form-control" id="contributeMapSearch">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-12 text-start item-map">
+
+    <button id="contributeMapDropPin" type="button" class="btn btn-outline-primary mb-2">Drop pin <svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+        </svg></button>
+
+    <button id="contributeRemoveMarker" type="button" class="btn btn-outline-primary mb-2 d-none">Remove location <svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
+            viewBox="0 0 16 16">
+            <path
+                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+            <path
+                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+        </svg></button>
+
+    <div id="map" data-map-type="contribute"></div>
+</div>
+
+<div class="row row-cols-auto">
+    <div class="col map-layer-buttons">
+        <div class="mb-2 map-layer-button map-layer-button historical-map-layer layer-button-active"
+            id="map-layer-google">
+            <p class="map-button-date">2024</p>
+            <p class="map-button-type">Modern Map</p>
+        </div>
+    </div>
+
+    <div class="col map-layer-buttons">
+        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-tithe">
+            <p class="map-button-date">1838-1850</p>
+            <p class="map-button-type">Tithe Map</p>
+        </div>
+    </div>
+
+    <div class="col map-layer-buttons">
+        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-1staddition">
+            <p class="map-button-date">1868-1892</p>
+            <p class="map-button-type">1st Edition</p>
+        </div>
+    </div>
+
+    <div class="col map-layer-buttons">
+        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-2ndaddition">
+            <p class="map-button-date">1899-1908</p>
+            <p class="map-button-type">2nd Edition</p>
+        </div>
+    </div>
+
+    <div class="col map-layer-buttons">
+        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-3rdaddition">
+            <p class="map-button-date">1920-1932</p>
+            <p class="map-button-type">3rd Edition</p>
+        </div>
+    </div>
+
+    <div class="col map-layer-buttons">
+        <div class="mb-2 map-layer-button map-layer-button historical-map-layer" id="map-layer-4thaddition">
+            <p class="map-button-date">1938-1954</p>
+            <p class="map-button-type">4th Edition</p>
+        </div>
+    </div>
+</div>
             <div class="row">
                 <div class="col-10">
-                    <input type="text" class="form-control" id="map" placeholder="">
+                    <input type="hidden" class="form-control" id="itemLocation">
                 </div>
             </div>
         </div>
 
     </div>
 </div>                <div class="card mb-3 contribute-advanced d-none">
+
+    <div class="card-body">
+        <div class="mb-1">
+            <label for="rights-holder" class="form-label fs-5">
+                This section allows you to credit rights holders
+            </label>
+            <div class="row g-2">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="rights-holder" placeholder="Rights holder">
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control" id="rights-type">
+                        <option value="" disabled selected>Select rights type</option>
+                        <option value="copyright">Copyright</option>
+                        <option value="trademark">Trademark</option>
+                        <option value="patent">Patent</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" id="rights-date" placeholder="Rights date">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="card-body">
         <div class="mb-3">
             <label for="licence" class="form-label fs-5">
-                Licence
+                Additional License Information
             </label>
             <div class="row">
                 <div class="col-10">
@@ -1591,28 +1696,62 @@
 </div>                <div class="card mb-3">
     <div class="card-body">
         <div class="mb-3">
-            <label for="manage_items" class="form-label fs-5">
-                Manage Items
-            </label>
 
-            <input type="hidden" class="form-control" id="manage_items" placeholder="">
+            <div class="accordion accordion-flush" id="contributeManageItemsContainer">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button id="contributeManageItemsContainerButton" class="accordion-button collapsed fs-5"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            Manage Items
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#contributeManageItemsContainer">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="contribute-manage-items" class="list-group d-flex flex-row">
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11788_2.jpg?itok=QcmxetUB" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11789_2.jpg?itok=KI1rp0aq" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11815_2.jpg?itok=xdsN90ak" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11845_2.jpg?itok=KQCJHJLy" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11837_2.jpg?itok=QbOvi3Rk" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11832_2.jpg?itok=yFae4Pve" alt="image" /></div>
+                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11828_2.jpg?itok=g1x_dnNI" alt="image" /></div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+
+        </div>
+    </div>
+</div>                <div class="card mb-3">
+    <div class="card-body">
+        <div class="mb-3">
+            <h5 class="form-label fs-5">Agree to Terms <span class="required">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-asterisk"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+                    </svg>
+                </span></h5>
+            <p>I have the right to upload this material and I have the right to allow others to use it under the
+                Creative Archive Licence</p>
             <div class="row">
                 <div class="col-10">
-
-                    <div id="simpleList" class="list-group d-flex flex-row">
-                        <div class="list-group-item">This is Sortable</a>
-                        </div>
-                        <div class="list-group-item">It works with Bootstrap...</div>
-                        <div class="list-group-item">...out of the box.</div>
-                        <div class="list-group-item">It has support for touch devices.</div>
-                        <div class="list-group-item">Just drag some elements around.</div>
-                    </div>
-
+                    <input type="checkbox" class="form-check-input" id="content-toc">
+                    <label for="content-toc" class="form-check-label">I agree</label>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
                 <div class="d-flex justify-content-center mt-3">

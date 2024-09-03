@@ -45,6 +45,9 @@
         font-size: 0.8rem;
     }
 
+    &.disabled {
+        display: none;
+    }
 }
 
 .layer-button-active {

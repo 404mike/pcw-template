@@ -1,12 +1,15 @@
 <div class="card mb-3">
     <div class="card-body">
         <div class="mb-3">
-            <label for="map" class="form-label fs-5">
+            <label for="itemLocation" class="form-label fs-5">
                 Map
             </label>
+
+            {% include 'includes/metadata/map.twig' %}
+
             <div class="row">
                 <div class="col-10">
-                    <input type="text" class="form-control" id="map" placeholder="">
+                    <input type="hidden" class="form-control" id="itemLocation">
                 </div>
             </div>
         </div>

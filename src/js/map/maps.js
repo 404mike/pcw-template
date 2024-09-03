@@ -1,4 +1,8 @@
 import { Loader } from "@googlemaps/js-api-loader";
+import { contributeMap } from "./contribute-map.js";
+import { collectionMap } from "./collection-map.js";
+import { locateMap } from "./locate-map.js";
+import { itemMap } from "./item-map.js";
 
 let map;
 const wales = { lat: 52.41371375319883, lng: -4.084020475317442 };
@@ -20,14 +24,17 @@ function initMap() {
 
   if (!document.getElementById("map")) return;
 
+  const mapType = document.getElementById("map").dataset.mapType;
+
   loader.load().then(async () => {
     const { Map } = await google.maps.importLibrary("maps");
-    const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
+    const { advancedMarker, AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
 
     map = new Map(document.getElementById("map"), {
       center: wales,
       zoom: 11,
       mapId: "6a2c815609bc8f90",
+      gestureHandling: "greedy",
     });
 
     map.addListener('bounds_changed', () => {
@@ -40,20 +47,24 @@ function initMap() {
         }
     });
 
-    addMarker(AdvancedMarkerElement, wales);
+    if (mapType === "contribute") {
+      contributeMap(map, AdvancedMarkerElement);
+    }
+    if (mapType === "item") {
+      itemMap(map, AdvancedMarkerElement);
+    }
+    if (mapType === "collection") {
+      collectionMap();
+    }
+    if (mapType === "locate") {
+      locateMap(map);
+    }
+
     mapLayerEventListeners();
   });
 }
 
-function addMarker(AdvancedMarkerElement, location) {
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: location,
-    title: "Item Location",
-  });
-}
-
-function mapLayerEventListeners() {
+const mapLayerEventListeners = () => {
   const mapLayerButtons = document.querySelectorAll('.historical-map-layer');
   mapLayerButtons.forEach((button) => {
 
@@ -70,7 +81,7 @@ function mapLayerEventListeners() {
   });
 }
 
-function setLayer(layerId) {
+const setLayer = (layerId) => {
     const layers = {
       'google': 'roadmap',
       '1staddition': { id: '1staddition', url: 'https://api.maptiler.com/tiles/004511f7-2020-4596-9223-fa674e0a4c97/{z}/{x}/{y}.png?key=1CYucAPOyljr43DBNflu' },
@@ -109,7 +120,7 @@ function setLayer(layerId) {
     selectedLayerButton.classList.add('layer-button-active');
   }
 
-  function isWalesInView(map) {
+  const isWalesInView = (map) => {
     const bounds = map.getBounds();
     const ne = bounds.getNorthEast();
     const sw = bounds.getSouthWest();
@@ -130,7 +141,7 @@ function setLayer(layerId) {
     return inView;
   }
   
-function historicalLayerButtons(disable) {
+const historicalLayerButtons = (disable) => {
     let historicalLayerButtons = document.querySelectorAll('.historical-map-layer');
     if (disable) {
         historicalLayerButtons.forEach((button) => {
@@ -142,6 +153,5 @@ function historicalLayerButtons(disable) {
         });
     }
 }
-  
 
 export { initMap };
