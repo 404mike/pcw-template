@@ -1,8 +1,9 @@
 import { contributeTooltips } from './contribute/tooltips.js';
 import { contributeTranslate } from './/contribute/translate.js';
-import { metadataQualityChecker } from './contribute/metadata-quality.js';
+import { metadataQualityChecker, getMetaDataIssues } from './contribute/metadata-quality.js';
 import { initTagsAutoComplete } from '../js/contribute/tags.js';
 import { initSortable } from './contribute/manage-images.js';
+import { Modal } from 'bootstrap';
 
 const contributePage = document.getElementById('contribute-form');
 const advancedToggle = document.getElementById('contribute-switch-advanced');
@@ -18,6 +19,7 @@ const initContribute = () => {
     toggleAlternativeLanguage();
     initTagsAutoComplete();
     initSortable();
+    validateSubmission();
 };
 
 const addEventListenerToAdvancedToggle = () => {
@@ -49,6 +51,52 @@ const toggleAlternativeLanguage = () => {
                 elementToToggle.classList.toggle('d-block');
             }
         });
+    });
+};
+
+const validateSubmission = () => {
+    const submitButton = document.getElementById('contributeItemSubmit');
+    submitButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const { count, messages } = getMetaDataIssues();
+        if (count > 0) {
+            // alert('Please fix the errors before submitting the form');
+
+            // Set the title
+            document.getElementById('contributeModalToolipTitle').innerText = 'Consider Improving Your Metadata';
+            
+            // Create the initial HTML content
+            let htmlContent = `<p>You have ${count} issue(s) with your metadata. Please review the following:</p>`;
+            
+            // Create the list
+            htmlContent += '<ul class="list-group list-group-flush">';
+            Object.keys(messages).forEach(key => {
+                htmlContent += `<li class="list-group-item">${messages[key].join(', ')}</li>`;
+            });
+            htmlContent += '</ul>';
+            
+            htmlContent += `<p>Watch the video below to learn more about metadata quality:</p>`;
+
+            // Add the iframe
+            htmlContent += `<iframe width="100%" height="315" src="https://www.youtube.com/embed/MPY_EuvimH0?si=9SAMucQNfy-dN3wH&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+            
+            // Set the innerHTML of the target element
+            document.getElementById('contributeModalToolipBody').innerHTML = htmlContent;
+            const myModalElement = document.getElementById('contributeModalToolip');
+            const myModal = new Modal(myModalElement, {
+                keyboard: true  // Allows closing the modal with the keyboard
+            });
+        
+            myModalElement.addEventListener('hidden.bs.modal', event => {
+                document.getElementById('contributeModalToolipTitle').innerText = '';
+                document.getElementById('contributeModalToolipBody').innerHTML = '';
+            });
+        
+            myModal.show();
+
+            return;
+        }
+        alert('Form submitted successfully');
     });
 };
 

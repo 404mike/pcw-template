@@ -198,7 +198,7 @@
             </div>
 
             <form>
-                <div class="card mb-3">
+                <div class="card mb-3" id="contributeTitleContainer">
     <div class="card-body">
         <div class="mb-3">
             <label for="contribute-english-title" class="form-label fs-5">
@@ -215,6 +215,7 @@
             <div class="row">
                 <div class="col-10">
                     <input type="text" class="form-control" id="contribute-english-title" placeholder="Short title">
+                    <div id="englishTitleHelp" class="form-text contribute-help-issue"></div>
                 </div>
                 <div class="col-2">
                     <button class="btn btn-secondary w-100 alternative-language" type="button"
@@ -224,7 +225,7 @@
         </div>
 
         <div class="mb-3 d-none" id="contribute-title-form-welsh">
-            <label for="welsh-title" class="form-label fs-5">Cymraeg</label>
+            <label for="contribute-welsh-title" class="form-label fs-5">Cymraeg</label>
             <div class="row">
                 <div class="col-10">
                     <input type="text" class="form-control" id="contribute-welsh-title" placeholder="Short title">
@@ -236,7 +237,7 @@
             </div>
         </div>
     </div>
-</div>                <div class="card mb-3">
+</div>                <div class="card mb-3" id="contributeDescriptionContainer">
     <div class="card-body">
         <div class="mb-3">
             <label for="contribute-english-description" class="form-label fs-5">
@@ -256,6 +257,7 @@
                     <textarea class="form-control" id="contribute-english-description"
                         placeholder="A good description will include details like: who, what, where and when"
                         rows="7"></textarea>
+                    <div id="englishDescriptionHelp" class="form-text contribute-help-issue"></div>
                 </div>
                 <div class="col-2">
                     <button class="btn btn-secondary w-100 alternative-language" type="button"
@@ -334,25 +336,26 @@
 </div>                <div class="card mb-3 contribute-advanced d-none">
     <div class="card-body">
         <div class="mb-3">
-            <label for="content-link" class="form-label fs-5">
+            <label for="contribute-english-link" class="form-label fs-5">
                 Link
             </label>
             <div class="row">
                 <div class="col-10">
-                    <input type="text" class="form-control" id="content-link"
+                    <input type="text" class="form-control" id="contribute-english-link"
                         placeholder="Link if your item is also on another website">
                 </div>
                 <div class="col-2">
-                    <button class="btn btn-secondary w-100" type="button">Cymraeg</button>
+                    <button class="btn btn-secondary w-100 alternative-language" type="button"
+                        id="contribute-link-form-english">Cymraeg</button>
                 </div>
             </div>
         </div>
 
-        <div class="mb-3 d-none">
-            <label for="welsh-title" class="form-label fs-5">Cymraeg</label>
+        <div class="mb-3 d-none" id="contribute-link-form-welsh">
+            <label for="contribute-welsh-link" class="form-label fs-5">Cymraeg</label>
             <div class="row">
                 <div class="col-10">
-                    <input type="text" class="form-control" id="welsh-title"
+                    <input type="text" class="form-control" id="contribute-welsh-link"
                         placeholder="Link if your item is also on another website">
                 </div>
             </div>
@@ -361,9 +364,9 @@
 </div>                <div class="card mb-3 contribute-advanced d-none">
     <div class="card-body">
         <div class="mb-3">
-            <label for="content-link" class="form-label fs-5">
+            <h5 class="contribute-heading">
                 Date
-            </label>
+            </h5>
             <div class="row">
                 <div class="col-4 d-flex justify-content-between">
                     <div class="me-1">
@@ -1564,9 +1567,9 @@
 </div>                <div class="card mb-3">
     <div class="card-body">
         <div class="mb-3">
-            <label for="itemLocation" class="form-label fs-5">
+            <h5 class="contribute-heading">
                 Map
-            </label>
+            </h5>
 
             
 <div class="card-body p-0">
@@ -1757,7 +1760,7 @@
                 <div class="d-flex justify-content-center mt-3">
                     <button type="button" class="btn btn-danger mx-2">Delete</button>
                     <button type="button" class="btn btn-primary mx-2">Save as Draft</button>
-                    <button type="button" class="btn btn-success mx-2">Publish</button>
+                    <button id="contributeItemSubmit" type="button" class="btn btn-success mx-2">Publish</button>
                 </div>
             </form>
 
