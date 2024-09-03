@@ -1,6 +1,8 @@
-import {contributeTooltips} from './contribute/tooltips.js';
-import {contributeTranslate} from './contribute/translate.js';
-import {metadataQualityChecker} from './contribute/metadata-quality.js';
+import { contributeTooltips } from './contribute/tooltips.js';
+import { contributeTranslate } from './/contribute/translate.js';
+import { metadataQualityChecker } from './contribute/metadata-quality.js';
+import { initTagsAutoComplete } from '../js/contribute/tags.js';
+import { initSortable } from './contribute/manage-images.js';
 
 const contributePage = document.getElementById('contribute-form');
 const advancedToggle = document.getElementById('contribute-switch-advanced');
@@ -13,7 +15,9 @@ const initContribute = () => {
     contributeTooltips();
     contributeTranslate();
     metadataQualityChecker();
-    toggleTranslateForms();
+    toggleAlternativeLanguage();
+    initTagsAutoComplete();
+    initSortable();
 };
 
 const addEventListenerToAdvancedToggle = () => {
@@ -31,8 +35,8 @@ const addEventListenerToAdvancedToggle = () => {
     });
 };
 
-const toggleTranslateForms = () => {
-    document.querySelectorAll('.translate-buttons').forEach(button => {
+const toggleAlternativeLanguage = () => {
+    document.querySelectorAll('.alternative-language').forEach(button => {
         button.addEventListener('click', (e) => {
             const suffix = e.target.id.split('-').pop(); // 'english' or 'welsh'
             const type = e.target.id.replace(`-${suffix}`, ''); // e.g., 'contribute-description'

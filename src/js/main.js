@@ -9,7 +9,6 @@ import { addToCollectionStory } from '../js/add-to-collection-story.js';
 import {initDropzone} from '../js/dropzone.js';
 import {initContribute} from '../js/contribute.js';
 
-
 initFacets();
 initMap();
 addToCollectionStory();

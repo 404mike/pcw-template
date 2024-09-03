@@ -1,12 +1,24 @@
 <div class="card mb-3">
     <div class="card-body">
         <div class="mb-3">
-            <label for="publisher_ref" class="form-label fs-5">
+            <label for="manage_items" class="form-label fs-5">
                 Manage Items
             </label>
+
+            <input type="hidden" class="form-control" id="manage_items" placeholder="">
+
             <div class="row">
                 <div class="col-10">
-                    <input type="text" class="form-control" id="publisher_ref" placeholder="">
+
+                    <div id="simpleList" class="list-group d-flex flex-row">
+                        <div class="list-group-item">This is Sortable</a>
+                        </div>
+                        <div class="list-group-item">It works with Bootstrap...</div>
+                        <div class="list-group-item">...out of the box.</div>
+                        <div class="list-group-item">It has support for touch devices.</div>
+                        <div class="list-group-item">Just drag some elements around.</div>
+                    </div>
+
                 </div>
             </div>
         </div>
