@@ -1,0 +1,33 @@
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="mb-3">
+
+            <div class="accordion accordion-flush" id="contributeManageItemsContainer">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button id="contributeManageItemsContainerButton" class="accordion-button collapsed fs-5"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            Manage Items
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#contributeManageItemsContainer">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="contribute-manage-items" class="list-group d-flex flex-row">
+                                        {% for d in discover|slice(0, 10) %}
+                                        <div class="list-group-item"><img src="{{ d.thumb }}" alt="image" /></div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
