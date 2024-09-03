@@ -2,7 +2,14 @@
 
 <div class="container text-center" id="main-content" role="main">
     <div class="row justify-content-center">
-        <div class="col-8">
+        <div class="
+            col-xxl-8
+            col-xl-8
+            col-lg-8
+            col-md-10
+            col-sm-12
+            col-12
+            ">
 
             <h2 class="text-start">Upload new items or edit your unpublished items</h2>
 
@@ -57,13 +64,14 @@
                                 <!-- Image Column -->
                                 <div class="col-md-3">
                                     <a href="#">
-                                        <img src="{{ d.thumb }}" class="img-fluid rounded-start" alt="{{ d.title }}">
+                                        <img src="{{ d.thumb }}" class="draft-item-img-fluid rounded-start"
+                                            alt="{{ d.title }}">
                                     </a>
                                 </div>
                                 <!-- Details Column -->
                                 <div class="col-md-5">
                                     <div class="card-body">
-                                        <h5 class="card-title text-start"><a href="#" class="discover-result-title">{{
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">{{
                                                 d.title
                                                 }}</a></h5>
                                     </div>
