@@ -3,6 +3,7 @@ import { contributeTranslate } from './/contribute/translate.js';
 import { metadataQualityChecker, getMetaDataIssues } from './contribute/metadata-quality.js';
 import { initTagsAutoComplete } from '../js/contribute/tags.js';
 import { initSortable } from './contribute/manage-images.js';
+import { runContributeTour } from './contribute/contribute-product-tour.js';
 import { Modal } from 'bootstrap';
 
 const contributePage = document.getElementById('contribute-form');
@@ -20,6 +21,7 @@ const initContribute = () => {
     initTagsAutoComplete();
     initSortable();
     validateSubmission();
+    contributeTourClick();
 };
 
 const addEventListenerToAdvancedToggle = () => {
@@ -97,6 +99,14 @@ const validateSubmission = () => {
             return;
         }
         alert('Form submitted successfully');
+    });
+};
+
+const contributeTourClick = () => {
+    const contributeTourButton = document.getElementById('contributeTour');
+    contributeTourButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        runContributeTour();
     });
 };
 
