@@ -35,6 +35,7 @@ function initMap() {
       zoom: 11,
       mapId: "6a2c815609bc8f90",
       gestureHandling: "greedy",
+      streetViewControl: false,
     });
 
     map.addListener('bounds_changed', () => {
@@ -57,7 +58,7 @@ function initMap() {
       collectionMap();
     }
     if (mapType === "locate") {
-      locateMap(map);
+      locateMap(map, AdvancedMarkerElement);
     }
 
     mapLayerEventListeners();

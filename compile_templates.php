@@ -11,7 +11,7 @@ $pages = [
     'profile'    => 'profile.twig',
     'upload'     => 'upload.twig',
     'edit'       => 'edit.twig',
-    'accordion'  => 'accordion.twig',
+    'locate'     => 'locate.twig',
 ];
 
 $data = [];

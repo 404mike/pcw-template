@@ -1,0 +1,110 @@
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#map[data-map-type="locate"] {
+    height: 60vh;
+}
+
+.map-container {
+    position: relative;
+}
+
+#mapSidebar {
+    position: absolute;
+    height: 53vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y: hidden;
+    /* Prevent the sidebar itself from scrolling */
+    z-index: 10;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-layer-buttons {
+    padding: 5px 15px 0 15px;
+    cursor: pointer;
+    width: 135px;
+}
+
+.historical-map-layer {
+    font-weight: 300;
+    border-bottom: 4px solid $pcwbuttongrey;
+
+    p {
+        line-height: 16px;
+        padding: 0;
+        margin: 5px;
+    }
+
+    .map-button-date {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .map-button-type {
+        font-size: 0.8rem;
+    }
+
+    &.disabled {
+        display: none;
+    }
+}
+
+a.map-locate-sidebar-nav {
+    padding: 10px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    color: $grey;
+    text-decoration: none;
+}
+
+.locate-sidebar-nav-active {
+    border-bottom: 3px solid $pcwdarkpurple;
+}
+
+.locate-sidebar-img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 11rem;
+    max-height: 11rem;
+}
+
+#locateSideNodeImagePreview {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 17rem;
+    max-height: 17rem;
+}
+
+#locateSidebarItemsContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin: 0 10px;
+}
+
+#locateSidebarPagination {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+#locateSidebarSearchContainer,
+#locateSidebarItemPreview {
+    display: none;
+    overflow-y: auto;
+}

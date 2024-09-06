@@ -1,5 +1,34 @@
+{% if page == 'locate' %}
 <nav aria-label="Page Navigation" id="pagination">
-    <ul class="pagination pagination-md justify-content-center">
+    <!-- Detailed Pagination for lg screens and up -->
+    <ul class="pagination pagination-md justify-content-center d-none d-lg-flex">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+
+    <!-- Simplified Pagination for smaller screens (up to lg) -->
+    <ul class="pagination pagination-sm justify-content-center d-lg-none">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+
+{% else %}
+
+<nav aria-label="Page Navigation" id="pagination">
+    <!-- Detailed Pagination for lg screens and up -->
+    <ul class="pagination pagination-md justify-content-center d-none d-lg-flex">
         <li class="page-item disabled">
             <a class="page-link">Previous</a>
         </li>
@@ -14,3 +43,4 @@
         </li>
     </ul>
 </nav>
+{% endif %}

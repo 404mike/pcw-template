@@ -10,6 +10,6 @@ const addMarker = (map, AdvancedMarkerElement, location) => {
       position: location,
       title: "Item Location",
     });
-  }
+};
 
 export { itemMap };

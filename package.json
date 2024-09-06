@@ -25,7 +25,9 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
+    "@google/markerclusterer": "^2.0.9",
     "@googlemaps/js-api-loader": "^1.16.6",
+    "@googlemaps/markerclusterer": "^2.5.3",
     "@popperjs/core": "^2.11.8",
     "accessible-autocomplete": "^3.0.0",
     "bootstrap": "^5.3.3",

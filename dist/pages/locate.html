@@ -178,359 +178,337 @@
 
     </div>
 </nav>
-<div class="container text-start" id="contribute-form" role="main">
-    <div class="row justify-content-center">
-        <div class="
-            col-xxl-8
-            col-xl-8
-            col-lg-8
-            col-md-10
-            col-sm-12
-            col-12
-            ">
+<div class="container" id="main-content" role="main">
 
-            <div>
-                <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94"
-                    class="img-thumbnail" alt="...">
-            </div>
+    <div class="row" id="node-metadata-details">
+        <h1 class="text-start">Locate</h1>
 
-            <div class="row">
-    <div class="col-auto mx-auto">
-        <div class="separator"></div>
-    </div>
-</div>
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="contribute-switch-advanced">
-                    <label class="form-check-label" for="contribute-switch-advanced">Advanced Options</label>
-                </div>
-                <button id="contributeTour" type="button" class="btn btn-outline-secondary d-flex align-items-center">
-                    Tour
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-person-raised-hand ms-2" viewBox="0 0 16 16">
-                        <path
-                            d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
-                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
-                    </svg>
-                </button>
-            </div>
 
-            <form>
-                <div class="card mb-3" id="contributeTitleContainer">
-    <div class="card-body">
-        <div class="mb-3">
-            <label for="contribute-english-title" class="form-label fs-5">
-                <span class="badge text-bg-secondary contribute-tooltip" id="contributeTooltipTitle"
-                    title="Show information on how to write a great title">?</span> Title
-                <span class="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-asterisk"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                    </svg>
-                </span>
-            </label>
-            <div class="row">
-                <div class="
-                    col-xxl-10
-                    col-xl-10
-                    col-lg-12
-                    col-md-12
-                    col-sm-12
-                    col-12
-                    ">
-                    <input type="text" class="form-control" id="contribute-english-title" placeholder="Short title">
-                    <div id="englishTitleHelp" class="form-text contribute-help-issue"></div>
-                </div>
-                <div class="
-                    col-xxl-2
-                    col-xl-2
-                    col-lg-3
-                    col-md-3
-                    col-sm-3
-                    ">
-                    <button class="btn btn-secondary w-100 alternative-language" type="button"
-                        id="contribute-title-form-english">Cymraeg</button>
-                </div>
-            </div>
-        </div>
+        <div class="col-12">
+            
 
-        <div class="mb-3 d-none" id="contribute-title-form-welsh">
-            <label for="contribute-welsh-title" class="form-label fs-5">Cymraeg</label>
-            <div class="row">
-                <div class="
-                    col-xxl-10
-                    col-xl-10
-                    col-lg-12
-                    col-md-12
-                    col-sm-12
-                    col-12
-                ">
-                    <input type="text" class="form-control" id="contribute-welsh-title" placeholder="Short title">
-                </div>
-                <div class="                    
-                    col-xxl-2
-                    col-xl-2
-                    col-lg-3
-                    col-md-3
-                    col-sm-3
-                    ">
-                    <button class="btn btn-secondary w-100 translate-button" id="translate-title-welsh"
-                        type="button">Translate</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>                <div class="card mb-3" id="contributeDescriptionContainer">
-    <div class="card-body">
-        <div class="mb-3">
-            <label for="contribute-english-description" class="form-label fs-5">
-                <span class="badge text-bg-secondary contribute-tooltip" id="contributeTooltipDescription"
-                    title="Show information on how to write a great description">?</span>
-                Description
-                <span class="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-asterisk"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                    </svg>
-                </span>
-            </label>
-            <div class="row">
-                <div class="
-                    col-xxl-10
-                    col-xl-10
-                    col-lg-12
-                    col-md-12
-                    col-sm-12
-                    col-12
-                    ">
-                    <textarea class="form-control" id="contribute-english-description"
-                        placeholder="A good description will include details like: who, what, where and when"
-                        rows="7"></textarea>
-                    <div id="englishDescriptionHelp" class="form-text contribute-help-issue"></div>
-                </div>
-                <div class="
-                    col-xxl-2
-                    col-xl-2
-                    col-lg-3
-                    col-md-3
-                    col-sm-3
-                    ">
-                    <button class="btn btn-secondary w-100 alternative-language" type="button"
-                        id="contribute-description-form-english">Cymraeg</button>
-                </div>
-            </div>
-        </div>
 
-        <div class="mb-3 d-none" id="contribute-description-form-welsh">
-            <label for="translate-description-welsh" class="form-label fs-5">Cymraeg</label>
-            <div class="row">
-                <div class="
-                    col-xxl-10
-                    col-xl-10
-                    col-lg-12
-                    col-md-12
-                    col-sm-12
-                    col-12
-                    ">
-                    <textarea class="form-control" id="contribute-welsh-description"
-                        placeholder="A good description will include details like: who, what, where and when"
-                        rows="7"></textarea>
-                </div>
-                <div class="
-                    col-xxl-2
-                    col-xl-2
-                    col-lg-3
-                    col-md-3
-                    col-sm-3
-                    ">
-                    <button class="btn btn-secondary w-100 translate-button" id="translate-description-welsh"
-                        type="button">Translate</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>                <div class="card mb-3 contribute-advanced d-none">
-    <div class="card-body">
-        <div class="mb-3">
-            <label for="content-owner" class="form-label fs-5">
-                Current Owner
+<div class="col-12 col-md-10 col-lg-10 mx-auto text-start item-map">
+
+    <div class="card-body p-0">
+        <div class="mb-2">
+            <label for="contributeMapLocationSearch" class="form-label fs-6">
+                Enter a city, town or village name here or use the +/- buttons on the map:
             </label>
             <div class="row">
                 <div class="col-10">
-                    <input type="text" class="form-control" id="content-owner" placeholder="">
-                    <div id="ownerHelp" class="form-text">Current owner of the original item.</div>
+                    <input type="text" class="form-control" id="contributeMapLocationSearch">
                 </div>
             </div>
         </div>
     </div>
-</div>                <div class="card mb-3" id="contributeCreatorContainer">
-    <div class="card-body">
-        <div class="mb-3">
-            <label for="content-creator" class="form-label fs-5">
-                Original Creator
-                <span class="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-asterisk"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                    </svg>
-                </span>
-            </label>
-            <div class="row">
-                <div class="col-10">
-                    <input type="text" class="form-control" id="content-creator" placeholder=""
-                        aria-describedby="creatorHelp">
-                    <div id="creatorHelp" class="form-text">Creator of the original item, such as the name of
-                        photographer, author, artist etc.</div>
-                </div>
-            </div>
-        </div>
 
-    </div>
-</div>                <div class="card mb-3 contribute-advanced d-none">
-    <div class="card-body">
-        <div class="mb-3">
-            <label for="publisher_ref" class="form-label fs-5">
-                Publisher Reference
-            </label>
-            <div class="row">
-                <div class="col-10">
-                    <input type="text" class="form-control" id="publisher_ref" placeholder="">
+    <!-- sidebar -->
+    <div class="map-container d-flex">
+        <div id="map" class="flex-grow-1" data-map-type="locate"></div>
+        <div id="mapSidebar" class="col-4 m-2 rounded-4">
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-2">
+                <div>
+                    <a href="#" class="map-locate-sidebar-nav locate-sidebar-nav-active"
+                        id="mapLocateSidebarItems">Items</a>
+                    <a href="#" class="map-locate-sidebar-nav" id="mapLocateSidebarSearch">Search filters</a>
+                </div>
+                <div>
+                    <a href="#" class="map-locate-sidebar-nav" id="mapLocateSidebarClose">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-        </div>
 
-    </div>
-</div>                <div class="card mb-3 contribute-advanced d-none">
-    <div class="card-body">
-        <div class="mb-3">
-            <label for="contribute-english-link" class="form-label fs-5">
-                Link
-            </label>
-            <div class="row">
-                <div class="
-                    col-xxl-10
-                    col-xl-10
-                    col-lg-12
-                    col-md-12
-                    col-sm-12
-                    col-12
-                    ">
-                    <input type="text" class="form-control" id="contribute-english-link"
-                        placeholder="Link if your item is also on another website">
-                </div>
-                <div class="
-                    col-xxl-2
-                    col-xl-2
-                    col-lg-3
-                    col-md-3
-                    col-sm-3
-                    ">
-                    <button class="btn btn-secondary w-100 alternative-language" type="button"
-                        id="contribute-link-form-english">Cymraeg</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-3 d-none" id="contribute-link-form-welsh">
-            <label for="contribute-welsh-link" class="form-label fs-5">Cymraeg</label>
-            <div class="row">
-                <div class="
-                    col-xxl-10
-                    col-xl-10
-                    col-lg-12
-                    col-md-12
-                    col-sm-12
-                    col-12
-                    ">
-                    <input type="text" class="form-control" id="contribute-welsh-link"
-                        placeholder="Link if your item is also on another website">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>                <div class="card mb-3 contribute-advanced d-none">
-    <div class="card-body">
-        <div class="mb-3">
-            <h5 class="contribute-heading">
-                Date
-            </h5>
-            <div class="row">
-                <div class="col-4 d-flex justify-content-between">
-                    <div class="me-1">
-                        <label for="select-year" class="form-label">Year</label>
-                        <input id="select-year" class="form-control" aria-label="Select year" placeholder="YYYY" />
+            <!-- sidebar items-->
+            <div id="locateSidebarItemsContainer" class="overflow-auto">
+                <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-1 row-cols-md-1 row-cols-xl-2 row-cols-xxl-2 g-4">
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode24" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Protest held in Liverpool against the flooding...">
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="me-1">
-                        <label for="select-month" class="form-label">Month</label>
-                        <select id="select-month" class="form-select" aria-label="Select month">
-                            <option selected>--</option>
-                            <option value="1">01</option>
-                            <option value="2">02</option>
-                            <option value="3">03</option>
-                            <option value="4">04</option>
-                            <option value="5">05</option>
-                            <option value="6">06</option>
-                            <option value="7">07</option>
-                            <option value="8">08</option>
-                            <option value="9">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode30" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Protest held in Liverpool against the flooding of Capel Celyn...">
+                            </a>
+                        </div>
                     </div>
-
-                    <div>
-                        <label for="select-day" class="form-label">Day</label>
-                        <select id="select-day" class="form-select" aria-label="Select day">
-                            <option selected>--</option>
-                            <option value="1">01</option>
-                            <option value="2">02</option>
-                            <option value="3">03</option>
-                            <option value="4">04</option>
-                            <option value="5">05</option>
-                            <option value="6">06</option>
-                            <option value="7">07</option>
-                            <option value="8">08</option>
-                            <option value="9">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                        </select>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode14" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11788_2.jpg?itok=QcmxetUB"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="A bleak view of Capel Celyn (Cwm Tryweryn), 14...">
+                            </a>
+                        </div>
                     </div>
-                </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode15" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11789_2.jpg?itok=KI1rp0aq"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Interior of the derelict chapel at Capel Celyn,...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode66" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11815_2.jpg?itok=xdsN90ak"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="The last sale at Gwerngenau Farm, Capel Celyn,...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode58" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11845_2.jpg?itok=KQCJHJLy"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="The last days of Capel Celyn School, October 1962">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode51" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11837_2.jpg?itok=QbOvi3Rk"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Moving out of Garnedd Llwyd, Ciltalgarth, Capel...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode51" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Residents of Capel Celyn (Tryweryn), 1961">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode48" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11832_2.jpg?itok=yFae4Pve"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Resident of Capel Celyn (Tryweryn), 1961">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode45" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11828_2.jpg?itok=g1x_dnNI"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Dismantling the railway at Capel Celyn ...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode80" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ61415_2.jpg?itok=R8v4fQ01"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Llandrindod Wells Cycle Club, 1889">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode78" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ12893_2.jpg?itok=aR-mCzzO"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Boy on a bicycle, c. 1885">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode131" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/gch08499_2.jpg?itok=gGfzcabC"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Hundred mile cycle race (Tour of Breiddens), 1955">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode123" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ85482_2.jpg?itok=4V2pmTUd"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Cyclist David Hughes, late 1950s">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode162" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ12139_2.jpg?itok=z4OLqTFb"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Soar-y-mynydd, the most remote chapel in Wales,...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode153" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ12316_2.jpg?itok=sv0dWi-4"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="International motorcycle trials at Builth Wells...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1000236" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2019/January/VOG00588.jpg?itok=mIcW8aOG"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Coal mines.">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1917156" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2022/October/CP64.10.jpg?itok=Ya0MtY9H"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Miner loading chunks of ore inside the mine">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode384" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11668_2.jpg?itok=Q0KapOAx"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Llechwedd quarry, Blaenau Ffestiniog, January 1955">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode642" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ12010_2.jpg?itok=HTIUZjlM"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Quarrymen at Aberllefenni Slate Quarry, 18...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1984296" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2023/April/Aled%202.jpg?itok=LaF7IjBr"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Caernarvonshire Library van in 1961">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1913236" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2022/October/page11image23745408.png?itok=5TrDp9P8"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Amy Ames left and Margaret Williams right on...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1912746" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2022/October/IMG_0428_r1.jpg?itok=bcpoKUl-"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Gordon Book D-Day Veteran Book Launch. 3.10.22....">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1912276" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2022/October/EMASEC-15-4_0.jpg?itok=eWMvYfJZ"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Mountain Ash Intermediate School">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1912176" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2022/October/D401%2520-%2520Motor%2520deliveries.jpg?itok=0CWZCyQb"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Motor van in yard. Thomas Stevens of Cardiff...">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode2061996" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2023/November/DCOMC-30-3-34_001.jpg?itok=vTQClF1m"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Four troops posed outside train">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode2054691" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2023/October/DX381-10_001.jpg?itok=CkMIfprf"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Dewi-Sant Tonypandy Garden Party">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1963131" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2023/March/DNCB_14_4_155_27.jpg?itok=lMCUdfXf"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="11. The Mines Rescue Service">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1963271" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2023/March/DNCB_14_4_149_19.jpg?itok=QM20PH_d"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="15. Pit Ponies">
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode1962826" src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2023/March/DNCB_14_4_33_9.jpg?itok=3-PI3bnN"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="Coegnant Male Voice Choir singing &#039;Song of the...">
+                            </a>
+                        </div>
+                    </div>
+                                    </div>
             </div>
-        </div>
-    </div>
-</div>                <div class="card mb-3" id="contributeFacetContainer">
+
+            <div id="locateSidebarPagination" class="">
+                <nav aria-label="Page Navigation" id="pagination">
+    <!-- Detailed Pagination for lg screens and up -->
+    <ul class="pagination pagination-md justify-content-center d-none d-lg-flex">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+
+    <!-- Simplified Pagination for smaller screens (up to lg) -->
+    <ul class="pagination pagination-sm justify-content-center d-lg-none">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+            <!-- end sidebar items -->
+
+            <!-- sidebar search -->
+            <div id="locateSidebarSearchContainer">
+                <div class="card mb-3">
     <div class="card-body">
         <div class="mb-3">
 
             <label for="my-autocomplete" class="form-label fs-5">Select relevant categories below</label>
 
-            <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion">
 
                 <div id="contributeWhatFacet">
                                         <div class="accordion-item">
@@ -1654,68 +1632,37 @@
 
         </div>
     </div>
-</div>                <div class="card mb-3 contribute-advanced d-none">
-    <div class="card-body">
-        <div class="mb-3">
+</div>            </div>
+            <!-- end sidebar search -->
 
-            <label for="my-autocomplete" class="form-label fs-5">Tags</label>
-            <div id="my-autocomplete-container"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-10">
-                <div id="creatorHelp" class="form-text">Maxium of 7 tags</div>
-            </div>
-
-            <div class="col-12 mt-2" id="contribute-tags-list"></div>
-        </div>
-    </div>
-</div>                <div class="card mb-3" id="contributeMapContainer">
-    <div class="card-body">
-        <div class="mb-3">
-            <h5 class="contribute-heading">
-                Map
-            </h5>
-
-            
-<div class="col-12 text-start item-map">
-
-    <div class="card-body p-0">
-        <div class="mb-2">
-            <label for="contributeMapLocationSearch" class="form-label fs-6">
-                Enter a city, town or village name here or use the +/- buttons on the map:
-            </label>
-            <div class="row">
-                <div class="col-10">
-                    <input type="text" class="form-control" id="contributeMapLocationSearch">
+            <!-- Item Preview -->
+            <div id="locateSidebarItemPreview" class="container mt-1">
+                <div class="d-flex justify-content-end">
+                    <button id="locateBackToItemsButton" type="button" class="btn btn-outline-dark mb-2">Back to
+                        items</button>
+                </div>
+                <div class="card mt-2">
+                    <img id="locateSideNodeImagePreview"
+                        src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94"
+                        class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-dark">View Item</a>
+                    </div>
                 </div>
             </div>
+            <!-- end Item Preview -->
+
         </div>
     </div>
 
-    <button id="contributeMapDropPin" type="button" class="btn btn-outline-primary mb-2">Drop pin <svg
-            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
-            viewBox="0 0 16 16">
-            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-        </svg></button>
-
-    <button id="contributeRemoveMarker" type="button" class="btn btn-outline-primary mb-2 d-none">Remove location <svg
-            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
-            viewBox="0 0 16 16">
-            <path
-                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
-            <path
-                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
-        </svg></button>
-
-    <div id="map" data-map-type="contribute"></div>
 </div>
 
 
 
-
-
-<div class="row row-cols-auto mt-2">
+<div class="row row-cols-auto justify-content-center mt-2">
     <div class="col map-layer-buttons">
         <div class="mb-2 map-layer-button map-layer-button historical-map-layer layer-button-active"
             id="map-layer-google">
@@ -1758,293 +1705,13 @@
             <p class="map-button-type">4th Edition</p>
         </div>
     </div>
-</div>
-            <div class="row">
-                <div class="col-10">
-                    <input type="hidden" class="form-control" id="itemLocation">
-                </div>
-            </div>
-        </div>
+</div>        </div>
 
     </div>
-</div>                <div class="card mb-3 contribute-advanced d-none">
-
-    <div class="card-body">
-        <div class="mb-1">
-            <label for="rights-holder" class="form-label fs-5">
-                This section allows you to credit rights holders
-            </label>
-            <div class="row g-2">
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="rights-holder" placeholder="Rights holder">
-                </div>
-                <div class="col-md-4">
-                    <select class="form-control" id="rights-type">
-                        <option value="" disabled selected>Select rights type</option>
-                        <option value="copyright">Copyright</option>
-                        <option value="trademark">Trademark</option>
-                        <option value="patent">Patent</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <input type="date" class="form-control" id="rights-date" placeholder="Rights date">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-body">
-        <div class="mb-3">
-            <label for="licence" class="form-label fs-5">
-                Additional License Information
-            </label>
-            <div class="row">
-                <div class="col-10">
-                    <input type="text" class="form-control" id="licence" placeholder="">
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>                <div class="card mb-3">
-    <div class="card-body">
-        <div class="mb-3">
-
-            <div class="accordion accordion-flush" id="contributeManageItemsContainer">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button id="contributeManageItemsContainerButton" class="accordion-button collapsed fs-5"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                            aria-expanded="false" aria-controls="flush-collapseOne">
-                            Manage Items
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#contributeManageItemsContainer">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div id="contribute-manage-items" class="list-group d-flex flex-row">
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11788_2.jpg?itok=QcmxetUB" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11789_2.jpg?itok=KI1rp0aq" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11815_2.jpg?itok=xdsN90ak" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11845_2.jpg?itok=KQCJHJLy" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11837_2.jpg?itok=QbOvi3Rk" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11832_2.jpg?itok=yFae4Pve" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11828_2.jpg?itok=g1x_dnNI" alt="image" /></div>
-                                                                            </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>                <div class="card mb-3" id="contributeTocContainer">
-    <div class="card-body">
-        <div class="mb-3">
-            <h5 class="form-label fs-5">Agree to Terms <span class="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-asterisk"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                    </svg>
-                </span></h5>
-            <p>I have the right to upload this material and I have the right to allow others to use it under the
-                Creative Archive Licence</p>
-            <div class="row">
-                <div class="col-10">
-                    <input type="checkbox" class="form-check-input" id="content-toc">
-                    <label for="content-toc" class="form-check-label">I agree</label>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-                <div class="d-flex justify-content-center mt-3" id="conributeSubmitButtonsContainer">
-                    <button type="button" class="btn btn-danger mx-2">Delete</button>
-                    <button type="button" class="btn btn-primary mx-2">Save as Draft</button>
-                    <button id="contributeItemSubmit" type="button" class="btn btn-success mx-2">Publish</button>
-                </div>
-            </form>
 
 
-        </div>
-    </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade " id="contributeModalToolip" tabindex="-1" aria-labelledby="contributeModalToolip"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="contributeModalToolipTitle"></h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="contributeModalToolipBody"></div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<!-- modal-dialog modal-dialog-centered modal-dialog-scrollable -->
-<div class="modal fade" id="addToCollectionStory" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
-    aria-labelledby="addToCollectionStoryLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="addToCollectionStoryLabel">Add to Collection / Story</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-                <div class="btn-group mb-2">
-                    <button class="btn btn-secondary active add-to-collection-story" aria-current="page"
-                        id="add-to-collection-button">Add to
-                        Collection</button>
-                    <button class="btn btn-secondary add-to-collection-story" id="add-to-story-button">Add to
-                        Story</button>
-                </div>
-
-                <!-- Collection -->
-                <div id="add-to-collection-container">
-                    <form class="add-to-collection-form">
-                        <div class="mb-3">
-                            <label for="addToExistingCollection" class="form-label">Add to an existing
-                                Collection</label>
-                            <select class="form-select" aria-label="Add to Existing Collection"
-                                id="addToExistingCollection" aria-describedby="emailHelp">
-                                <option selected>Open this select menu</option>
-                                <option value="1">Existing Collection 1</option>
-                                <option value="2">Existing Collection 2</option>
-                                <option value="3">Existing Collection 3</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-                    <hr />
-
-                    <form class="add-to-collection-form">
-                        <div class="mb-3">
-                            <label for="addToNewCollection" class="form-label">Create new Collection</label>
-                            <input type="input" class="form-control" id="addToNewCollection">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-                <!-- Story -->
-                <div id="add-to-story-container" class="d-none">
-                    <form class="add-to-story-form">
-                        <div class="mb-3">
-                            <label for="addToExistingStory" class="form-label">Add to an existing Story</label>
-                            <select class="form-select" aria-label="Default select example" id="addToExistingStory"
-                                aria-describedby="emailHelp">
-                                <option selected>Open this select menu</option>
-                                <option value="1">Existing Story 1</option>
-                                <option value="2">Existing Story 2</option>
-                                <option value="3">Existing Story 3</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-                    <hr />
-
-                    <form class="add-to-story-form">
-                        <div class="mb-3">
-                            <label for="addToNewStory" class="form-label">Create new Story</label>
-                            <input type="input" class="form-control" id="addToNewStory">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- modal-dialog modal-dialog-centered modal-dialog-scrollable -->
-<div class="modal fade" id="downloadMedia" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
-    aria-labelledby="downloadMediaLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="downloadMediaLabel">Download (non-commercial use only)</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-                <div class="alert alert-danger" role="alert">
-                    <p class="p-0 m-0">
-                        Content can be downloaded for non-commercial purposes, such as for personal use or in
-                        educational
-                        resources.
-                        For commercial purposes please contact the copyright holder directly.
-                        Read more about <a href="https://www.peoplescollection.wales/creative-archive-licence">The
-                            Archive Licence</a>.
-                    </p>
-                </div>
-
-                <div class="row">
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/D261-M1022.jpg?itok=mTdJwktG"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 1 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/Wallace%20Gunn%20at%20Rheidol%20%20power%20station%2C%20late%201960s.jpg?itok=NGjq9x0D"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 2 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/D177_9.jpg?itok=jqYIc8Ct"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 3 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
 <footer class="container text-center py-3 my-3 border-top">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-center">
         <div class="col mb-3">

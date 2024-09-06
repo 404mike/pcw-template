@@ -5,20 +5,20 @@
 {% endif %}
 
 {% if page == 'edit' %}
-<div class="card-body p-0">
-    <div class="mb-2">
-        <label for="contributeMapSearch" class="form-label fs-6">
-            Enter a city, town or village name here or use the +/- buttons on the map:
-        </label>
-        <div class="row">
-            <div class="col-10">
-                <input type="text" class="form-control" id="contributeMapSearch">
+<div class="col-12 text-start item-map">
+
+    <div class="card-body p-0">
+        <div class="mb-2">
+            <label for="contributeMapLocationSearch" class="form-label fs-6">
+                Enter a city, town or village name here or use the +/- buttons on the map:
+            </label>
+            <div class="row">
+                <div class="col-10">
+                    <input type="text" class="form-control" id="contributeMapLocationSearch">
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="col-12 text-start item-map">
 
     <button id="contributeMapDropPin" type="button" class="btn btn-outline-primary mb-2">Drop pin <svg
             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
@@ -39,7 +39,102 @@
 </div>
 {% endif %}
 
-<div class="row row-cols-auto">
+
+{% if page == 'locate' %}
+<div class="col-12 col-md-10 col-lg-10 mx-auto text-start item-map">
+
+    <div class="card-body p-0">
+        <div class="mb-2">
+            <label for="contributeMapLocationSearch" class="form-label fs-6">
+                Enter a city, town or village name here or use the +/- buttons on the map:
+            </label>
+            <div class="row">
+                <div class="col-10">
+                    <input type="text" class="form-control" id="contributeMapLocationSearch">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="map-container d-flex">
+        <div id="map" class="flex-grow-1" data-map-type="locate"></div>
+        <div id="mapSidebar" class="col-4 m-2 rounded-4">
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-2">
+                <div>
+                    <a href="#" class="map-locate-sidebar-nav locate-sidebar-nav-active"
+                        id="mapLocateSidebarItems">Items</a>
+                    <a href="#" class="map-locate-sidebar-nav" id="mapLocateSidebarSearch">Search filters</a>
+                </div>
+                <div>
+                    <a href="#" class="map-locate-sidebar-nav" id="mapLocateSidebarClose">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- sidebar items-->
+            <div id="locateSidebarItemsContainer" class="overflow-auto">
+                <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-1 row-cols-md-1 row-cols-xl-2 row-cols-xxl-2 g-4">
+                    {% for d in discover %}
+                    <div class="col d-flex align-items-stretch m-0 p-1">
+                        <div class="card text-center w-100 discover-result-node">
+                            <a href="#">
+                                <img id="locateNode{{ d.nid }}" src="{{ d.thumb }}"
+                                    class="card-img-top locate-sidebar-img mx-auto" alt="{{ d.title }}">
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div id="locateSidebarPagination" class="">
+                {% include 'includes/pagination.twig' %}
+            </div>
+            <!-- end sidebar items -->
+
+            <!-- sidebar search -->
+            <div id="locateSidebarSearchContainer">
+                {% include 'includes/components/facets_locate.twig' %}
+            </div>
+            <!-- end sidebar search -->
+
+            <!-- Item Preview -->
+            <div id="locateSidebarItemPreview" class="container mt-1">
+                <div class="d-flex justify-content-end">
+                    <button id="locateBackToItemsButton" type="button" class="btn btn-outline-dark mb-2">Back to
+                        items</button>
+                </div>
+                <div class="card mt-2">
+                    <img id="locateSideNodeImagePreview"
+                        src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94"
+                        class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-dark">View Item</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end Item Preview -->
+
+        </div>
+    </div>
+
+</div>
+{% endif %}
+
+
+{% set row_classes = page == 'locate' ? 'row row-cols-auto justify-content-center' : 'row row-cols-auto' %}
+
+<div class="{{ row_classes }} mt-2">
     <div class="col map-layer-buttons">
         <div class="mb-2 map-layer-button map-layer-button historical-map-layer layer-button-active"
             id="map-layer-google">
