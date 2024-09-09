@@ -3,6 +3,7 @@ import { MarkerClusterer } from "@googlemaps/markerclusterer";
 const sidebarItemsButtonTab = document.getElementById('mapLocateSidebarItems');
 const sidebarSearchButtonTab = document.getElementById('mapLocateSidebarSearch');
 const sidebarCloseButton = document.getElementById('mapLocateSidebarClose');
+const sidebarOpenButton = document.getElementById('mapSidebarOpenButton');
 const locateBackToItemsButton = document.getElementById('locateBackToItemsButton');
 
 const locateSidebarSearch = document.getElementById('locateSidebarSearchContainer');
@@ -39,6 +40,11 @@ const setEventListeners = () => {
     sidebarCloseButton.addEventListener('click', (e) => {
         e.preventDefault();
         sidebarCloseButtonClicked();
+    });
+
+    sidebarOpenButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        sidebarOpenButtonClicked();
     });
 
     locateBackToItemsButton.addEventListener('click', (e) => {
@@ -117,7 +123,15 @@ const locateBackToItemsButtonClicked = () => {
     setNewMapPosition();
 };
 
-const sidebarCloseButtonClicked = () => {};
+const sidebarCloseButtonClicked = () => {
+    document.getElementById('mapSidebar').style.display = 'none';
+    document.getElementById('mapSidebarOpenButton').style.display = 'flex';
+};
+
+const sidebarOpenButtonClicked = () => {
+    document.getElementById('mapSidebar').style.display = 'flex';
+    document.getElementById('mapSidebarOpenButton').style.display = 'none';
+};
 
 const getGeoJson = async () => {
 
