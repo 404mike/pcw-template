@@ -1,9 +1,7 @@
-import {
-    MarkerClusterer
-} from "@googlemaps/markerclusterer";
+import { MarkerClusterer } from "@googlemaps/markerclusterer";
 
-const sidebarItemsButton = document.getElementById('mapLocateSidebarItems');
-const sidebarSearchButton = document.getElementById('mapLocateSidebarSearch');
+const sidebarItemsButtonTab = document.getElementById('mapLocateSidebarItems');
+const sidebarSearchButtonTab = document.getElementById('mapLocateSidebarSearch');
 const sidebarCloseButton = document.getElementById('mapLocateSidebarClose');
 const locateBackToItemsButton = document.getElementById('locateBackToItemsButton');
 
@@ -28,12 +26,12 @@ const locateMap = (map, AdvancedMarkerElement) => {
 };
 
 const setEventListeners = () => {
-    sidebarItemsButton.addEventListener('click', (e) => {
+    sidebarItemsButtonTab.addEventListener('click', (e) => {
         e.preventDefault();
         sidebarItemsButtonClicked();
     });
 
-    sidebarSearchButton.addEventListener('click', (e) => {
+    sidebarSearchButtonTab.addEventListener('click', (e) => {
         e.preventDefault();
         sidebarSearchButtonClicked();
     });
@@ -50,13 +48,14 @@ const setEventListeners = () => {
 
     // listen to map move event
     mapObj.addListener('bounds_changed', () => {
+        if(mapViewState === 'preview') return;
         updateMapPosition();
     });
 };
 
 const sidebarItemsButtonClicked = () => {
-    sidebarItemsButton.classList.add('locate-sidebar-nav-active');
-    sidebarSearchButton.classList.remove('locate-sidebar-nav-active');
+    sidebarItemsButtonTab.classList.add('locate-sidebar-nav-active');
+    sidebarSearchButtonTab.classList.remove('locate-sidebar-nav-active');
 
     locateSidebarSearch.style.display = 'none';
     locateSidebarItemPreview.style.display = 'none';
@@ -65,8 +64,8 @@ const sidebarItemsButtonClicked = () => {
 };
 
 const sidebarSearchButtonClicked = () => {
-    sidebarItemsButton.classList.remove('locate-sidebar-nav-active');
-    sidebarSearchButton.classList.add('locate-sidebar-nav-active');
+    sidebarItemsButtonTab.classList.remove('locate-sidebar-nav-active');
+    sidebarSearchButtonTab.classList.add('locate-sidebar-nav-active');
 
     locateSidebarSearch.style.display = 'block';
     locateSidebarItems.style.display = 'none';
@@ -88,7 +87,7 @@ const setSidebarItemPreviewEventListeners = () => {
 };
 
 const locateSidebarImgClicked = (id, src) => {
-    sidebarItemsButton.classList.remove('locate-sidebar-nav-active');
+    sidebarItemsButtonTab.classList.remove('locate-sidebar-nav-active');
 
     locateSidebarItemPreview.style.display = 'block';
     locateSidebarItems.style.display = 'none';
@@ -108,23 +107,23 @@ const locateSidebarImgClicked = (id, src) => {
 };
 
 const locateBackToItemsButtonClicked = () => {
-    sidebarItemsButton.classList.add('locate-sidebar-nav-active');
+    sidebarItemsButtonTab.classList.add('locate-sidebar-nav-active');
     locateSidebarItemPreview.style.display = 'none';
     locateSidebarItems.style.display = 'block';
     locateSidebarPagination.style.display = 'block';
 
     clearAllMarkers();
+    getGeoJsonFeatures(); 
     setNewMapPosition();
-    getGeoJsonFeatures();
 };
 
 const sidebarCloseButtonClicked = () => {};
 
 const getGeoJson = async () => {
 
+    console.log('getGeoJson');
     // random number between 0 and 16
-    // let randomNumber = Math.floor(Math.random() * 17);
-    let randomNumber = 5;
+    let randomNumber = Math.floor(Math.random() * 17);
 
     try {
         const response = await fetch(`data/geoJson${randomNumber}.json`);
@@ -167,7 +166,6 @@ const getGeoJsonFeatures = () => {
     }
 
     setSidebarItemPreviewEventListeners();
-    mapViewState = '';
 };
 
 const addItemMarker = (location) => {
@@ -202,14 +200,7 @@ const clearGeoJsonFeatures = () => {
 };
 
 const updateMapPosition = () => {
-    // if (locateSidebarItemPreview.style.display === 'block') {
-    //     return;
-    // }
-    console.log("mapViewState", mapViewState);
-
     if (mapViewState === 'preview') return;
-
-    console.log('updateMapPosition');
 
     clearAllMarkers();
     getGeoJson();
@@ -239,6 +230,12 @@ const setNewMapPosition = () => {
         lng: lng
     });
     mapObj.setZoom(zoom);
+
+    // Add a one-time listener for the 'idle' event
+    google.maps.event.addListenerOnce(mapObj, 'idle', () => {
+        console.log("Map move completed");
+        mapViewState = '';
+    });
 };
 
 const addItemPreviewToSidebar = (item) => {
