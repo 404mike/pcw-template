@@ -67,6 +67,8 @@ const sidebarItemsButtonClicked = () => {
     locateSidebarItemPreview.style.display = 'none';
     locateSidebarItems.style.display = 'block';
     locateSidebarPagination.style.display = 'block';
+
+    resetImagePreview();
 };
 
 const sidebarSearchButtonClicked = () => {
@@ -77,6 +79,8 @@ const sidebarSearchButtonClicked = () => {
     locateSidebarItems.style.display = 'none';
     locateSidebarPagination.style.display = 'none';
     locateSidebarItemPreview.style.display = 'none';
+
+    resetImagePreview();
 };
 
 const setSidebarItemPreviewEventListeners = () => {
@@ -118,6 +122,10 @@ const locateBackToItemsButtonClicked = () => {
     locateSidebarItems.style.display = 'block';
     locateSidebarPagination.style.display = 'block';
 
+    resetImagePreview();
+};
+
+const resetImagePreview = () => {
     clearAllMarkers();
     getGeoJsonFeatures(); 
     setNewMapPosition();
@@ -135,7 +143,6 @@ const sidebarOpenButtonClicked = () => {
 
 const getGeoJson = async () => {
 
-    console.log('getGeoJson');
     // random number between 0 and 16
     let randomNumber = Math.floor(Math.random() * 17);
 
