@@ -28,7 +28,7 @@ function initMap() {
 
   loader.load().then(async () => {
     const { Map } = await google.maps.importLibrary("maps");
-    const { advancedMarker, AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
     map = new Map(document.getElementById("map"), {
       center: wales,

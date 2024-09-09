@@ -1,4 +1,6 @@
-import { MarkerClusterer } from "@googlemaps/markerclusterer";
+import {
+    MarkerClusterer
+} from "@googlemaps/markerclusterer";
 
 const sidebarItemsButton = document.getElementById('mapLocateSidebarItems');
 const sidebarSearchButton = document.getElementById('mapLocateSidebarSearch');
@@ -7,23 +9,21 @@ const locateBackToItemsButton = document.getElementById('locateBackToItemsButton
 
 const locateSidebarSearch = document.getElementById('locateSidebarSearchContainer');
 const locateSidebarItems = document.getElementById('locateSidebarItemsContainer');
+const locateSidebarItemsPreview = document.getElementById('locateSidebarItemsPreview');
 const locateSidebarPagination = document.getElementById('locateSidebarPagination');
 const locateSidebarItemPreview = document.getElementById('locateSidebarItemPreview');
 
 let mapObj;
 let AdvancedMarkerElementObj;
 let markers = [];
-
+let clusterer;
 let mapPosition;
-
 let geoJsonData;
+let mapViewState = '';
 
 const locateMap = (map, AdvancedMarkerElement) => {
-    console.log("map 1", map);
     mapObj = map;
     AdvancedMarkerElementObj = AdvancedMarkerElement;
-
-    getGeoJson();
     setEventListeners();
 };
 
@@ -43,17 +43,6 @@ const setEventListeners = () => {
         sidebarCloseButtonClicked();
     });
 
-    // loop class locate-sidebar-img and add event listener
-    const locateSidebarImg = document.querySelectorAll('.locate-sidebar-img');
-    locateSidebarImg.forEach((img) => {
-        img.addEventListener('click', (e) => {
-            e.preventDefault();
-            const id = img.id;
-            const imgSrc = img.src;
-            locateSidebarImgClicked(id, imgSrc);
-        });
-    });
-
     locateBackToItemsButton.addEventListener('click', (e) => {
         e.preventDefault();
         locateBackToItemsButtonClicked();
@@ -65,7 +54,7 @@ const setEventListeners = () => {
     });
 };
 
-const sidebarItemsButtonClicked = () => {  
+const sidebarItemsButtonClicked = () => {
     sidebarItemsButton.classList.add('locate-sidebar-nav-active');
     sidebarSearchButton.classList.remove('locate-sidebar-nav-active');
 
@@ -85,6 +74,19 @@ const sidebarSearchButtonClicked = () => {
     locateSidebarItemPreview.style.display = 'none';
 };
 
+const setSidebarItemPreviewEventListeners = () => {
+    // loop class locate-sidebar-img and add event listener
+    const locateSidebarImg = document.querySelectorAll('.locate-sidebar-img');
+    locateSidebarImg.forEach((img) => {
+        img.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = img.id;
+            const imgSrc = img.src;
+            locateSidebarImgClicked(id, imgSrc);
+        });
+    });
+};
+
 const locateSidebarImgClicked = (id, src) => {
     sidebarItemsButton.classList.remove('locate-sidebar-nav-active');
 
@@ -97,7 +99,12 @@ const locateSidebarImgClicked = (id, src) => {
 
     clearAllMarkers();
 
-    addItemMarker({ lat: 51.481583, lng: -3.179090 });
+    addItemMarker({
+        lat: 51.481583,
+        lng: -3.179090
+    });
+
+    mapViewState = 'preview';
 };
 
 const locateBackToItemsButtonClicked = () => {
@@ -114,8 +121,13 @@ const locateBackToItemsButtonClicked = () => {
 const sidebarCloseButtonClicked = () => {};
 
 const getGeoJson = async () => {
+
+    // random number between 0 and 16
+    // let randomNumber = Math.floor(Math.random() * 17);
+    let randomNumber = 5;
+
     try {
-        const response = await fetch('/pages/data/geoJson.json');
+        const response = await fetch(`data/geoJson${randomNumber}.json`);
         const data = await response.json();
         geoJsonData = data;
         getGeoJsonFeatures();
@@ -125,42 +137,44 @@ const getGeoJson = async () => {
 };
 
 const getGeoJsonFeatures = () => {
-    // Clear previous data
-    mapObj.data.forEach((feature) => {
-        mapObj.data.remove(feature);
-    });
+    clearAllMarkers();
 
-    mapObj.data.addGeoJson(geoJsonData);
-    setupClusterer();
-};
-
-const setupClusterer = () => {
-    // Assuming mapObj.data contains the GeoJSON features
-    mapObj.data.forEach((feature) => {
-        const position = feature.getGeometry().get(); // Get the coordinates from the feature
+    // Create markers from GeoJSON features
+    markers = []; // Reset markers array
+    geoJsonData.features.forEach((feature) => {
+        let lat = feature.geometry.coordinates[1];
+        let lng = feature.geometry.coordinates[0];
         const marker = new AdvancedMarkerElementObj({
-            map: mapObj,
-            position: position,
-            title: feature.getProperty('name') // Assuming 'name' is a property of the GeoJSON features
+          map: mapObj,
+          position: {lat: lat, lng: lng},
+          title: feature['properties']['title'], // Assuming 'name' is a property
         });
-
         markers.push(marker);
+
+        addItemPreviewToSidebar(feature.properties);
     });
 
-    // Reinitialize the clusterer with the new markers
-    // if (window.markerClusterer) {
-    //     window.markerClusterer.clearMarkers(); // Clear previous clusterer markers if any
-    // }
+    // Update the clusterer with the new markers
+    if (clusterer) {
+        clusterer.clearMarkers(); // Clear existing markers
+        clusterer.addMarkers(markers); // Add new markers to clusterer
+    } else {
+        // Create a new clusterer instance if it doesn't exist
+        clusterer = new MarkerClusterer({
+            map: mapObj,
+            markers
+        });
+    }
 
-    // Create a new MarkerClusterer instance with the updated markers array
-    window.markerClusterer = new MarkerClusterer({ map: mapObj, markers: markers });
+    setSidebarItemPreviewEventListeners();
+    mapViewState = '';
 };
 
 const addItemMarker = (location) => {
     const marker = new AdvancedMarkerElementObj({
-      map: mapObj,
-      position: location,
-      title: "Item Location",
+        map: mapObj,
+        position: location,
+        title: "Item Location",
     });
 
     markers.push(marker);
@@ -168,8 +182,6 @@ const addItemMarker = (location) => {
 };
 
 const clearAllMarkers = () => {
-    console.log("Clearing all markers. Initial count:", markers.length);
-
     markers.forEach(marker => marker.setMap(null)); // Remove each marker from the map
     markers = []; // Reset the markers array
 
@@ -179,21 +191,28 @@ const clearAllMarkers = () => {
 
     clearGeoJsonFeatures(); // Clear GeoJSON features from the data layer
 
-    console.log("Markers and GeoJSON features cleared.");
+    // clear sidebar
+    locateSidebarItemsPreview.innerHTML = '';
 };
 
 const clearGeoJsonFeatures = () => {
     mapObj.data.forEach((feature) => {
         mapObj.data.remove(feature);
     });
-    console.log("All GeoJSON features have been removed from the map.");
 };
 
-
 const updateMapPosition = () => {
-    if (locateSidebarItemPreview.style.display === 'block') {
-        return;
-    }
+    // if (locateSidebarItemPreview.style.display === 'block') {
+    //     return;
+    // }
+    console.log("mapViewState", mapViewState);
+
+    if (mapViewState === 'preview') return;
+
+    console.log('updateMapPosition');
+
+    clearAllMarkers();
+    getGeoJson();
 
     const center = mapObj.getCenter();
     const zoom = mapObj.getZoom();
@@ -215,8 +234,30 @@ const updateMapPosition = () => {
 // get values from mapPosition and set map position
 const setNewMapPosition = () => {
     const { lat, lng, zoom } = mapPosition;
-    mapObj.setCenter({ lat: lat, lng: lng });
+    mapObj.setCenter({
+        lat: lat,
+        lng: lng
+    });
     mapObj.setZoom(zoom);
+};
+
+const addItemPreviewToSidebar = (item) => {
+    const id = item.id;
+    const imageSrc = item.image;
+    const title = item.title;
+
+    const template = `                   
+        <div class="col d-flex align-items-stretch m-0 p-1">
+            <div class="card text-center w-100 discover-result-node">
+                <a href="#">
+                    <img id="locateNode${ id }" src="${ imageSrc }"
+                    class="card-img-top locate-sidebar-img mx-auto" alt="${ title }">
+                </a>
+            </div>
+        </div>`;
+    
+    // append template to #locateSidebarItemsPreview
+    locateSidebarItemsPreview.insertAdjacentHTML('beforeend', template);
 };
 
 export { locateMap };

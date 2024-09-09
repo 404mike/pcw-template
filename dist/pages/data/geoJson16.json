@@ -1,0 +1,326 @@
+{
+    "type": "FeatureCollection",
+    "total_results": 63890,
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22554",
+                "title": " Fall of the Rheidiol 7 mile...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01848.jpg?itok=nn6kGpPI",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22554\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01848.jpg?itok=nn6kGpPI\" \/>\n<\/div><p class=\"title\"> Fall of the Rheidiol 7 mile...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.960631,
+                    52.419356
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22586",
+                "title": "The Terrace, Aberystwith, fr...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01649.jpg?itok=-l_wIpX0",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22586\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01649.jpg?itok=-l_wIpX0\" \/>\n<\/div><p class=\"title\">The Terrace, Aberystwith, fr...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22596",
+                "title": " Aberystwyth",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01600.jpg?itok=JR-0NZcJ",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22596\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01600.jpg?itok=JR-0NZcJ\" \/>\n<\/div><p class=\"title\"> Aberystwyth<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22599",
+                "title": " Aberistwith Castle, in Card...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01629.jpg?itok=-XL51Qo0",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22599\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01629.jpg?itok=-XL51Qo0\" \/>\n<\/div><p class=\"title\"> Aberistwith Castle, in Card...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22663",
+                "title": " Aberystwith",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01744.jpg?itok=rQ0tftCh",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22663\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01744.jpg?itok=rQ0tftCh\" \/>\n<\/div><p class=\"title\"> Aberystwith<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.960631,
+                    52.419356
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22668",
+                "title": " Aberystwith, Cardiganshire ...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01591.jpg?itok=l3vFjdEa",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22668\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01591.jpg?itok=l3vFjdEa\" \/>\n<\/div><p class=\"title\"> Aberystwith, Cardiganshire ...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22703",
+                "title": " Crynfryn Place & Pier, Aber...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01596.jpg?itok=lwyvvSL0",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22703\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01596.jpg?itok=lwyvvSL0\" \/>\n<\/div><p class=\"title\"> Crynfryn Place & Pier, Aber...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22777",
+                "title": " Marine Terrace, Aberystwith",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01599.jpg?itok=UM2893ZC",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22777\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01599.jpg?itok=UM2893ZC\" \/>\n<\/div><p class=\"title\"> Marine Terrace, Aberystwith<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22783",
+                "title": "The Pier, Aberystwith",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01638.jpg?itok=Had1MRYD",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22783\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01638.jpg?itok=Had1MRYD\" \/>\n<\/div><p class=\"title\">The Pier, Aberystwith<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22840",
+                "title": " Cardiganshire",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01790.jpg?itok=7bHJRidi",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22840\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01790.jpg?itok=7bHJRidi\" \/>\n<\/div><p class=\"title\"> Cardiganshire<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22937",
+                "title": " Aberystwith castle & church",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01616.jpg?itok=N7KC3Vf6",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22937\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01616.jpg?itok=N7KC3Vf6\" \/>\n<\/div><p class=\"title\"> Aberystwith castle & church<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22957",
+                "title": " St. Michael's Church",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01783.jpg?itok=IEiwKYfG",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22957\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01783.jpg?itok=IEiwKYfG\" \/>\n<\/div><p class=\"title\"> St. Michael's Church<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22995",
+                "title": " Ruins of the castle, Aberys...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01626.jpg?itok=snwPcx6u",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22995\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01626.jpg?itok=snwPcx6u\" \/>\n<\/div><p class=\"title\"> Ruins of the castle, Aberys...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22998",
+                "title": " Aberystwith",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01583.jpg?itok=ZqQQT_X5",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22998\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01583.jpg?itok=ZqQQT_X5\" \/>\n<\/div><p class=\"title\"> Aberystwith<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "22999",
+                "title": " Hafod, South Wales",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01707.jpg?itok=htwv2Yxl",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/22999\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01707.jpg?itok=htwv2Yxl\" \/>\n<\/div><p class=\"title\"> Hafod, South Wales<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.961772,
+                    52.369939
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "23055",
+                "title": " Aberystwith Harbour",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01761.jpg?itok=yiAcMKSF",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/23055\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01761.jpg?itok=yiAcMKSF\" \/>\n<\/div><p class=\"title\"> Aberystwith Harbour<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.085515,
+                    52.410226
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "23058",
+                "title": " Aberystwith",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01582.jpg?itok=chLHc2tC",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/23058\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01582.jpg?itok=chLHc2tC\" \/>\n<\/div><p class=\"title\"> Aberystwith<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "23088",
+                "title": " Aberystwith",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01745.jpg?itok=6_pB4v9N",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/23088\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01745.jpg?itok=6_pB4v9N\" \/>\n<\/div><p class=\"title\"> Aberystwith<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "23114",
+                "title": " Aberystwith from the north",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01765.jpg?itok=g5u9Cm2F",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/23114\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01765.jpg?itok=g5u9Cm2F\" \/>\n<\/div><p class=\"title\"> Aberystwith from the north<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "23159",
+                "title": "The Queen's Hotel, Aberystwi...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01642.jpg?itok=O2991b3A",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/23159\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/tir01642.jpg?itok=O2991b3A\" \/>\n<\/div><p class=\"title\">The Queen's Hotel, Aberystwi...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        }
+    ]
+}

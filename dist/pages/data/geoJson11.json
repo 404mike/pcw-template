@@ -1,0 +1,486 @@
+{
+    "type": "FeatureCollection",
+    "total_results": 63890,
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10483",
+                "title": "Mountain hare: taxidermy by ...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23606_2.jpg?itok=k0nj0EL-",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10483\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23606_2.jpg?itok=k0nj0EL-\" \/>\n<\/div><p class=\"title\">Mountain hare: taxidermy by ...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10484",
+                "title": "Polecat: taxidermy (possibly...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23607_2.jpg?itok=lxVHMDVQ",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10484\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23607_2.jpg?itok=lxVHMDVQ\" \/>\n<\/div><p class=\"title\">Polecat: taxidermy (possibly...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10485",
+                "title": "Puffin, Manx Shearwarer, Gui...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23608_2.jpg?itok=8FXjZlWe",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10485\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23608_2.jpg?itok=8FXjZlWe\" \/>\n<\/div><p class=\"title\">Puffin, Manx Shearwarer, Gui...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10486",
+                "title": "Pheasants: taxidermy, c. 1910",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23609_2.jpg?itok=qaWxFA2e",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10486\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23609_2.jpg?itok=qaWxFA2e\" \/>\n<\/div><p class=\"title\">Pheasants: taxidermy, c. 1910<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10487",
+                "title": "Three birds in a case: taxid...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23610_2.jpg?itok=_HlG6MXa",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10487\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23610_2.jpg?itok=_HlG6MXa\" \/>\n<\/div><p class=\"title\">Three birds in a case: taxid...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10488",
+                "title": "Red fox: taxidermy by J. Hut...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23611_2.jpg?itok=DqJTKhxD",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10488\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23611_2.jpg?itok=DqJTKhxD\" \/>\n<\/div><p class=\"title\">Red fox: taxidermy by J. Hut...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10489",
+                "title": "Domestic sheep-dog called 'C...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23613_2.jpg?itok=gi2VuHPO",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10489\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23613_2.jpg?itok=gi2VuHPO\" \/>\n<\/div><p class=\"title\">Domestic sheep-dog called 'C...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10491",
+                "title": "Salmon head: taxidermy possi...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23616_2.jpg?itok=FL72l-A3",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10491\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ23616_2.jpg?itok=FL72l-A3\" \/>\n<\/div><p class=\"title\">Salmon head: taxidermy possi...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10901",
+                "title": "Cambrian Railways souvenir b...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ61522_2.jpg?itok=4DFSdpsX",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10901\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ61522_2.jpg?itok=4DFSdpsX\" \/>\n<\/div><p class=\"title\">Cambrian Railways souvenir b...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "10988",
+                "title": "Promissory note, Aberystwyth...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ61692_2.jpg?itok=DgADDMGn",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/10988\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ61692_2.jpg?itok=DgADDMGn\" \/>\n<\/div><p class=\"title\">Promissory note, Aberystwyth...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11454",
+                "title": "'Felin Newydd on the Rhydol'...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26708_2.jpg?itok=SuzDGrdK",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11454\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26708_2.jpg?itok=SuzDGrdK\" \/>\n<\/div><p class=\"title\">'Felin Newydd on the Rhydol'...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.932541763931,
+                    52.388333215214
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11456",
+                "title": "'Aberystwith Castle', probab...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26710_2.jpg?itok=v85PNt7A",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11456\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26710_2.jpg?itok=v85PNt7A\" \/>\n<\/div><p class=\"title\">'Aberystwith Castle', probab...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11458",
+                "title": "'Felin y Craig, or Rock Mill...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26712_2.jpg?itok=jpIgxtZl",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11458\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26712_2.jpg?itok=jpIgxtZl\" \/>\n<\/div><p class=\"title\">'Felin y Craig, or Rock Mill...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11459",
+                "title": "'A Fall of the Rhydol, Havre...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26713_2.jpg?itok=jWdf9YCQ",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11459\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26713_2.jpg?itok=jWdf9YCQ\" \/>\n<\/div><p class=\"title\">'A Fall of the Rhydol, Havre...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11460",
+                "title": "'Tan y Castle Bridge', proba...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26714_2.jpg?itok=zDyvJnKn",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11460\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26714_2.jpg?itok=zDyvJnKn\" \/>\n<\/div><p class=\"title\">'Tan y Castle Bridge', proba...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11461",
+                "title": "'Pendineas and the river Yst...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26715_2.jpg?itok=Af8u0Noc",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11461\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26715_2.jpg?itok=Af8u0Noc\" \/>\n<\/div><p class=\"title\">'Pendineas and the river Yst...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11462",
+                "title": "'Periwinkle Gatherers at Abe...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26716_2.jpg?itok=_fxCKziy",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11462\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26716_2.jpg?itok=_fxCKziy\" \/>\n<\/div><p class=\"title\">'Periwinkle Gatherers at Abe...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11463",
+                "title": "'A Fountain near Aberystwith...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26717_2.jpg?itok=OXoi-yAo",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11463\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26717_2.jpg?itok=OXoi-yAo\" \/>\n<\/div><p class=\"title\">'A Fountain near Aberystwith...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11464",
+                "title": "'Aberystwith Harbour', proba...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26718_2.jpg?itok=wZE7RFdM",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11464\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26718_2.jpg?itok=wZE7RFdM\" \/>\n<\/div><p class=\"title\">'Aberystwith Harbour', proba...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11465",
+                "title": "'Llanachiarn Church', probab...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26719_2.jpg?itok=amrpO0I7",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11465\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26719_2.jpg?itok=amrpO0I7\" \/>\n<\/div><p class=\"title\">'Llanachiarn Church', probab...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11466",
+                "title": "'Llanrhystyd Church', probab...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26720_2.jpg?itok=0bxaC8nd",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11466\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26720_2.jpg?itok=0bxaC8nd\" \/>\n<\/div><p class=\"title\">'Llanrhystyd Church', probab...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.148897641873,
+                    52.303661333604
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11468",
+                "title": "'The River Rhydol', probably...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26722_2.jpg?itok=rIJ4G8M4",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11468\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26722_2.jpg?itok=rIJ4G8M4\" \/>\n<\/div><p class=\"title\">'The River Rhydol', probably...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.078979516345,
+                    52.376854893298
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11469",
+                "title": "'Pendineas', probably by the...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26723_2.jpg?itok=ZCvq3Xkp",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11469\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26723_2.jpg?itok=ZCvq3Xkp\" \/>\n<\/div><p class=\"title\">'Pendineas', probably by the...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.065136227859,
+                    52.395082941251
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11470",
+                "title": "'Felin y Craig', probably by...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26724_2.jpg?itok=KXh_NkBj",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11470\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26724_2.jpg?itok=KXh_NkBj\" \/>\n<\/div><p class=\"title\">'Felin y Craig', probably by...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11472",
+                "title": "'Talieisin', probably by the...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26726_2.jpg?itok=Yp1mkBNV",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11472\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26726_2.jpg?itok=Yp1mkBNV\" \/>\n<\/div><p class=\"title\">'Talieisin', probably by the...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.981839580652,
+                    52.504418414854
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "11473",
+                "title": "'A Factory nigh Aberystwith'...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26727_2.jpg?itok=NW5SCJSp",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/11473\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/GTJ26727_2.jpg?itok=NW5SCJSp\" \/>\n<\/div><p class=\"title\">'A Factory nigh Aberystwith'...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080669835339,
+                    52.412795728846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "12016",
+                "title": "Invoice from dental practice...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/31518_MP1.jpg?itok=AqYuLxwo",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/12016\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/31518_MP1.jpg?itok=AqYuLxwo\" \/>\n<\/div><p class=\"title\">Invoice from dental practice...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "12135",
+                "title": "3 generations of  women in J...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/33020_CJH040.jpg?itok=8u8_U7VJ",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/12135\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/33020_CJH040.jpg?itok=8u8_U7VJ\" \/>\n<\/div><p class=\"title\">3 generations of  women in J...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.082922935486,
+                    52.415482333479
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "12560",
+                "title": "Boats in Aberystwyth Harbour",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/33496_DSC_0020rsz.jpg?itok=BNq1tPzi",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/12560\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/33496_DSC_0020rsz.jpg?itok=BNq1tPzi\" \/>\n<\/div><p class=\"title\">Boats in Aberystwyth Harbour<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.087471961975,
+                    52.409828084414
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "12778",
+                "title": "Borth Golf Club, c.1900",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/xch00030_2.jpg?itok=6rYDIlNq",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/12778\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/xch00030_2.jpg?itok=6rYDIlNq\" \/>\n<\/div><p class=\"title\">Borth Golf Club, c.1900<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.054625219974,
+                    52.485191657622
+                ]
+            }
+        }
+    ]
+}

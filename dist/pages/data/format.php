@@ -5,29 +5,62 @@ $data =  json_decode($json, true);
 
 $arr = [];
 
+echo count($data['features']);
+
 // print_r($data);
 
-$arr['type'] = 'FeatureCollection'; 
-$arr['total_results'] = 63890;
-$arr['features'] = [];
+$chunks = array_chunk($data['features'], 30);
 
-foreach($data['features'] as $k => $v) {
+// echo count($chunks) . PHP_EOL;
 
-    $arr['features'][] = [
-        'type' => 'Feature',
-        'properties' => [
-            'nid' => $v['properties']['nid'],
-            'title' => $v['properties']['title'],
-            'description' => $v['properties']['description'],
-        ],
-        'geometry' => [
-            'type' => 'Point',
-            'coordinates' => [
-                (float)$v['geometry']['coordinates'][0],
-                (float)$v['geometry']['coordinates'][1],
+
+foreach($chunks as $k => $chunk) {
+    $arr['type'] = 'FeatureCollection'; 
+    $arr['total_results'] = 63890;
+    $arr['features'] = [];
+    // $arr['features'] = $chunk;
+
+    foreach($chunk as $kk => $vv) {
+
+        $arr['features'][] = [
+            'type' => 'Feature',
+            'properties' => [
+                'nid' => $vv['properties']['nid'],
+                'title' => $vv['properties']['title'],
+                'image' => getImage($vv['properties']['description']),
+                'description' => $vv['properties']['description'],
+            ],
+            'geometry' => [
+                'type' => 'Point',
+                'coordinates' => [
+                    (float)$vv['geometry']['coordinates'][0],
+                    (float)$vv['geometry']['coordinates'][1],
+                ]
             ]
-        ]
-    ];
+        ];
+    }
+
+    file_put_contents('geoJson' . $k . '.json', json_encode($arr, JSON_PRETTY_PRINT));
+
+    echo $k . PHP_EOL;
 }
 
-file_put_contents('geoJson.json', json_encode($arr, JSON_PRETTY_PRINT));
+function getImage($string) {
+    $pattern = '/<img\s+[^>]*src="([^"]+)"/i';
+
+    preg_match($pattern, $string, $matches);
+
+    if (isset($matches[1])) {
+        $image_url = $matches[1];
+
+        if (strpos($image_url, 'http') === false) {
+            $image_url = 'https://www.peoplescollection.wales' . $image_url;
+        }
+
+        return $image_url;
+    } else {
+        echo "No image found in the string";
+    }
+}
+
+// file_put_contents('geoJson.json', json_encode($arr, JSON_PRETTY_PRINT));

@@ -1,0 +1,486 @@
+{
+    "type": "FeatureCollection",
+    "total_results": 63890,
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3774",
+                "title": "PLAS GOGERDDAN, EXCAVATED FE...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2005_1409.jpg?itok=eeq9rjJ3",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3774\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2005_1409.jpg?itok=eeq9rjJ3\" \/>\n<\/div><p class=\"title\">PLAS GOGERDDAN, EXCAVATED FE...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.022287,
+                    52.432158
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3794",
+                "title": "CROWN BUILDING, PLAS CRUG, A...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0783.jpg?itok=eTFHj548",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3794\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0783.jpg?itok=eTFHj548\" \/>\n<\/div><p class=\"title\">CROWN BUILDING, PLAS CRUG, A...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.07744,
+                    52.412526
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3797",
+                "title": "PILLBOX (TYPE FW3\/24), ABERY...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0781.jpg?itok=R91hZMtA",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3797\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0781.jpg?itok=R91hZMtA\" \/>\n<\/div><p class=\"title\">PILLBOX (TYPE FW3\/24), ABERY...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.088356,
+                    52.410778
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3884",
+                "title": "TAN-YR-ALLT, TRE TALIESIN",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2005_1424.jpg?itok=WbvmgJtV",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3884\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2005_1424.jpg?itok=WbvmgJtV\" \/>\n<\/div><p class=\"title\">TAN-YR-ALLT, TRE TALIESIN<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.983822,
+                    52.502583
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3906",
+                "title": "HOREB WELSH BAPTIST CHURCH, ...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DD_2005_007.jpg?itok=NQb_YTwe",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3906\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DD_2005_007.jpg?itok=NQb_YTwe\" \/>\n<\/div><p class=\"title\">HOREB WELSH BAPTIST CHURCH, ...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.986684,
+                    52.438606
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3924",
+                "title": "PLAS-Y-CREUDDYN; LLANFIHANGE...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0861.jpg?itok=kXMAZc85",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3924\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0861.jpg?itok=kXMAZc85\" \/>\n<\/div><p class=\"title\">PLAS-Y-CREUDDYN; LLANFIHANGE...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.956836,
+                    52.368288
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3925",
+                "title": "NANTEOS LODGE",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0857.jpg?itok=hkOJJnRY",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3925\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0857.jpg?itok=hkOJJnRY\" \/>\n<\/div><p class=\"title\">NANTEOS LODGE<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.040307,
+                    52.387871
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3928",
+                "title": "BETHEL WELSH BAPTIST CHURCH,...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0296.jpg?itok=qX5PcruH",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3928\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0296.jpg?itok=qX5PcruH\" \/>\n<\/div><p class=\"title\">BETHEL WELSH BAPTIST CHURCH,...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.084135,
+                    52.415744
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3930",
+                "title": "SEION WELSH INDEPENDENT CHAP...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2005_0786.jpg?itok=ecBWdGHi",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3930\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2005_0786.jpg?itok=ecBWdGHi\" \/>\n<\/div><p class=\"title\">SEION WELSH INDEPENDENT CHAP...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.084112,
+                    52.41525
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3936",
+                "title": "ST PADARN'S CHURCH, LLANBADA...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2005_1172.jpg?itok=5QV2ZzpY",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3936\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2005_1172.jpg?itok=5QV2ZzpY\" \/>\n<\/div><p class=\"title\">ST PADARN'S CHURCH, LLANBADA...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.06093,
+                    52.409102
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3944",
+                "title": "ABERYSTWYTH ARTS CENTRE",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0288.jpg?itok=GWSRpYyS",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3944\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0288.jpg?itok=GWSRpYyS\" \/>\n<\/div><p class=\"title\">ABERYSTWYTH ARTS CENTRE<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.061832,
+                    52.41583
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3948",
+                "title": "UNIVERSITY COLLEGE OF WALES,...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0287.jpg?itok=fMBfsuY0",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3948\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2006_0287.jpg?itok=fMBfsuY0\" \/>\n<\/div><p class=\"title\">UNIVERSITY COLLEGE OF WALES,...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.064493,
+                    52.416143
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3968",
+                "title": "LLANDDEINIOL VILLAGE",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2005_1578.jpg?itok=GUcPBQMn",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3968\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2005_1578.jpg?itok=GUcPBQMn\" \/>\n<\/div><p class=\"title\">LLANDDEINIOL VILLAGE<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.113075,
+                    52.328065
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3971",
+                "title": "ABERYSTWYTH PIER AND PAVILION",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0778.jpg?itok=kIVUvn3X",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3971\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0778.jpg?itok=kIVUvn3X\" \/>\n<\/div><p class=\"title\">ABERYSTWYTH PIER AND PAVILION<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.08771,
+                    52.415762
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3972",
+                "title": "CAPEL SARON, LLANGWYRYFON",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0636.jpg?itok=g6HAS0k6",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3972\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0636.jpg?itok=g6HAS0k6\" \/>\n<\/div><p class=\"title\">CAPEL SARON, LLANGWYRYFON<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.055701,
+                    52.315275
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3978",
+                "title": "ST HILARY'S CHURCH",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0645.jpg?itok=szYO-hfe",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3978\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0645.jpg?itok=szYO-hfe\" \/>\n<\/div><p class=\"title\">ST HILARY'S CHURCH<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.02236,
+                    52.356628
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3979",
+                "title": "ST JOHN'S CHURCH, PENRHYNCOCH",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0733.jpg?itok=mV_04XX4",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3979\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0733.jpg?itok=mV_04XX4\" \/>\n<\/div><p class=\"title\">ST JOHN'S CHURCH, PENRHYNCOCH<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.996824,
+                    52.438346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3995",
+                "title": "PEN-Y-CASTELL, STANDING STONE",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0743.jpg?itok=IVrRSIpH",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3995\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0743.jpg?itok=IVrRSIpH\" \/>\n<\/div><p class=\"title\">PEN-Y-CASTELL, STANDING STONE<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.926982,
+                    52.446068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "3997",
+                "title": "PLYNLIMON AND HAFAN TRAMWAY",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0770.jpg?itok=ZbZupYMZ",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/3997\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/AP_2004_0770.jpg?itok=ZbZupYMZ\" \/>\n<\/div><p class=\"title\">PLYNLIMON AND HAFAN TRAMWAY<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.023896,
+                    52.46405
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4031",
+                "title": "CASTLE HOUSE HOTEL, (THE OLD...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2007_0780.jpg?itok=2o6R7wof",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4031\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2007_0780.jpg?itok=2o6R7wof\" \/>\n<\/div><p class=\"title\">CASTLE HOUSE HOTEL, (THE OLD...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.088327,
+                    52.414834
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4300",
+                "title": "BROGININ ENCLOSURE",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_206_001.jpg?itok=6FfFPrsy",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4300\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_206_001.jpg?itok=6FfFPrsy\" \/>\n<\/div><p class=\"title\">BROGININ ENCLOSURE<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.975397,
+                    52.442842
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4301",
+                "title": "SALEM WELSH INDEPENDENT CHAP...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_058_004.jpg?itok=ky4u8Ykp",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4301\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_058_004.jpg?itok=ky4u8Ykp\" \/>\n<\/div><p class=\"title\">SALEM WELSH INDEPENDENT CHAP...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.959732,
+                    52.441304
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4322",
+                "title": "BRIDGE STREET, NO. 44, ABERY...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_013_042.jpg?itok=VGgSX1et",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4322\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_013_042.jpg?itok=VGgSX1et\" \/>\n<\/div><p class=\"title\">BRIDGE STREET, NO. 44, ABERY...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.085243,
+                    52.412425
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4325",
+                "title": "TY DAFYDD, BROGYNIN;TY DAFYD...",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2007_090_001.jpg?itok=NwZU9RQ1",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4325\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2007_090_001.jpg?itok=NwZU9RQ1\" \/>\n<\/div><p class=\"title\">TY DAFYDD, BROGYNIN;TY DAFYD...<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.968829,
+                    52.44403
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4343",
+                "title": "BANC-Y-GAER, BLAEN PLWYF",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2005_0185.jpg?itok=JUEmfB6k",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4343\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2005_0185.jpg?itok=JUEmfB6k\" \/>\n<\/div><p class=\"title\">BANC-Y-GAER, BLAEN PLWYF<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.104719,
+                    52.349884
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4351",
+                "title": "OLD PAVILION, CONSTITUTION HILL",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2007_159_001.jpg?itok=5YN0BBcm",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4351\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2007_159_001.jpg?itok=5YN0BBcm\" \/>\n<\/div><p class=\"title\">OLD PAVILION, CONSTITUTION HILL<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.08349,
+                    52.424828
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4362",
+                "title": "MARINE TERRACE, 32, ABERYSTWYTH",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2007_021_001.jpg?itok=gN03Diu3",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4362\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2007_021_001.jpg?itok=gN03Diu3\" \/>\n<\/div><p class=\"title\">MARINE TERRACE, 32, ABERYSTWYTH<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.084279,
+                    52.417225
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4369",
+                "title": "PEN-Y-WAL, DOLLWEN ENCLOSURE",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_212_001.jpg?itok=uHbxREpm",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4369\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_212_001.jpg?itok=uHbxREpm\" \/>\n<\/div><p class=\"title\">PEN-Y-WAL, DOLLWEN ENCLOSURE<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.93181,
+                    52.415149
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4371",
+                "title": "CWRT, ENCLOSURE",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_208_001.jpg?itok=OHUApJAy",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4371\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DS2006_208_001.jpg?itok=OHUApJAy\" \/>\n<\/div><p class=\"title\">CWRT, ENCLOSURE<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.997479,
+                    52.446337
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nid": "4379",
+                "title": "PEN Y GAER",
+                "image": "https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2005_0243.jpg?itok=7EFP7UOx",
+                "description": "<div class=\"map-popup\"><a target=\"_blank\" href=\"https:\/\/www.peoplescollection.wales\/items\/4379\"><div style=\"\"><img src=\"https:\/\/www.peoplescollection.wales\/sites\/default\/files\/styles\/pcw_entity_glance\/public\/images\/2014\/February\/DI2005_0243.jpg?itok=7EFP7UOx\" \/>\n<\/div><p class=\"title\">PEN Y GAER<\/p><\/a><\/div>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.080086,
+                    52.313095
+                ]
+            }
+        }
+    ]
+}
