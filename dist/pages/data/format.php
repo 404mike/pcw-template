@@ -57,6 +57,7 @@ function getImage($string) {
             $image_url = 'https://www.peoplescollection.wales' . $image_url;
         }
 
+        $inage_url = str_replace('pcw_entity_glance', 'edit_node_thumb_larger', $image_url);
         return $image_url;
     } else {
         echo "No image found in the string";

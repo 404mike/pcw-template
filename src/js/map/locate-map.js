@@ -150,6 +150,12 @@ const getGeoJsonFeatures = () => {
         });
         markers.push(marker);
 
+        // Add event listener to the marker
+        marker.addListener('click', function() {
+            console.log('Marker was clicked',  feature['properties']['nid']);
+            // Add your callback logic here
+        });
+
         addItemPreviewToSidebar(feature.properties);
     });
 
@@ -239,7 +245,7 @@ const setNewMapPosition = () => {
 };
 
 const addItemPreviewToSidebar = (item) => {
-    const id = item.id;
+    const id = item.nid;
     const imageSrc = item.image;
     const title = item.title;
 

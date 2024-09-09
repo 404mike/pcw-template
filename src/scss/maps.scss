@@ -96,6 +96,10 @@ a.map-locate-sidebar-nav {
     flex-grow: 1;
     overflow-y: auto;
     margin: 0 10px;
+
+    h2 {
+        font-size: 1em;
+    }
 }
 
 #locateSidebarPagination {
