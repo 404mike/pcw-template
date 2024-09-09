@@ -128,7 +128,11 @@ const locateBackToItemsButtonClicked = () => {
 const resetImagePreview = () => {
     clearAllMarkers();
     getGeoJsonFeatures(); 
-    setNewMapPosition();
+
+    let mapHasMoved = hasMapMoved();
+    if(mapHasMoved) {
+        setNewMapPosition();
+    }
 };
 
 const sidebarCloseButtonClicked = () => {
@@ -283,5 +287,32 @@ const addItemPreviewToSidebar = (item) => {
     // append template to #locateSidebarItemsPreview
     locateSidebarItemsPreview.insertAdjacentHTML('beforeend', template);
 };
+
+const hasMapMoved = () => {
+    const center = mapObj.getCenter();
+    const zoom = mapObj.getZoom();
+    const bounds = mapObj.getBounds();
+  
+    const currentMapPosition = {
+      lat: center.lat(),
+      lng: center.lng(),
+      zoom: zoom,
+      bounds: {
+        north: bounds.getNorthEast().lat(),
+        south: bounds.getSouthWest().lat(),
+        east: bounds.getNorthEast().lng(),
+        west: bounds.getSouthWest().lng()   
+  
+      }
+    };
+  
+    return (currentMapPosition.lat !== mapPosition.lat ||
+            currentMapPosition.lng !== mapPosition.lng ||
+            currentMapPosition.zoom !== mapPosition.zoom ||
+            currentMapPosition.bounds.north !== mapPosition.bounds.north ||
+            currentMapPosition.bounds.south !== mapPosition.bounds.south ||
+            currentMapPosition.bounds.east !== mapPosition.bounds.east ||
+            currentMapPosition.bounds.west !== mapPosition.bounds.west);
+  };
 
 export { locateMap };
