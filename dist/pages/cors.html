@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML5 Boilerplate</title>
+</head>
+
+<body>
+    <h1>Page Title</h1>
+    <script>
+        // make fetch request to the server and log the response from 'https://www.peoplescollection.wales/locate/geojson?zoom=8&bbox=0.463554428111177,53.41066347496639,-8.325508071888843,51.400390049809396'
+        fetch('https://www.peoplescollection.wales/locate/geojson?zoom=8&bbox=0.463554428111177,53.41066347496639,-8.325508071888843,51.400390049809396')
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+
+    </script>
+</body>
+
+</html>
