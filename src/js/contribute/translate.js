@@ -64,6 +64,7 @@ const translateEngishTitleToWelsh = async (title) => {
     }
     const welshTitle = await translateText(englishTitle, 'en', 'cy');
     document.getElementById('contribute-welsh-title').value = welshTitle;
+    document.getElementById('titleTranslatedNotice').classList.remove('d-none');
 };
 const translateWelshTitleToEnglish = async (title) => {
     const welshTitle = document.getElementById('contribute-welsh-title').value;
@@ -79,8 +80,8 @@ const translateEnglishDescriptionToWelsh = async (description) => {
         return;
     }
     const welshDescription = await translateText(englishDescription, 'en', 'cy');
-    console.log(welshDescription);
     document.getElementById('contribute-welsh-description').value = welshDescription;
+    document.getElementById('descriptionTranslatedNotice').classList.remove('d-none');
 };
 const translateWelshDescriptionToEnglish = async (description) => {
     const welshDescription = document.getElementById('contribute-welsh-description').value;

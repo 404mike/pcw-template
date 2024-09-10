@@ -267,6 +267,11 @@
                     col-12
                 ">
                     <input type="text" class="form-control" id="contribute-welsh-title" placeholder="Short title">
+                    <div id="titleTranslatedNotice" class="form-text badge text-bg-warning d-none">Please proof-read
+                        this
+                        translation
+                        for
+                        accuracy before submitting your item for publication.</div>
                 </div>
                 <div class="                    
                     col-xxl-2
@@ -306,7 +311,7 @@
                     col-12
                     ">
                     <textarea class="form-control" id="contribute-english-description"
-                        placeholder="A good description will include details like: who, what, where and when"
+                        placeholder="A good description will provide as much information as possible, including names, locations and historical context."
                         rows="7"></textarea>
                     <div id="englishDescriptionHelp" class="form-text contribute-help-issue"></div>
                 </div>
@@ -335,8 +340,14 @@
                     col-12
                     ">
                     <textarea class="form-control" id="contribute-welsh-description"
-                        placeholder="A good description will include details like: who, what, where and when"
+                        placeholder="A good description will provide as much information as possible, including names, locations and historical context."
                         rows="7"></textarea>
+                    <div id="descriptionTranslatedNotice" class="form-text badge text-bg-warning d-none">Please
+                        proof-read
+                        this
+                        translation
+                        for
+                        accuracy before submitting your item for publication.</div>
                 </div>
                 <div class="
                     col-xxl-2
@@ -1816,27 +1827,125 @@
                         <button id="contributeManageItemsContainerButton" class="accordion-button collapsed fs-5"
                             type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                             aria-expanded="false" aria-controls="flush-collapseOne">
-                            Manage Items
+                            Image Order
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                         data-bs-parent="#contributeManageItemsContainer">
                         <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div id="contribute-manage-items" class="list-group d-flex flex-row">
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11788_2.jpg?itok=QcmxetUB" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11789_2.jpg?itok=KI1rp0aq" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11815_2.jpg?itok=xdsN90ak" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11845_2.jpg?itok=KQCJHJLy" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11837_2.jpg?itok=QbOvi3Rk" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11832_2.jpg?itok=yFae4Pve" alt="image" /></div>
-                                                                                <div class="list-group-item"><img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11828_2.jpg?itok=g1x_dnNI" alt="image" /></div>
-                                                                            </div>
-                                </div>
+                            <div class="container">
+
+
+                                <div id="contribute-manage-items" class="row 
+                                               row-cols-2 
+                                               row-cols-xs-2 
+                                               row-cols-sm-2 
+                                               row-cols-md-3 
+                                               row-cols-xl-4 
+                                               row-cols-xxl-5 
+                                               g-4">
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh" class="card-img-top fixed-size-img mx-auto"
+                                                alt="Protest held in Liverpool against the flooding...">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">Protest held in Liverpool against the flooding...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn" class="card-img-top fixed-size-img mx-auto"
+                                                alt="Protest held in Liverpool against the flooding of Capel Celyn...">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">Protest held in Liverpool against the flooding of Capel Celyn...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11788_2.jpg?itok=QcmxetUB" class="card-img-top fixed-size-img mx-auto"
+                                                alt="A bleak view of Capel Celyn (Cwm Tryweryn), 14...">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">A bleak view of Capel Celyn (Cwm Tryweryn), 14...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11789_2.jpg?itok=KI1rp0aq" class="card-img-top fixed-size-img mx-auto"
+                                                alt="Interior of the derelict chapel at Capel Celyn,...">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">Interior of the derelict chapel at Capel Celyn,...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11815_2.jpg?itok=xdsN90ak" class="card-img-top fixed-size-img mx-auto"
+                                                alt="The last sale at Gwerngenau Farm, Capel Celyn,...">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">The last sale at Gwerngenau Farm, Capel Celyn,...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11845_2.jpg?itok=KQCJHJLy" class="card-img-top fixed-size-img mx-auto"
+                                                alt="The last days of Capel Celyn School, October 1962">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">The last days of Capel Celyn School, October 1962</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11837_2.jpg?itok=QbOvi3Rk" class="card-img-top fixed-size-img mx-auto"
+                                                alt="Moving out of Garnedd Llwyd, Ciltalgarth, Capel...">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">Moving out of Garnedd Llwyd, Ciltalgarth, Capel...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94" class="card-img-top fixed-size-img mx-auto"
+                                                alt="Residents of Capel Celyn (Tryweryn), 1961">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">Residents of Capel Celyn (Tryweryn), 1961</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11832_2.jpg?itok=yFae4Pve" class="card-img-top fixed-size-img mx-auto"
+                                                alt="Resident of Capel Celyn (Tryweryn), 1961">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">Resident of Capel Celyn (Tryweryn), 1961</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11828_2.jpg?itok=g1x_dnNI" class="card-img-top fixed-size-img mx-auto"
+                                                alt="Dismantling the railway at Capel Celyn ...">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">Dismantling the railway at Capel Celyn ...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    </div>
+
                             </div>
                         </div>
                     </div>
@@ -1888,157 +1997,6 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="contributeModalToolipBody"></div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<!-- modal-dialog modal-dialog-centered modal-dialog-scrollable -->
-<div class="modal fade" id="addToCollectionStory" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
-    aria-labelledby="addToCollectionStoryLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="addToCollectionStoryLabel">Add to Collection / Story</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-                <div class="btn-group mb-2">
-                    <button class="btn btn-secondary active add-to-collection-story" aria-current="page"
-                        id="add-to-collection-button">Add to
-                        Collection</button>
-                    <button class="btn btn-secondary add-to-collection-story" id="add-to-story-button">Add to
-                        Story</button>
-                </div>
-
-                <!-- Collection -->
-                <div id="add-to-collection-container">
-                    <form class="add-to-collection-form">
-                        <div class="mb-3">
-                            <label for="addToExistingCollection" class="form-label">Add to an existing
-                                Collection</label>
-                            <select class="form-select" aria-label="Add to Existing Collection"
-                                id="addToExistingCollection" aria-describedby="emailHelp">
-                                <option selected>Open this select menu</option>
-                                <option value="1">Existing Collection 1</option>
-                                <option value="2">Existing Collection 2</option>
-                                <option value="3">Existing Collection 3</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-                    <hr />
-
-                    <form class="add-to-collection-form">
-                        <div class="mb-3">
-                            <label for="addToNewCollection" class="form-label">Create new Collection</label>
-                            <input type="input" class="form-control" id="addToNewCollection">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-                <!-- Story -->
-                <div id="add-to-story-container" class="d-none">
-                    <form class="add-to-story-form">
-                        <div class="mb-3">
-                            <label for="addToExistingStory" class="form-label">Add to an existing Story</label>
-                            <select class="form-select" aria-label="Default select example" id="addToExistingStory"
-                                aria-describedby="emailHelp">
-                                <option selected>Open this select menu</option>
-                                <option value="1">Existing Story 1</option>
-                                <option value="2">Existing Story 2</option>
-                                <option value="3">Existing Story 3</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-                    <hr />
-
-                    <form class="add-to-story-form">
-                        <div class="mb-3">
-                            <label for="addToNewStory" class="form-label">Create new Story</label>
-                            <input type="input" class="form-control" id="addToNewStory">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- modal-dialog modal-dialog-centered modal-dialog-scrollable -->
-<div class="modal fade" id="downloadMedia" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
-    aria-labelledby="downloadMediaLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="downloadMediaLabel">Download (non-commercial use only)</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-                <div class="alert alert-danger" role="alert">
-                    <p class="p-0 m-0">
-                        Content can be downloaded for non-commercial purposes, such as for personal use or in
-                        educational
-                        resources.
-                        For commercial purposes please contact the copyright holder directly.
-                        Read more about <a href="https://www.peoplescollection.wales/creative-archive-licence">The
-                            Archive Licence</a>.
-                    </p>
-                </div>
-
-                <div class="row">
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/D261-M1022.jpg?itok=mTdJwktG"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 1 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/Wallace%20Gunn%20at%20Rheidol%20%20power%20station%2C%20late%201960s.jpg?itok=NGjq9x0D"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 2 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/D177_9.jpg?itok=jqYIc8Ct"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 3 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>

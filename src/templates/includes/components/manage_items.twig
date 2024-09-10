@@ -8,20 +8,37 @@
                         <button id="contributeManageItemsContainerButton" class="accordion-button collapsed fs-5"
                             type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                             aria-expanded="false" aria-controls="flush-collapseOne">
-                            Manage Items
+                            Image Order
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                         data-bs-parent="#contributeManageItemsContainer">
                         <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div id="contribute-manage-items" class="list-group d-flex flex-row">
-                                        {% for d in discover|slice(0, 10) %}
-                                        <div class="list-group-item"><img src="{{ d.thumb }}" alt="image" /></div>
-                                        {% endfor %}
+                            <div class="container">
+
+
+                                <div id="contribute-manage-items" class="row 
+                                               row-cols-2 
+                                               row-cols-xs-2 
+                                               row-cols-sm-2 
+                                               row-cols-md-3 
+                                               row-cols-xl-4 
+                                               row-cols-xxl-5 
+                                               g-4">
+                                    {% for d in discover | slice(0,10) %}
+                                    <div class="col d-flex align-items-stretch">
+                                        <div
+                                            class="card text-center w-100 discover-result-node contribute-manage-single-item">
+                                            <img src="{{ d.thumb }}" class="card-img-top fixed-size-img mx-auto"
+                                                alt="{{ d.title }}">
+                                            <div class="card-body discover-result-details">
+                                                <span class="">{{ d.title }}</span>
+                                            </div>
+                                        </div>
                                     </div>
+                                    {% endfor %}
                                 </div>
+
                             </div>
                         </div>
                     </div>

@@ -13,19 +13,26 @@
 
             <h2 class="text-start">Upload new items or edit your unpublished items</h2>
 
-            <div class="text-start">
-                <!-- Inline display for label and list -->
-                <div class="d-flex align-items-center">
-                    <p class="mb-0 me-2"><small> file types:</small></p>
-                    <ul class="list-unstyled d-flex flex-row mb-0">
-                        <li class="me-3"><small>.jpg</small></li>
-                        <li class="me-3"><small>.png</small></li>
-                        <li class="me-3"><small>.mp3</small></li>
-                        <li class="me-3"><small>.mp4</small></li>
-                        <li><small>.pdf</small></li>
-                    </ul>
+            <div class="d-flex justify-content-between">
+                <div class="text-start">
+                    <!-- Inline display for label and list -->
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0 me-2"><small> file types:</small></p>
+                        <ul class="list-unstyled d-flex flex-row mb-0">
+                            <li class="me-3"><small>.jpg</small></li>
+                            <li class="me-3"><small>.png</small></li>
+                            <li class="me-3"><small>.mp3</small></li>
+                            <li class="me-3"><small>.mp4</small></li>
+                            <li><small>.pdf</small></li>
+                        </ul>
+                    </div>
+                    <p class="m-0"><small>Maximum upload size 100MB</small></p>
                 </div>
-                <p class="m-0"><small>Maximum upload size 100MB</small></p>
+
+                <div class="text-end">
+                    <span class="badge text-bg-secondary contribute-tooltip fs-5" id="contributeUploadTooltip"
+                        title="Show information on how to upload">?</span>
+                </div>
             </div>
 
             <div id="dropzone" class="dropzone"></div>
@@ -112,6 +119,6 @@
 </div>
 
 <!-- Modal -->
-{% include 'includes/modal.twig' %}
+{% include 'includes/components/empty_modal.twig' %}
 
 {% include 'includes/footer.twig' %}

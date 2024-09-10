@@ -18,10 +18,10 @@ span.required svg {
 #contribute-manage-items {
     width: 100%;
     overflow-y: scroll;
+}
 
-    .list-group-item {
-        cursor: grabbing;
-    }
+.contribute-manage-single-item {
+    cursor: grabbing;
 }
 
 #contributeManageItemsContainerButton {

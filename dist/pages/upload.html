@@ -191,19 +191,26 @@
 
             <h2 class="text-start">Upload new items or edit your unpublished items</h2>
 
-            <div class="text-start">
-                <!-- Inline display for label and list -->
-                <div class="d-flex align-items-center">
-                    <p class="mb-0 me-2"><small> file types:</small></p>
-                    <ul class="list-unstyled d-flex flex-row mb-0">
-                        <li class="me-3"><small>.jpg</small></li>
-                        <li class="me-3"><small>.png</small></li>
-                        <li class="me-3"><small>.mp3</small></li>
-                        <li class="me-3"><small>.mp4</small></li>
-                        <li><small>.pdf</small></li>
-                    </ul>
+            <div class="d-flex justify-content-between">
+                <div class="text-start">
+                    <!-- Inline display for label and list -->
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0 me-2"><small> file types:</small></p>
+                        <ul class="list-unstyled d-flex flex-row mb-0">
+                            <li class="me-3"><small>.jpg</small></li>
+                            <li class="me-3"><small>.png</small></li>
+                            <li class="me-3"><small>.mp3</small></li>
+                            <li class="me-3"><small>.mp4</small></li>
+                            <li><small>.pdf</small></li>
+                        </ul>
+                    </div>
+                    <p class="m-0"><small>Maximum upload size 100MB</small></p>
                 </div>
-                <p class="m-0"><small>Maximum upload size 100MB</small></p>
+
+                <div class="text-end">
+                    <span class="badge text-bg-secondary contribute-tooltip fs-5" id="contributeUploadTooltip"
+                        title="Show information on how to upload">?</span>
+                </div>
             </div>
 
             <div id="dropzone" class="dropzone"></div>
@@ -648,149 +655,16 @@
 </div>
 
 <!-- Modal -->
-<!-- modal-dialog modal-dialog-centered modal-dialog-scrollable -->
-<div class="modal fade" id="addToCollectionStory" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
-    aria-labelledby="addToCollectionStoryLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+<!-- Modal -->
+<div class="modal fade " id="contributeModalToolip" tabindex="-1" aria-labelledby="contributeModalToolip"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="addToCollectionStoryLabel">Add to Collection / Story</h1>
+                <h1 class="modal-title fs-5" id="contributeModalToolipTitle"></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-
-                <div class="btn-group mb-2">
-                    <button class="btn btn-secondary active add-to-collection-story" aria-current="page"
-                        id="add-to-collection-button">Add to
-                        Collection</button>
-                    <button class="btn btn-secondary add-to-collection-story" id="add-to-story-button">Add to
-                        Story</button>
-                </div>
-
-                <!-- Collection -->
-                <div id="add-to-collection-container">
-                    <form class="add-to-collection-form">
-                        <div class="mb-3">
-                            <label for="addToExistingCollection" class="form-label">Add to an existing
-                                Collection</label>
-                            <select class="form-select" aria-label="Add to Existing Collection"
-                                id="addToExistingCollection" aria-describedby="emailHelp">
-                                <option selected>Open this select menu</option>
-                                <option value="1">Existing Collection 1</option>
-                                <option value="2">Existing Collection 2</option>
-                                <option value="3">Existing Collection 3</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-                    <hr />
-
-                    <form class="add-to-collection-form">
-                        <div class="mb-3">
-                            <label for="addToNewCollection" class="form-label">Create new Collection</label>
-                            <input type="input" class="form-control" id="addToNewCollection">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-                <!-- Story -->
-                <div id="add-to-story-container" class="d-none">
-                    <form class="add-to-story-form">
-                        <div class="mb-3">
-                            <label for="addToExistingStory" class="form-label">Add to an existing Story</label>
-                            <select class="form-select" aria-label="Default select example" id="addToExistingStory"
-                                aria-describedby="emailHelp">
-                                <option selected>Open this select menu</option>
-                                <option value="1">Existing Story 1</option>
-                                <option value="2">Existing Story 2</option>
-                                <option value="3">Existing Story 3</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-
-                    <hr />
-
-                    <form class="add-to-story-form">
-                        <div class="mb-3">
-                            <label for="addToNewStory" class="form-label">Create new Story</label>
-                            <input type="input" class="form-control" id="addToNewStory">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- modal-dialog modal-dialog-centered modal-dialog-scrollable -->
-<div class="modal fade" id="downloadMedia" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
-    aria-labelledby="downloadMediaLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="downloadMediaLabel">Download (non-commercial use only)</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-
-                <div class="alert alert-danger" role="alert">
-                    <p class="p-0 m-0">
-                        Content can be downloaded for non-commercial purposes, such as for personal use or in
-                        educational
-                        resources.
-                        For commercial purposes please contact the copyright holder directly.
-                        Read more about <a href="https://www.peoplescollection.wales/creative-archive-licence">The
-                            Archive Licence</a>.
-                    </p>
-                </div>
-
-                <div class="row">
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/D261-M1022.jpg?itok=mTdJwktG"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 1 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/Wallace%20Gunn%20at%20Rheidol%20%20power%20station%2C%20late%201960s.jpg?itok=NGjq9x0D"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 2 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center text-start mb-4">
-                        <div class="col">
-                            <a href="#"><img class="image-download-thumbnail"
-                                    src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2024/May/D177_9.jpg?itok=jqYIc8Ct"
-                                    alt="Description of image"></a>
-                            <div class="mt-1 text-center">
-                                <a href="#" class="btn btn-dark">Image 3 (opens in new window)</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <div class="modal-body" id="contributeModalToolipBody"></div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
