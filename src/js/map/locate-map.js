@@ -11,6 +11,7 @@ const locateSidebarItems = document.getElementById('locateSidebarItemsContainer'
 const locateSidebarItemsPreview = document.getElementById('locateSidebarItemsPreview');
 const locateSidebarPagination = document.getElementById('locateSidebarPagination');
 const locateSidebarItemPreview = document.getElementById('locateSidebarItemPreview');
+const locateNumberResults = document.getElementById('locateNumberResults');
 
 let mapObj;
 let AdvancedMarkerElementObj;
@@ -19,6 +20,7 @@ let clusterer;
 let mapPosition;
 let geoJsonData;
 let mapViewState = '';
+let num_results = 20;
 
 const locateMap = (map, AdvancedMarkerElement) => {
     mapObj = map;
@@ -52,11 +54,21 @@ const setEventListeners = () => {
         locateBackToItemsButtonClicked();
     });
 
+    locateNumberResults.addEventListener('change', (e) => {
+        e.preventDefault();
+        updateNumberOfResults();
+    });
+
     // listen to map move event
     mapObj.addListener('bounds_changed', () => {
         if(mapViewState === 'preview') return;
         updateMapPosition();
     });
+};
+
+const updateNumberOfResults = () => {
+    num_results = locateNumberResults.value;
+    getGeoJson();
 };
 
 const sidebarItemsButtonClicked = () => {
@@ -146,19 +158,32 @@ const sidebarOpenButtonClicked = () => {
 };
 
 const getGeoJson = async () => {
-
-    // random number between 0 and 16
-    let randomNumber = Math.floor(Math.random() * 17);
+    const pcwdomain = `https://www.peoplescollection.wales/locate/geojson`;
+    const locateurl = `${pcwdomain}?zoom=${mapObj.getZoom()}&bbox=${getBoundingBox().west},${getBoundingBox().north},${getBoundingBox().east},${getBoundingBox().south}&num_results=${num_results}`;
 
     try {
-        const response = await fetch(`data/geoJson${randomNumber}.json`);
+        const response = await fetch(locateurl);
         const data = await response.json();
+        console.log('GeoJSON data:', data);
         geoJsonData = data;
         getGeoJsonFeatures();
     } catch (error) {
         console.error('Failed to load GeoJSON data', error);
     }
 };
+
+const getBoundingBox = () => {
+    const bounds = mapObj.getBounds();
+    const northEast = bounds.getNorthEast();
+    const southWest = bounds.getSouthWest();
+
+    return {
+        north: northEast.lat(),
+        south: southWest.lat(),
+        east: northEast.lng(),
+        west: southWest.lng()
+    };
+}
 
 const getGeoJsonFeatures = () => {
     clearAllMarkers();
@@ -264,14 +289,13 @@ const setNewMapPosition = () => {
 
     // Add a one-time listener for the 'idle' event
     google.maps.event.addListenerOnce(mapObj, 'idle', () => {
-        console.log("Map move completed");
         mapViewState = '';
     });
 };
 
 const addItemPreviewToSidebar = (item) => {
     const id = item.nid;
-    const imageSrc = item.image;
+    const imageSrc = item.thumbnail;
     const title = item.title;
 
     const template = `                   

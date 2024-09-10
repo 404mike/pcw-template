@@ -11,7 +11,11 @@
     <h1>Page Title</h1>
     <script>
         // make fetch request to the server and log the response from 'https://www.peoplescollection.wales/locate/geojson?zoom=8&bbox=0.463554428111177,53.41066347496639,-8.325508071888843,51.400390049809396'
-        fetch('https://www.peoplescollection.wales/locate/geojson?zoom=8&bbox=0.463554428111177,53.41066347496639,-8.325508071888843,51.400390049809396')
+
+        const domain = "https://www.peoplescollection.wales/locate/geojson";
+        const url1 = `${domain}?zoom=12&bbox=-3.8071927968750052,52.47592255698692,-4.356509203125005,52.35027394995086`;
+        const url2 = `${domain}?zoom=8&bbox=0.463554428111177,53.41066347496639,-8.325508071888843,51.400390049809396`;
+        fetch(url1)
             .then(response => response.json())
             .then(data => console.log(data))
             .catch(error => console.error(error));
