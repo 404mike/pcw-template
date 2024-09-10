@@ -20,7 +20,7 @@ let clusterer;
 let mapPosition;
 let geoJsonData;
 let mapViewState = '';
-let num_results = 20;
+let num_results = 80;
 
 const locateMap = (map, AdvancedMarkerElement) => {
     mapObj = map;
