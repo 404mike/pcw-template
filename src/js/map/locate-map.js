@@ -161,6 +161,7 @@ const getGeoJson = async () => {
     const pcwdomain = `https://www.peoplescollection.wales/locate/geojson`;
     const locateurl = `${pcwdomain}?zoom=${mapObj.getZoom()}&bbox=${getBoundingBox().west},${getBoundingBox().north},${getBoundingBox().east},${getBoundingBox().south}&num_results=${num_results}`;
 
+    console.log('GeoJSON URL:', locateurl);
     try {
         const response = await fetch(locateurl);
         const data = await response.json();
