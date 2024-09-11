@@ -21,6 +21,7 @@ let mapPosition;
 let geoJsonData;
 let mapViewState = '';
 let num_results = 80;
+let debounceTimer;
 
 const locateMap = (map, AdvancedMarkerElement) => {
     mapObj = map;
@@ -61,8 +62,15 @@ const setEventListeners = () => {
 
     // listen to map move event
     mapObj.addListener('bounds_changed', () => {
-        if(mapViewState === 'preview') return;
-        updateMapPosition();
+        if (mapViewState === 'preview') return;
+    
+        // Clear the existing timer if it exists
+        clearTimeout(debounceTimer);
+    
+        // Set a new timer
+        debounceTimer = setTimeout(() => {
+            updateMapPosition();
+        }, 500); // Adjust the delay (in milliseconds) to your preference
     });
 };
 
@@ -257,6 +265,7 @@ const clearGeoJsonFeatures = () => {
 };
 
 const updateMapPosition = () => {
+    console.log('Map position updated');
     if (mapViewState === 'preview') return;
 
     clearAllMarkers();

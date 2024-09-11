@@ -55,7 +55,7 @@ function initMap() {
       itemMap(map, AdvancedMarkerElement);
     }
     if (mapType === "collection") {
-      collectionMap();
+      collectionMap(map, AdvancedMarkerElement);
     }
     if (mapType === "locate") {
       locateMap(map, AdvancedMarkerElement);
