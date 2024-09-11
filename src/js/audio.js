@@ -12,6 +12,14 @@ const secondsToHHMMSS = (seconds) => {
 const initializeCues = (track) => {
     const captionBox = document.getElementById('captionBox');
     const cues = track.cues;
+    if(track.cues.length === 0) {
+        console.log('No cues found');
+        setTimeout(() => {
+            console.log('Trying again...');
+            initializeCues(track);
+        }
+        , 500);
+    }
 
     for (let i = 0; i < cues.length; i++) {
         const cue = cues[i];
@@ -40,26 +48,31 @@ const initializeCues = (track) => {
 const initAudioPlayer = () => {
     if (!audioPlayer) return;
 
-    console.log('Initializing audio player');
-
     document.addEventListener('DOMContentLoaded', () => {
-        console.log('DOM loaded');
-        audioPlayer.addEventListener('loadedmetadata', () => {
-            console.log('Audio metadata loaded');
-            const checkTrackReady = setInterval(() => {
-                const track = document.querySelector('track[kind="captions"]');
-                console.log("checkTrackReady", track);
-                if (track && track.track && track.track.cues) {
-                    clearInterval(checkTrackReady);
+        const initializeIfReady = () => {
+            const track = document.querySelector('track[kind="captions"]');
+            if (audioPlayer.readyState >= 1) { // readyState 1: HAVE_METADATA
+                if (track.track) {
                     initializeCues(track.track);
+                } else {
+                    track.addEventListener('load', () => initializeCues(track.track));
                 }
-            }, 100); // Check every 100ms
-
-            audioPlayer.addEventListener('error', (e) => {
-                clearInterval(checkTrackReady);
-                console.error('Error loading audio:', e);
-            });
+            } else {
+                audioPlayer.addEventListener('loadedmetadata', () => {
+                    if (track.track) {
+                        initializeCues(track.track);
+                    } else {
+                        track.addEventListener('load', () => initializeCues(track.track));
+                    }
+                });
+            }
+        };
+        
+        initializeIfReady();
+        audioPlayer.addEventListener('error', (e) => {
+            console.error('Error loading audio:', e);
         });
     });
 };
+
 export { initAudioPlayer };
