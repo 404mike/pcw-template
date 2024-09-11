@@ -75,18 +75,23 @@ audio {
     width: 80%;
 }
 
-.caption-container {
-    max-height: 300px; // Or whatever height suits your layout
-    overflow-y: auto;
+#audioCaptionsContainer {
+    display: none;
 }
 
+#hideAudioCaptions {
+    display: none;
+}
+
+.caption-container {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
 
 #captionBox {
     height: 150px;
-    // overflow-y: auto;
-    // border: 1px solid #ccc;
     padding: 10px;
-    background-color: #f9f9f9;
     overflow-y: auto;
 }
 

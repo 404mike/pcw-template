@@ -73,6 +73,27 @@ const initAudioPlayer = () => {
             console.error('Error loading audio:', e);
         });
     });
+
+    setDisplayToggleEvents();
 };
+
+const setDisplayToggleEvents = () => {
+    const showAudioCaptionsButton = document.getElementById('showAudioCaptions');
+    const hideAudioCaptionsButton = document.getElementById('hideAudioCaptions');
+    const audioCaptionsContainer = document.getElementById('audioCaptionsContainer');
+
+    showAudioCaptionsButton.addEventListener('click', () => {
+        showAudioCaptionsButton.style.display = 'none';
+        hideAudioCaptionsButton.style.display = 'block';
+        audioCaptionsContainer.style.display = 'block';
+    });
+
+    hideAudioCaptionsButton.addEventListener('click', () => {
+        showAudioCaptionsButton.style.display = 'block';
+        hideAudioCaptionsButton.style.display = 'none';
+        audioCaptionsContainer.style.display = 'none';
+    });
+
+}
 
 export { initAudioPlayer };
