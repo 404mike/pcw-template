@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Player with WebVTT</title>
+</head>
+
+<body>
+
+    <audio id="audioPlayer" controls="" controlslist="nodownload">
+        <source src="https://www.peoplescollection.wales/sites/default/files/audio/2017/February/VSW063.1.1_0.mp3"
+            type="audio/mpeg">
+        <track id="captions" kind="captions" src="data/550537.vtt" default>
+        Your browser does not support the audio tag.
+    </audio>
+
+    <div id="captionBox" class="caption-box"></div>
+
+    <style>
+        audio {
+            width: 100%;
+        }
+
+        .caption-box {
+            height: 150px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .active {
+            border: 1px solid black !important;
+        }
+
+        .audio-cue {
+            border: 1px solid #f9f9f9;
+            padding: 2px;
+            margin: 2px 0;
+        }
+
+        .audio-transcript-time {
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const captionBox = document.getElementById('captionBox');
+            const track = document.querySelector('track[kind="captions"]');
+            const cues = [];
+
+            track.addEventListener('load', function () {
+                const track = this.track; // get the track element
+                const cues = track.cues;
+
+                for (let i = 0; i < cues.length; i++) {
+
+                    // console.log(cues[i]);
+                    const startTime = secondsToHHMMSS(cues[i].startTime);
+
+                    const cue = cues[i];
+                    const text = cue.text;
+                    const cueDiv = document.createElement('div');
+                    cueDiv.innerHTML = `<span class="audio-transcript-time">${startTime}</span> ${text}`;
+                    cueDiv.id = 'cue' + i;
+                    cueDiv.classList.add('audio-cue');
+                    captionBox.appendChild(cueDiv);
+
+                    cue.onenter = function () {
+                        document.querySelector('.active')?.classList.remove('active');
+                        cueDiv.classList.add('active');
+                        if (cueDiv.scrollIntoView) {
+                            cueDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    };
+
+                    cue.onexit = function () {
+                        cueDiv.classList.remove('active');
+                    };
+                }
+            });
+
+            audioPlayer.addEventListener('error', function (e) {
+                console.error('Error loading audio:', e);
+            });
+        });
+
+        function secondsToHHMMSS(seconds) {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }
+
+    </script>
+</body>
+
+</html>

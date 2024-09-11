@@ -12,6 +12,7 @@ $pages = [
     'upload'     => 'upload.twig',
     'edit'       => 'edit.twig',
     'locate'     => 'locate.twig',
+    'audio'      => 'audio.twig',
 ];
 
 $data = [];

@@ -70,3 +70,36 @@
 #cta-container {
     margin: 0;
 }
+
+audio {
+    width: 80%;
+}
+
+.caption-container {
+    max-height: 300px; // Or whatever height suits your layout
+    overflow-y: auto;
+}
+
+
+#captionBox {
+    height: 150px;
+    // overflow-y: auto;
+    // border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+
+.caption-box-active {
+    border: 1px solid black !important;
+}
+
+.audio-cue {
+    border: 1px solid #f9f9f9;
+    padding: 2px;
+    margin: 2px 0;
+}
+
+.audio-transcript-time {
+    font-weight: bold;
+}

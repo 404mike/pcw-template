@@ -68,9 +68,10 @@ const setEventListeners = () => {
         clearTimeout(debounceTimer);
     
         // Set a new timer
+        // This will prevent the function from running until the user has stopped moving the map
         debounceTimer = setTimeout(() => {
             updateMapPosition();
-        }, 500); // Adjust the delay (in milliseconds) to your preference
+        }, 500);
     });
 };
 
@@ -265,7 +266,6 @@ const clearGeoJsonFeatures = () => {
 };
 
 const updateMapPosition = () => {
-    console.log('Map position updated');
     if (mapViewState === 'preview') return;
 
     clearAllMarkers();
@@ -335,8 +335,7 @@ const hasMapMoved = () => {
         north: bounds.getNorthEast().lat(),
         south: bounds.getSouthWest().lat(),
         east: bounds.getNorthEast().lng(),
-        west: bounds.getSouthWest().lng()   
-  
+        west: bounds.getSouthWest().lng()
       }
     };
   
