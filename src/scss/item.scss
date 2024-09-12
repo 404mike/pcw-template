@@ -91,12 +91,13 @@ audio {
 
 #captionBox {
     height: 150px;
-    padding: 10px;
+    padding: 10px 0;
     overflow-y: auto;
 }
 
 .caption-box-active {
-    border: 1px solid black !important;
+    border-bottom: 1px solid #000 !important;
+    background: #cdcdcd;
 }
 
 .audio-cue {
