@@ -25,6 +25,7 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
+    "@automattic/isolated-block-editor": "^2.29.0",
     "@googlemaps/js-api-loader": "^1.16.6",
     "@googlemaps/markerclusterer": "^2.5.3",
     "@popperjs/core": "^2.11.8",
