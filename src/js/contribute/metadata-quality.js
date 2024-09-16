@@ -13,6 +13,13 @@ const metadataQualityChecker = () => {
     welshDescription.addEventListener('blur', () => validateField(welshDescription, 'contributeDescriptionContainer', 'welshDescriptionHelp', validateWelshDescription));
 };
 
+const onFormSubmitMetadataCheck = () => {
+    validateField(englishTitle, 'contributeTitleContainer', 'englishTitleHelp', validateEnglishTitle);
+    // validateField(welshTitle, 'contributeTitleContainer', 'welshTitleHelp', validateWelshTitle);
+    validateField(englishDescription, 'contributeDescriptionContainer', 'englishDescriptionHelp', validateEnglishDescription)
+    // validateField(welshDescription, 'contributeDescriptionContainer', 'welshDescriptionHelp', validateWelshDescription)
+};
+
 const validateField = (field, containerId, helpId, validationFunctions) => {
     let errors = validationFunctions(field.value);
     updateErrors(field, containerId, helpId, errors);
@@ -91,7 +98,7 @@ const updateErrors = (field, containerId, helpId, newErrors) => {
     }
 
     // Log current errors for debugging
-    console.log(`Current Error Count: ${errorCount}`, JSON.stringify(errorMessages));
+    // console.log(`Current Error Count: ${errorCount}`, JSON.stringify(errorMessages));
 };
 
 const getMetaDataIssues = () => {
@@ -101,4 +108,4 @@ const getMetaDataIssues = () => {
     };
 }
 
-export { metadataQualityChecker, getMetaDataIssues };
+export { metadataQualityChecker, getMetaDataIssues, onFormSubmitMetadataCheck };

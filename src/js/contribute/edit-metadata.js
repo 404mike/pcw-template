@@ -1,6 +1,6 @@
 import { contributeTooltips } from '../contribute/tooltips.js';
 import { contributeTranslate } from '../contribute/translate.js';
-import { metadataQualityChecker, getMetaDataIssues } from '../contribute/metadata-quality.js';
+import { metadataQualityChecker, getMetaDataIssues, onFormSubmitMetadataCheck } from '../contribute/metadata-quality.js';
 import { initTagsAutoComplete } from '../../js/contribute/tags.js';
 import { initSortable } from '../contribute/manage-images.js';
 import { runContributeTour } from '../contribute/contribute-product-tour.js';
@@ -59,6 +59,7 @@ const validateSubmission = () => {
     const submitButton = document.getElementById('contributeItemSubmit');
     submitButton.addEventListener('click', (e) => {
         e.preventDefault();
+        onFormSubmitMetadataCheck();
         const { count, messages } = getMetaDataIssues();
         if (count > 0) {
             // alert('Please fix the errors before submitting the form');
