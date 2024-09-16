@@ -1,0 +1,61 @@
+{% include 'includes/header.twig' %}
+
+<div class="container text-start" id="contribute-form" role="main">
+    <div class="row justify-content-center">
+        <div class="
+            col-xxl-8
+            col-xl-8
+            col-lg-8
+            col-md-10
+            col-sm-12
+            col-12
+            ">
+
+            <div>
+                <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94"
+                    class="img-thumbnail" alt="...">
+            </div>
+
+            {% include 'includes/metadata/separator.twig' %}
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="contribute-switch-advanced">
+                    <label class="form-check-label" for="contribute-switch-advanced">Advanced Options</label>
+                </div>
+                <button id="contributeTour" type="button" class="btn btn-outline-secondary d-flex align-items-center">
+                    Tour
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-raised-hand ms-2" viewBox="0 0 16 16">
+                        <path
+                            d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                    </svg>
+                </button>
+            </div>
+
+            <form>
+                {% include 'includes/components/title.twig' %}
+                {% include 'includes/components/story_subject.twig' %}
+                {% include 'includes/components/link.twig' %}
+                {% include 'includes/components/facets.twig' %}
+                {% include 'includes/components/tags.twig' %}
+                {% include 'includes/components/map/map.twig' %}
+                {% include 'includes/components/manage_items.twig' %}
+                {% include 'includes/components/toc.twig' %}
+
+                <div class="d-flex justify-content-center mt-3" id="conributeSubmitButtonsContainer">
+                    <button type="button" class="btn btn-danger mx-2">Delete</button>
+                    <button type="button" class="btn btn-primary mx-2">Save as Draft</button>
+                    <button id="contributeItemSubmit" type="button" class="btn btn-success mx-2">Publish</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+{% include 'includes/components/empty_modal.twig' %}
+
+{% include 'includes/footer.twig' %}

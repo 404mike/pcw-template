@@ -1,0 +1,138 @@
+<div class="card mb-3" id="contributeStoryContainer">
+    <div class="card-body">
+        <div class="mb-3">
+            <label for="contribute-english-title" class="form-label fs-5">
+                <span class="badge text-bg-secondary contribute-tooltip" id="contributeTooltipTitle"
+                    title="Show information on how to write a great title">?</span> Title
+                <span class="required">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-asterisk"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+                    </svg>
+                </span>
+            </label>
+            <div class="row">
+                <div class="
+                    col-xxl-10
+                    col-xl-10
+                    col-lg-12
+                    col-md-12
+                    col-sm-12
+                    col-12
+                    ">
+
+
+
+                    <div class="container mt-5">
+                        <!-- Toolbar -->
+                        <div id="toolbar-container">
+                            <span class="ql-formats">
+                                <select class="ql-header"></select>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-bold"></button>
+                                <button class="ql-italic"></button>
+                                <button class="ql-underline"></button>
+                                <button class="ql-strike"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-script" value="sub"></button>
+                                <button class="ql-script" value="super"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-blockquote"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-list" value="ordered"></button>
+                                <button class="ql-list" value="bullet"></button>
+                            </span>
+                            <span class="ql-formats">
+                                <button class="ql-clean"></button>
+                                <!-- Add Media Button -->
+                                <button id="add-media-button" class="" type="button">
+                                    Add Media
+                                </button>
+                            </span>
+                        </div>
+
+                        <!-- Editor -->
+                        <div id="editor" style="height: 300px;">
+                        </div>
+
+                        <!-- Add Media Modal -->
+                        <div class="modal fade" id="addMediaModal" tabindex="-1" aria-labelledby="addMediaModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="addMediaModalLabel">Add Media</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Search Box -->
+                                        <input type="text" id="media-search" class="form-control mb-3"
+                                            placeholder="Enter Item ID or Search...">
+                                        <!-- Predefined Media List -->
+                                        <div id="predefined-media-list" class="row">
+                                            <!-- Predefined media items will be injected here -->
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Edit Media Modal -->
+                        <div class="modal fade" id="editMediaModal" tabindex="-1" aria-labelledby="editMediaModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="editMediaModalLabel">Edit Media</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Media Metadata -->
+                                        <div id="media-metadata" class="mb-4">
+                                            <!-- Metadata will be injected here -->
+                                        </div>
+                                        <!-- Media Options -->
+                                        <div id="media-options">
+                                            <!-- Options will be injected here -->
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" id="save-media-changes" class="btn btn-primary">Save
+                                            Changes</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>

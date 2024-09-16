@@ -7,6 +7,7 @@ let errorCount = 0;
 let errorMessages = {};
 
 const metadataQualityChecker = () => {
+    return;
     englishTitle.addEventListener('blur', () => validateField(englishTitle, 'contributeTitleContainer', 'englishTitleHelp', validateEnglishTitle));
     welshTitle.addEventListener('blur', () => validateField(welshTitle, 'contributeTitleContainer', 'welshTitleHelp', validateWelshTitle));
     englishDescription.addEventListener('blur', () => validateField(englishDescription, 'contributeDescriptionContainer', 'englishDescriptionHelp', validateEnglishDescription));
@@ -14,6 +15,7 @@ const metadataQualityChecker = () => {
 };
 
 const onFormSubmitMetadataCheck = () => {
+    return;
     validateField(englishTitle, 'contributeTitleContainer', 'englishTitleHelp', validateEnglishTitle);
     // validateField(welshTitle, 'contributeTitleContainer', 'welshTitleHelp', validateWelshTitle);
     validateField(englishDescription, 'contributeDescriptionContainer', 'englishDescriptionHelp', validateEnglishDescription)

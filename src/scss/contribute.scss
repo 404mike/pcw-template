@@ -57,3 +57,61 @@ span.required svg {
         text-align: center;
     }
 }
+
+
+/* styles.css */
+/* styles.css */
+.custom-media {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+    /* Default alignment */
+    // contenteditable: false;
+}
+
+.media-thumbnail {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.edit-media-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.edit-media-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Alignment based on data-position */
+.custom-media[data-position="left"] {
+    float: left;
+    margin-right: 10px;
+}
+
+.custom-media[data-position="center"] {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-media[data-position="right"] {
+    float: right;
+    margin-left: 10px;
+}
+
+button#add-media-button {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+}
