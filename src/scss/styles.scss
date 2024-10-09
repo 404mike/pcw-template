@@ -1,6 +1,5 @@
-// Import all of Bootstrap's CSS
-@import "bootstrap/scss/bootstrap";
 @import "variables.scss";
+@import "bootstrap/scss/bootstrap";
 @import "_main.scss";
 @import "navigation.scss";
 @import "main-content.scss";
@@ -14,4 +13,5 @@
 @import "discover.scss";
 @import "dropzone.scss";
 @import "contribute.scss";
+@import "homepage.scss";
 @import "accessible-autocomplete";

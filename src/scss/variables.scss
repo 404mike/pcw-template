@@ -11,6 +11,8 @@ $pcwlightgrey: #696969;
 $pcwbuttongrey: #e4e4e4;
 $pcworange2: #7b3503;
 $grey: #676666;
+$black: #000000;
+$white: #ffffff;
 
 // $breadcrumb-divider: quote(">");
 
@@ -23,3 +25,7 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px
 );
+
+$carousel-control-color: $white;
+$carousel-control-width: 5% !default;
+$carousel-control-opacity: .9;

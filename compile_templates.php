@@ -13,6 +13,7 @@ $pages = [
     'edit'       => 'edit.twig',
     'locate'     => 'locate.twig',
     'audio'      => 'audio.twig',
+    'homepage'   => 'homepage.twig',
 ];
 
 $data = [];
