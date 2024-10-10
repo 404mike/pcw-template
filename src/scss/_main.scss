@@ -18,32 +18,32 @@ body {
 
 
 
-@include media-breakpoint-down(xxl) {
-    body {
-        background-color: yellow !important;
-    }
-}
+// @include media-breakpoint-down(xxl) {
+//     body {
+//         background-color: yellow !important;
+//     }
+// }
 
-@include media-breakpoint-down(xl) {
-    body {
-        background-color: purple !important;
-    }
-}
+// @include media-breakpoint-down(xl) {
+//     body {
+//         background-color: purple !important;
+//     }
+// }
 
-@include media-breakpoint-down(lg) {
-    body {
-        background-color: orange !important;
-    }
-}
+// @include media-breakpoint-down(lg) {
+//     body {
+//         background-color: orange !important;
+//     }
+// }
 
-@include media-breakpoint-down(md) {
-    body {
-        background-color: blue !important;
-    }
-}
+// @include media-breakpoint-down(md) {
+//     body {
+//         background-color: blue !important;
+//     }
+// }
 
-@include media-breakpoint-down(sm) {
-    body {
-        background-color: green !important;
-    }
-}
+// @include media-breakpoint-down(sm) {
+//     body {
+//         background-color: green !important;
+//     }
+// }
