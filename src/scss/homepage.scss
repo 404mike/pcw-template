@@ -76,6 +76,10 @@
 .carousel-control-next {
     background: $black;
     opacity: 0.5;
+
+    @media (max-width: 768px) {
+        width: 15%;
+    }
 }
 
 .carousel-control-prev-icon,
