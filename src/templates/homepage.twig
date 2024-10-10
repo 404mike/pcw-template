@@ -1,39 +1,39 @@
 {% include 'includes/header.twig' %}
 
 <div class="container" id="main-content" role="main">
-    <div class="col-12">
+
+    <div class="col-12" id="homepageTopBanner">
         <div class="image-overlay-container">
             <img src="../images/homepage-top-banner.jpg" alt="Descriptive Alt Text" class="homepage-banner-image">
             <div class="overlay-content">
                 <h1>Tell your Story</h1>
-                <div class="d-flex justify-content-center">
-
-                    <button class="btn btn-primary">Get Started</button>
-                    <p>Be a part of history</p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="#" class="homepage-banner-link">Get Started</a>
+                    <p class="homepage-banner-text">Be a part of history</p>
                 </div>
-
             </div>
+
         </div>
     </div>
 
     <!-- Additional content blocks -->
-    <div class="col-12">
+    <div class="col-12 mt-3" id="homepageSearchCTA">
         <div class="container mt-4">
             <div class="row justify-content-center">
                 <!-- Central column of medium size 6 -->
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class="row">
                         <!-- Text column -->
                         <div class="col-md-6">
-                            <h4>Search the collection</h4>
+                            <h2>Search the collection</h2>
                             <p>See what you can discover about the past</p>
                         </div>
 
                         <!-- Search form column -->
-                        <div class="col-md-6">
+                        <div class="col-md-6 mt-2">
                             <form class="position-relative">
                                 <input type="search" class="form-control" placeholder="Search...">
-                                <button type="submit" class="btn position-absolute top-0 end-0 border-0"
+                                <button type="submit" title="Submit" class="btn position-absolute top-0 end-0 border-0"
                                     style="background: none;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
@@ -49,14 +49,14 @@
         </div>
     </div>
 
-    <div id="homepageCarousel" class="col-12">
+    <div id="homepageCarousel" class="col-12 mt-3">
         <h2 class="text-center pt-3">Items in the spotlight</h2>
         <div class="col-8 row mx-auto my-auto justify-content-center">
             {% include 'includes/components/homepage_carousel.twig' %}
         </div>
     </div>
 
-    <div class="col-12">
+    <div class="col-12 mt-3" id="homepageCommunityCTA">
         <div class="container m-4">
             <div class="row justify-content-center">
                 <!-- Central column of medium size 6 -->
@@ -64,8 +64,8 @@
                     <div class="row">
                         <!-- Text column -->
                         <div class="col-md-6">
-                            <h4>Discover how can help and support your community group or project.</h4>
-                            <button class="btn btn-primary">Click Me!</button>
+                            <h3>Discover how can help and support your community group or project.</h3>
+                            <button class="btn">Learn More</button>
                         </div>
 
                         <!-- Search form column -->
@@ -80,14 +80,17 @@
     </div>
 
 
-    <div class="col-12">
-        <div class="image-overlay-container">
+    <div class="col-12 mt-3" id="homepageBottomCTA">
+        <div class="image-overlay-container row">
             <img src="../images/homepage-bottom-banner.jpg" alt="Descriptive Alt Text" class="homepage-banner-image">
-            <div class="overlay-content">
-                <h1>Helping organisations celebrate and share cultural heritage.</h1>
-                <p>Explore how People's Collection Wales can help your organisation digitise and share your collections
-                    with Wales the world.</p>
-                <button class="btn btn-primary">Learn More</button>
+            <div class="overlay-content ">
+                <div class="col-6">
+                    <h1>Helping organisations celebrate and share cultural heritage.</h1>
+                    <p>Explore how People's Collection Wales can help your organisation digitise and share your
+                        collections
+                        with Wales the world.</p>
+                    <button class="btn">Learn More</button>
+                </div>
             </div>
         </div>
     </div>
