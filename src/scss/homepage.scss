@@ -102,12 +102,24 @@
         font-size: 2.4em;
         font-weight: 300;
     }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 1.8em;
+        }
+    }
 }
 
 #homepageTopBanner {
     h1 {
         font-size: 5em;
         font-weight: 100;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 3em;
+        }
     }
 
     .homepage-banner-link,
@@ -146,6 +158,12 @@
         font-weight: 300;
     }
 
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 2em;
+        }
+    }
+
     p {
         font-size: 1.1em;
         font-weight: 300;
@@ -158,6 +176,12 @@
         font-weight: 300;
     }
 
+    @media screen and (max-width: 768px) {
+        h3 {
+            font-size: 1.5em;
+        }
+    }
+
     button {
         background-color: #91713c;
         color: $white;
@@ -168,6 +192,16 @@
     h1 {
         font-size: 2.8em;
         font-weight: 300;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 2em;
+        }
+
+        .image-overlay-container {
+            height: 65vh;
+        }
     }
 
     p {
