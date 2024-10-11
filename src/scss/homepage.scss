@@ -87,6 +87,13 @@
     z-index: 9999;
 }
 
+.homepage-carousel-item {
+    .discover-resulst-node {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
 #homepageCarousel {
     background-color: #efebe5;
 
