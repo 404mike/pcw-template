@@ -1,4 +1,5 @@
 import { MarkerClusterer } from "@googlemaps/markerclusterer";
+import { get } from "sortablejs";
 
 const sidebarItemsButtonTab = document.getElementById('mapLocateSidebarItems');
 const sidebarSearchButtonTab = document.getElementById('mapLocateSidebarSearch');
@@ -19,8 +20,9 @@ let markers = [];
 let clusterer;
 let mapPosition;
 let geoJsonData;
+let geojsonDataFormatted;
 let mapViewState = '';
-let num_results = 80;
+let num_results = 200;
 let debounceTimer;
 
 const locateMap = (map, AdvancedMarkerElement) => {
@@ -110,7 +112,7 @@ const setSidebarItemPreviewEventListeners = () => {
     locateSidebarImg.forEach((img) => {
         img.addEventListener('click', (e) => {
             e.preventDefault();
-            const id = img.id;
+            let id = img.id.replace('locateNode', '');
             const imgSrc = img.src;
             locateSidebarImgClicked(id, imgSrc);
         });
@@ -118,6 +120,8 @@ const setSidebarItemPreviewEventListeners = () => {
 };
 
 const locateSidebarImgClicked = (id, src) => {
+    mapViewState = 'preview'; // Set this before any map changes
+
     sidebarItemsButtonTab.classList.remove('locate-sidebar-nav-active');
 
     locateSidebarItemPreview.style.display = 'block';
@@ -130,11 +134,14 @@ const locateSidebarImgClicked = (id, src) => {
     clearAllMarkers();
 
     addItemMarker({
-        lat: 51.481583,
-        lng: -3.179090
+        lat: geojsonDataFormatted[id].coordinates[1],
+        lng: geojsonDataFormatted[id].coordinates[0]
     });
 
-    mapViewState = 'preview';
+    // Ensure mapViewState remains 'preview' until after the zoom
+    google.maps.event.addListenerOnce(mapObj, 'idle', () => {
+        // Optionally reset mapViewState here if needed
+    });
 };
 
 const locateBackToItemsButtonClicked = () => {
@@ -142,6 +149,8 @@ const locateBackToItemsButtonClicked = () => {
     locateSidebarItemPreview.style.display = 'none';
     locateSidebarItems.style.display = 'block';
     locateSidebarPagination.style.display = 'block';
+
+    mapViewState = '';
 
     resetImagePreview();
 };
@@ -168,18 +177,45 @@ const sidebarOpenButtonClicked = () => {
 
 const getGeoJson = async () => {
     const pcwdomain = `https://www.peoplescollection.wales/locate/geojson`;
-    const locateurl = `${pcwdomain}?zoom=${mapObj.getZoom()}&bbox=${getBoundingBox().west},${getBoundingBox().north},${getBoundingBox().east},${getBoundingBox().south}&num_results=${num_results}`;
+    let zoom = mapObj.getZoom();
+    let bbox = getBoundingBox();
+    let west = bbox.west;
+    let north = bbox.north;
+    let east = bbox.east;
+    let south = bbox.south;
+    let locateurl = '';
 
-    console.log('GeoJSON URL:', locateurl);
+    if(window.location.hostname === 'localhost') {
+        const pcwlocate = `${pcwdomain}?zoom=${zoom}&bbox=${west},${north},${east},${south}&num_results=${num_results}`;
+        locateurl = `http://localhost:8944/dist/proxy.php?url=` + encodeURIComponent(pcwlocate);
+    }else{
+        locateurl = `${pcwdomain}?zoom=${zoom}&bbox=${west},${north},${east},${south}&num_results=${num_results}`;
+    }
+
     try {
         const response = await fetch(locateurl);
         const data = await response.json();
-        console.log('GeoJSON data:', data);
         geoJsonData = data;
+        getGeoJsonFormatted(data);
         getGeoJsonFeatures();
     } catch (error) {
         console.error('Failed to load GeoJSON data', error);
     }
+};
+
+const getGeoJsonFormatted = (data) => {
+    let items = {};
+    for (let i = 0; i < data.features.length; i++) {
+        let nid = data.features[i].properties.nid;
+        items[nid] = {
+            'title': data.features[i].properties.title,
+            'thumbnail': data.features[i].properties.thumbnail,
+            'coordinates': data.features[i].geometry.coordinates,
+            'description': data.features[i].properties.description,
+        };
+    }
+
+    geojsonDataFormatted = items;
 };
 
 const getBoundingBox = () => {
@@ -235,27 +271,34 @@ const getGeoJsonFeatures = () => {
 };
 
 const addItemMarker = (location) => {
+    const targetZoom = 15;
+
+    // Set center and zoom
+    mapObj.setCenter(location);
+    mapObj.setZoom(targetZoom);
+
+    // Add the marker
     const marker = new AdvancedMarkerElementObj({
         map: mapObj,
         position: location,
         title: "Item Location",
     });
-
     markers.push(marker);
-    mapObj.setCenter(location);
 };
 
+
 const clearAllMarkers = () => {
+    console.log('clearAllMarkers');
     markers.forEach(marker => marker.setMap(null)); // Remove each marker from the map
     markers = []; // Reset the markers array
 
-    if (window.markerClusterer) {
-        window.markerClusterer.clearMarkers(); // Clear markers from the clusterer
+    if (clusterer) {
+        clusterer.clearMarkers(); // Use the correct variable
     }
 
     clearGeoJsonFeatures(); // Clear GeoJSON features from the data layer
 
-    // clear sidebar
+    // Clear sidebar
     locateSidebarItemsPreview.innerHTML = '';
 };
 
@@ -297,10 +340,13 @@ const setNewMapPosition = () => {
     });
     mapObj.setZoom(zoom);
 
-    // Add a one-time listener for the 'idle' event
-    google.maps.event.addListenerOnce(mapObj, 'idle', () => {
-        mapViewState = '';
-    });
+    // Only reset mapViewState if it's not 'preview'
+    if (mapViewState !== 'preview') {
+        // Add a one-time listener for the 'idle' event
+        google.maps.event.addListenerOnce(mapObj, 'idle', () => {
+            mapViewState = '';
+        });
+    }
 };
 
 const addItemPreviewToSidebar = (item) => {
