@@ -24,6 +24,7 @@ let geojsonDataFormatted;
 let mapViewState = '';
 let num_results = 200;
 let debounceTimer;
+let isResetting = false;
 
 const locateMap = (map, AdvancedMarkerElement) => {
     mapObj = map;
@@ -64,13 +65,9 @@ const setEventListeners = () => {
 
     // listen to map move event
     mapObj.addListener('bounds_changed', () => {
-        if (mapViewState === 'preview') return;
+        if (mapViewState === 'preview' || isResetting) return;
     
-        // Clear the existing timer if it exists
         clearTimeout(debounceTimer);
-    
-        // Set a new timer
-        // This will prevent the function from running until the user has stopped moving the map
         debounceTimer = setTimeout(() => {
             updateMapPosition();
         }, 500);
@@ -156,12 +153,19 @@ const locateBackToItemsButtonClicked = () => {
 };
 
 const resetImagePreview = () => {
-    clearAllMarkers();
-    getGeoJsonFeatures(); 
-
+    isResetting = true;
     let mapHasMoved = hasMapMoved();
-    if(mapHasMoved) {
+    if (mapHasMoved) {
         setNewMapPosition();
+        google.maps.event.addListenerOnce(mapObj, 'idle', () => {
+            clearAllMarkers();
+            getGeoJsonFeatures(); 
+            isResetting = false;
+        });
+    } else {
+        clearAllMarkers();
+        getGeoJsonFeatures(); 
+        isResetting = false;
     }
 };
 
@@ -178,7 +182,7 @@ const sidebarOpenButtonClicked = () => {
 const getGeoJson = async () => {
     const pcwdomain = `https://www.peoplescollection.wales/locate/geojson`;
     let zoom = mapObj.getZoom();
-    let bbox = getBoundingBox();
+    let bbox = getBoundingBox();   
     let west = bbox.west;
     let north = bbox.north;
     let east = bbox.east;
@@ -197,6 +201,7 @@ const getGeoJson = async () => {
         const data = await response.json();
         geoJsonData = data;
         getGeoJsonFormatted(data);
+        console.log("What???")
         getGeoJsonFeatures();
     } catch (error) {
         console.error('Failed to load GeoJSON data', error);
@@ -249,9 +254,11 @@ const getGeoJsonFeatures = () => {
         // Add event listener to the marker
         marker.addListener('click', function() {
             console.log('Marker was clicked',  feature['properties']['nid']);
+            locateSidebarImgClicked(feature['properties']['nid'], feature['properties']['thumbnail']);
             // Add your callback logic here
         });
 
+        console.log('adding feature to map');
         addItemPreviewToSidebar(feature.properties);
     });
 
@@ -309,7 +316,7 @@ const clearGeoJsonFeatures = () => {
 };
 
 const updateMapPosition = () => {
-    if (mapViewState === 'preview') return;
+    if (mapViewState === 'preview' || isResetting) return;
 
     clearAllMarkers();
     getGeoJson();

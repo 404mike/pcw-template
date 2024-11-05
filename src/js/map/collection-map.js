@@ -37,6 +37,12 @@ const addMarker = (map, AdvancedMarkerElement, location) => {
       position: location,
       title: "Item Location",
     });
+
+    // Add a click listener for the marker
+    marker.addListener("click", () => {
+      map.setZoom(8);
+      map.setCenter(marker.getPosition());
+    });
 };
 
 export { collectionMap };

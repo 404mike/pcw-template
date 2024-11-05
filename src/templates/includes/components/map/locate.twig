@@ -17,11 +17,12 @@
     <div class="map-container d-flex">
         <div id="map" class="flex-grow-1" data-map-type="locate"></div>
 
-        <div id="mapSidebarOpenButton" class="rounded-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                class="bi bi-arrow-90deg-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708z" />
+        <div id="mapSidebarOpenButton" class="rounded-1" aria-label="open sidebar" title="open sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-layout-sidebar-inset-reverse" viewBox="0 0 16 16">
+                <path
+                    d="M2 2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2z" />
+                <path d="M13 4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1z" />
             </svg>
         </div>
 
@@ -36,14 +37,15 @@
             col-xxl-4
             ">
             <div class="d-flex justify-content-between align-items-center border-bottom mb-2">
-                <div>
+                <div class="col-11">
                     <a href="#" class="map-locate-sidebar-nav locate-sidebar-nav-active"
                         id="mapLocateSidebarItems">Items</a>
                     <a href="#" class="map-locate-sidebar-nav" id="mapLocateSidebarSearch">Search filters</a>
                 </div>
-                <div>
-                    <a href="#" class="map-locate-sidebar-nav" id="mapLocateSidebarClose">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                <div class="col-1">
+                    <a href="#" class="map-locate-sidebar-nav" id="mapLocateSidebarClose" title="close sidebar"
+                        aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                             class="bi bi-x-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                             <path

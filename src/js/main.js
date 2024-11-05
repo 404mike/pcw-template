@@ -6,6 +6,7 @@ import { addToCollectionStory } from '../js/add-to-collection-story.js';
 import { initContribute } from '../js/contribute.js';
 import { initAudioPlayer } from '../js/audio.js';
 import { initHomepageCarousel } from './homepage.js';
+import { itemsPageInit } from './items.js';
 
 initFacets();
 initMap();
@@ -13,3 +14,4 @@ addToCollectionStory();
 initContribute();
 initAudioPlayer();
 initHomepageCarousel();
+itemsPageInit();

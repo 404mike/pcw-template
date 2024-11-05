@@ -64,7 +64,6 @@ if (!file_exists('dist/pages')) {
 }
 
 foreach ($pages as $page => $template) {
-    
     $html = $twig->render($template, [
         'facets' => $data,
         'whatFacet' => $whatFacetList,

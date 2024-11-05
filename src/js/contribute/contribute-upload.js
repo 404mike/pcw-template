@@ -39,12 +39,14 @@ const initDropzone = () => {
 
     myDropzone.on("removedfile", (file) => {
         numFiles--;
-        checkNumberOfUploadedFiles();
+        let uploadedMimeTypes = getMimeTypeOfUploadedFiles(myDropzone);
+        checkNumberOfUploadedFiles(uploadedMimeTypes);
     });
 
     myDropzone.on("complete", (file) => {
         numFiles++;
-        checkNumberOfUploadedFiles();
+        let uploadedMimeTypes = getMimeTypeOfUploadedFiles(myDropzone);
+        checkNumberOfUploadedFiles(uploadedMimeTypes);
     });
 
     myDropzone.on("error", (file, errorMessage) => {
@@ -52,13 +54,31 @@ const initDropzone = () => {
     });
 };
 
-const checkNumberOfUploadedFiles = () => {
+const getMimeTypeOfUploadedFiles = (myDropzone) => {
+    let uploadedMimeTypes = [];
+    myDropzone.files.forEach((file) => {
+        let fileMimeType = file.type;
+        if(fileMimeType === 'image/jpeg' || fileMimeType === 'image/png' || fileMimeType === 'image/jpg') {
+            fileMimeType = 'image/jpg';
+        }
+        uploadedMimeTypes.push(fileMimeType);
+    });
+    return uploadedMimeTypes;
+};
+
+const checkNumberOfUploadedFiles = (uploadedMimeTypes) => {
     // console.log("doSomething");
     // console.log(numFiles);
 
     const singleFileElement = document.getElementById("dropzone-single-file");
     const multipartFileElement = document.getElementById("dropzone-multipart-file");
     const externalResource = document.getElementById("external-resource-upload-form");
+
+    // if uploadedmimeTypes contains mix of different mime types return
+    if (uploadedMimeTypes.length > 1 && new Set(uploadedMimeTypes).size > 1) {
+        toggleVisibility(singleFileElement, multipartFileElement, externalResource, true, false, false);
+        return;
+    }
 
     numFiles === 1 ? toggleVisibility(singleFileElement, multipartFileElement, externalResource, true) :
     numFiles > 1 ? toggleVisibility(singleFileElement, multipartFileElement, externalResource, false, true) :
