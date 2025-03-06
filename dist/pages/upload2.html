@@ -1,0 +1,857 @@
+<!-- templates/base.twig -->
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Casgliad y Werin</title>
+    <script defer="defer" src="../main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="../main.css" rel="stylesheet">
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-cols">
+    <nav class="container px-4 text-center navbar navbar-expand-lg" id="header-nav" role="navigation">
+    <div class="row w-100 h-100">
+
+        <div class="
+            col-xs-12
+            col-sm-12
+            col-md-12 
+            col-lg-4
+            col-xl-4
+            col-xxl-4
+            d-flex             
+            justify-content-center
+            justify-content-xs-center
+            justify-content-sm-center
+            justify-content-md-center
+            justify-content-lg-start
+            justify-content-xl-start
+            justify-content-xxl-start
+            mb-2
+            ">
+
+            <span class="svg-xml">
+    <svg width="0" height="0" class="hidden">
+        <symbol viewBox="0 0 0 0" id="sprite-logo">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.53 57.77" id="logo">
+                <path
+                    d="M9 30.39l2.38.76a5.34 5.34 0 0 1-1.82 3 5.2 5.2 0 0 1-3.23 1 5.23 5.23 0 0 1-4-1.66 6.34 6.34 0 0 1-1.52-4.6 6.65 6.65 0 0 1 1.57-4.72 5.38 5.38 0 0 1 4.12-1.68 5.06 5.06 0 0 1 3.63 1.32 4.8 4.8 0 0 1 1.24 2.24l-2.43.58a2.51 2.51 0 0 0-2.56-2 2.77 2.77 0 0 0-2.2 1 4.76 4.76 0 0 0-.84 3.15A5.1 5.1 0 0 0 4.17 32a2.7 2.7 0 0 0 2.16 1A2.46 2.46 0 0 0 8 32.35a3.62 3.62 0 0 0 1-1.96zm5.46-1.65l-2.12-.38a3.3 3.3 0 0 1 1.23-1.89 4.49 4.49 0 0 1 2.59-.61 5.58 5.58 0 0 1 2.32.37 2.32 2.32 0 0 1 1.07.94 4.81 4.81 0 0 1 .31 2.09v2.72a9.45 9.45 0 0 0 .14 1.7 5 5 0 0 0 .42 1.18h-2.35q-.09-.23-.22-.69c0-.14-.07-.23-.08-.27a4.21 4.21 0 0 1-1.28.87 3.66 3.66 0 0 1-1.45.29 3 3 0 0 1-2.15-.74 2.46 2.46 0 0 1-.78-1.87 2.51 2.51 0 0 1 .36-1.33 2.33 2.33 0 0 1 1-.9 7.8 7.8 0 0 1 1.85-.54 12.67 12.67 0 0 0 2.27-.57v-.23a1.21 1.21 0 0 0-.33-1 2 2 0 0 0-1.26-.24 1.67 1.67 0 0 0-1 .24 1.7 1.7 0 0 0-.54.86zm3.12 1.89a14.53 14.53 0 0 1-1.42.36 4.27 4.27 0 0 0-1.27.41 1 1 0 0 0-.46.82 1.14 1.14 0 0 0 .37.85 1.28 1.28 0 0 0 .93.36 2 2 0 0 0 1.2-.41 1.46 1.46 0 0 0 .56-.77 4.6 4.6 0 0 0 .09-1.14zm2.98 1.72L22.9 32a1.72 1.72 0 0 0 .61 1 2 2 0 0 0 1.28.35 2.31 2.31 0 0 0 1.36-.35.74.74 0 0 0 .31-.62.61.61 0 0 0-.17-.44 1.86 1.86 0 0 0-.78-.31 12.58 12.58 0 0 1-3.58-1.14 2.27 2.27 0 0 1-1-2 2.44 2.44 0 0 1 .9-1.93 4.22 4.22 0 0 1 2.8-.78 4.89 4.89 0 0 1 2.69.59 3 3 0 0 1 1.21 1.74l-2.2.41a1.36 1.36 0 0 0-.54-.79 2 2 0 0 0-1.12-.27 2.53 2.53 0 0 0-1.32.26.55.55 0 0 0-.27.47.52.52 0 0 0 .23.42 8.76 8.76 0 0 0 2.18.66 6.48 6.48 0 0 1 2.6 1 2.16 2.16 0 0 1 .73 1.73 2.66 2.66 0 0 1-1 2.08 4.48 4.48 0 0 1-3 .87 4.92 4.92 0 0 1-2.85-.73 3.36 3.36 0 0 1-1.41-1.87zm9.28 3.1l2.66.32a.91.91 0 0 0 .31.64 1.75 1.75 0 0 0 1 .25 2.72 2.72 0 0 0 1.37-.27 1.13 1.13 0 0 0 .46-.59 3.54 3.54 0 0 0 .11-1.07v-1.29a3.16 3.16 0 0 1-2.64 1.43 3.25 3.25 0 0 1-2.81-1.5 5.11 5.11 0 0 1-.81-3A4.86 4.86 0 0 1 30.6 27a3.44 3.44 0 0 1 2.65-1.17 3.23 3.23 0 0 1 2.7 1.44v-1.22h2.18V34a7.89 7.89 0 0 1-.26 2.33 2.89 2.89 0 0 1-.72 1.21 3.19 3.19 0 0 1-1.24.69 6.53 6.53 0 0 1-2 .25 5.08 5.08 0 0 1-3.18-.77 2.41 2.41 0 0 1-.94-1.95c.04-.11.04-.2.05-.31zm2.08-5.17a3.18 3.18 0 0 0 .54 2.05 1.68 1.68 0 0 0 1.34.67 1.85 1.85 0 0 0 1.44-.67 2.91 2.91 0 0 0 .59-2 3.09 3.09 0 0 0-.56-2 1.79 1.79 0 0 0-1.43-.66 1.72 1.72 0 0 0-1.38.65 3.06 3.06 0 0 0-.54 1.96zm7.73 4.58V22.7H42v12.16zm3.94-10V22.7h2.33v2.16zm0 10v-8.81h2.33v8.81zm5.69-6.12l-2.12-.38a3.3 3.3 0 0 1 1.23-1.89 4.49 4.49 0 0 1 2.61-.62 5.58 5.58 0 0 1 2.32.37 2.32 2.32 0 0 1 1.07.94 4.81 4.81 0 0 1 .31 2.09v2.72a9.45 9.45 0 0 0 .11 1.71 5 5 0 0 0 .42 1.18h-2.34q-.09-.23-.22-.69-.06-.21-.08-.27a4.21 4.21 0 0 1-1.28.87 3.66 3.66 0 0 1-1.45.29 3 3 0 0 1-2.15-.74 2.46 2.46 0 0 1-.78-1.87 2.51 2.51 0 0 1 .36-1.33 2.33 2.33 0 0 1 1-.9 7.8 7.8 0 0 1 1.85-.54 12.67 12.67 0 0 0 2.27-.57v-.23a1.21 1.21 0 0 0-.33-1 2 2 0 0 0-1.25-.29 1.67 1.67 0 0 0-1 .24 1.7 1.7 0 0 0-.55.91zm3.12 1.89A14.53 14.53 0 0 1 51 31a4.27 4.27 0 0 0-1.27.41 1 1 0 0 0-.46.82 1.14 1.14 0 0 0 .37.85 1.28 1.28 0 0 0 .93.36 2 2 0 0 0 1.2-.41 1.46 1.46 0 0 0 .56-.77 4.6 4.6 0 0 0 .09-1.14zm11.89 4.23h-2.17v-1.29a3.5 3.5 0 0 1-1.27 1.12 3.27 3.27 0 0 1-1.48.37 3.36 3.36 0 0 1-2.6-1.22 5 5 0 0 1-1.08-3.41A4.92 4.92 0 0 1 56.74 27a3.44 3.44 0 0 1 2.66-1.17 3.3 3.3 0 0 1 2.6 1.25V22.7h2.33zm-6.22-4.6a4 4 0 0 0 .39 2 1.76 1.76 0 0 0 1.58.91 1.72 1.72 0 0 0 1.37-.68 3.16 3.16 0 0 0 .56-2 3.46 3.46 0 0 0-.55-2.19 1.73 1.73 0 0 0-1.4-.67 1.75 1.75 0 0 0-1.39.66 3 3 0 0 0-.57 1.98zm10.57-4.21h2.48l2.11 6.26 2.06-6.26h2.41l-3.11 8.48-.59 1.54a6.24 6.24 0 0 1-.59 1.18 2.56 2.56 0 0 1-.64.66 2.79 2.79 0 0 1-.89.39 4.6 4.6 0 0 1-1.19.14 6.17 6.17 0 0 1-1.32-.14l-.21-1.83a5.17 5.17 0 0 0 1 .11 1.46 1.46 0 0 0 1.2-.48 3.31 3.31 0 0 0 .6-1.22zm15.46 8.81L81.19 22.7h2.51l1.83 8.36 2.22-8.36h2.92l2.13 8.5 1.87-8.5h2.47l-3 12.17H91.6l-2.42-9.1-2.42 9.1zm18.31-2.8l2.32.39a3.81 3.81 0 0 1-1.41 1.95 4.16 4.16 0 0 1-2.42.67 3.94 3.94 0 0 1-3.4-1.5 5 5 0 0 1-.87-3 4.87 4.87 0 0 1 1.15-3.43 3.77 3.77 0 0 1 2.9-1.24 3.91 3.91 0 0 1 3.1 1.3 5.75 5.75 0 0 1 1.09 4H99a2.36 2.36 0 0 0 .56 1.61 1.77 1.77 0 0 0 1.34.58 1.43 1.43 0 0 0 .92-.3 1.85 1.85 0 0 0 .59-1.03zm.13-2.36a2.25 2.25 0 0 0-.52-1.54 1.6 1.6 0 0 0-1.21-.53 1.62 1.62 0 0 0-1.26.56 2.15 2.15 0 0 0-.49 1.51zm5.67 5.16h-2.33v-8.81H108v1.25a3.76 3.76 0 0 1 1-1.17 1.84 1.84 0 0 1 1-.28 3 3 0 0 1 1.54.44l-.72 2a2 2 0 0 0-1.1-.38 1.3 1.3 0 0 0-.83.27 1.84 1.84 0 0 0-.54 1 13.86 13.86 0 0 0-.2 3zm3.6-10V22.7h2.33v2.16zm0 10v-8.81h2.33v8.81zm11.96 0h-2.33v-4.5a7 7 0 0 0-.15-1.85 1.3 1.3 0 0 0-.49-.65 1.39 1.39 0 0 0-.81-.23 1.87 1.87 0 0 0-1.09.33 1.67 1.67 0 0 0-.66.88 7.6 7.6 0 0 0-.18 2v4h-2.33v-8.79h2.17v1.29a3.61 3.61 0 0 1 4.32-1.22 2.37 2.37 0 0 1 1 .71 2.57 2.57 0 0 1 .46 1 7.27 7.27 0 0 1 .13 1.57zm13.32-4.47l2.38.76a5.34 5.34 0 0 1-1.82 3 5.73 5.73 0 0 1-7.22-.69 6.34 6.34 0 0 1-1.56-4.53 6.65 6.65 0 0 1 1.57-4.72 5.38 5.38 0 0 1 4.12-1.68 5.06 5.06 0 0 1 3.63 1.32 4.8 4.8 0 0 1 1.24 2.24l-2.43.58a2.51 2.51 0 0 0-2.56-2 2.77 2.77 0 0 0-2.2 1 4.76 4.76 0 0 0-.84 3.15 5.1 5.1 0 0 0 .83 3.29 2.7 2.7 0 0 0 2.16 1 2.46 2.46 0 0 0 1.68-.62 3.62 3.62 0 0 0 1.02-2.1zm2.59-4.34h2.48l2.11 6.26 2.06-6.26h2.42l-3.11 8.48-.56 1.54a6.24 6.24 0 0 1-.59 1.18 2.56 2.56 0 0 1-.64.66 2.79 2.79 0 0 1-.89.39 4.6 4.6 0 0 1-1.19.14 6.17 6.17 0 0 1-1.32-.14l-.21-1.83a5.17 5.17 0 0 0 1 .11 1.46 1.46 0 0 0 1.2-.48 3.31 3.31 0 0 0 .6-1.22zm9.6 0h2.15v1.2a3.46 3.46 0 0 1 2.75-1.4 3 3 0 0 1 1.47.35 2.68 2.68 0 0 1 1 1.05 4.07 4.07 0 0 1 1.25-1.05 3.07 3.07 0 0 1 1.44-.35 3.2 3.2 0 0 1 1.64.39 2.41 2.41 0 0 1 1 1.16 5 5 0 0 1 .24 1.83v5.64h-2.33v-5a3.74 3.74 0 0 0-.24-1.69 1.1 1.1 0 0 0-1-.5 1.59 1.59 0 0 0-.92.3 1.66 1.66 0 0 0-.62.88 6.29 6.29 0 0 0-.19 1.82v4.23h-2.33V30a6.7 6.7 0 0 0-.12-1.66 1.06 1.06 0 0 0-.39-.56 1.22 1.22 0 0 0-.71-.18 1.7 1.7 0 0 0-1 .29 1.59 1.59 0 0 0-.62.84 6.23 6.23 0 0 0-.19 1.82v4.28h-2.33zM166 34.86h-2.33v-8.81h2.17v1.25a3.76 3.76 0 0 1 1-1.17 1.84 1.84 0 0 1 1-.28 3 3 0 0 1 1.54.44l-.72 2a2 2 0 0 0-1.1-.38 1.3 1.3 0 0 0-.83.27 1.84 1.84 0 0 0-.54 1 13.86 13.86 0 0 0-.2 3zm9.42 0v-1.31a3.4 3.4 0 0 1-1.27 1.11 3.55 3.55 0 0 1-1.66.41 3.24 3.24 0 0 1-1.59-.39 2.31 2.31 0 0 1-1-1.1 4.89 4.89 0 0 1-.32-2v-5.53h2.33v4a11.23 11.23 0 0 0 .13 2.28 1.24 1.24 0 0 0 .47.66 1.44 1.44 0 0 0 .86.24 1.83 1.83 0 0 0 1.07-.33 1.67 1.67 0 0 0 .65-.81 9.44 9.44 0 0 0 .17-2.38v-3.66h2.33v8.81z"
+                    fill="#3e3e3e"></path>
+                <path
+                    d="M1.24 54.41V42.25h3.94a14.31 14.31 0 0 1 2.92.18 3.19 3.19 0 0 1 1.75 1.19 3.78 3.78 0 0 1 .71 2.38 4 4 0 0 1-.41 1.88 3.33 3.33 0 0 1-1 1.2 3.56 3.56 0 0 1-1.27.58 14 14 0 0 1-2.55.17H3.69v4.59zM3.69 44.3v3.45H5a6.35 6.35 0 0 0 2-.18 1.61 1.61 0 0 0 .77-.6A1.63 1.63 0 0 0 8 46a1.57 1.57 0 0 0-.39-1.1 1.7 1.7 0 0 0-1-.54 11.84 11.84 0 0 0-1.77-.08zm13.51 7.31l2.32.39a3.81 3.81 0 0 1-1.41 1.95 4.16 4.16 0 0 1-2.42.67 3.94 3.94 0 0 1-3.4-1.5 5 5 0 0 1-.87-3 4.87 4.87 0 0 1 1.15-3.43 3.77 3.77 0 0 1 2.9-1.24 3.91 3.91 0 0 1 3.1 1.3 5.75 5.75 0 0 1 1.09 4h-5.85a2.36 2.36 0 0 0 .56 1.61 1.77 1.77 0 0 0 1.34.58 1.43 1.43 0 0 0 .92-.3 1.85 1.85 0 0 0 .57-1.03zm.13-2.36a2.24 2.24 0 0 0-.52-1.54 1.68 1.68 0 0 0-2.47 0 2.15 2.15 0 0 0-.49 1.51zm3.22.63a4.77 4.77 0 0 1 .57-2.25A3.93 3.93 0 0 1 22.75 46a4.81 4.81 0 0 1 2.34-.57 4.4 4.4 0 0 1 3.28 1.3A4.49 4.49 0 0 1 29.65 50a4.54 4.54 0 0 1-1.29 3.32 4.36 4.36 0 0 1-3.25 1.32 5.12 5.12 0 0 1-2.31-.55 3.76 3.76 0 0 1-1.67-1.61 5.35 5.35 0 0 1-.58-2.6zm2.39.12a2.92 2.92 0 0 0 .62 2 2 2 0 0 0 3.07 0 3 3 0 0 0 .62-2 2.91 2.91 0 0 0-.62-2 2 2 0 0 0-3.07 0 2.92 2.92 0 0 0-.62 2zm8.01-4.4h2.17v1.29a3.25 3.25 0 0 1 1.15-1.08 3.16 3.16 0 0 1 1.6-.41 3.36 3.36 0 0 1 2.61 1.2 4.87 4.87 0 0 1 1.07 3.4 5 5 0 0 1-1.08 3.43 3.36 3.36 0 0 1-2.61 1.22 3 3 0 0 1-1.32-.29 4.47 4.47 0 0 1-1.25-1v4.44h-2.34zm2.31 4.26a3.39 3.39 0 0 0 .59 2.2 1.8 1.8 0 0 0 1.44.71 1.68 1.68 0 0 0 1.35-.65 3.36 3.36 0 0 0 .53-2.12 3.19 3.19 0 0 0-.56-2.06 1.72 1.72 0 0 0-1.38-.67 1.79 1.79 0 0 0-1.42.66 2.94 2.94 0 0 0-.56 1.93zm7.68 4.55V42.25h2.33v12.16zm9.36-2.8l2.32.39a3.81 3.81 0 0 1-1.41 1.95 4.16 4.16 0 0 1-2.42.67 3.94 3.94 0 0 1-3.4-1.5 5 5 0 0 1-.87-3 4.87 4.87 0 0 1 1.15-3.43 3.77 3.77 0 0 1 2.9-1.24 3.91 3.91 0 0 1 3.1 1.3 5.75 5.75 0 0 1 1.09 4h-5.85a2.36 2.36 0 0 0 .56 1.61 1.77 1.77 0 0 0 1.34.58 1.43 1.43 0 0 0 .92-.3 1.84 1.84 0 0 0 .57-1.03zm.13-2.36a2.24 2.24 0 0 0-.52-1.54 1.6 1.6 0 0 0-1.21-.53 1.62 1.62 0 0 0-1.26.56 2.15 2.15 0 0 0-.44 1.51zm3.71-6.97h2.33v1.67a5.81 5.81 0 0 1-.17 1.6 2.39 2.39 0 0 1-.66 1 3.4 3.4 0 0 1-1.23.73l-.46-1a2 2 0 0 0 1-.64 1.92 1.92 0 0 0 .32-1.11h-1.13zM57 51.9l2.34-.36a1.72 1.72 0 0 0 .61 1 2 2 0 0 0 1.28.35 2.31 2.31 0 0 0 1.36-.33.74.74 0 0 0 .31-.56.61.61 0 0 0-.17-.44 1.86 1.86 0 0 0-.78-.31 12.58 12.58 0 0 1-3.58-1.14 2.27 2.27 0 0 1-1-2 2.44 2.44 0 0 1 .9-1.93A4.23 4.23 0 0 1 61 45.4a4.89 4.89 0 0 1 2.69.59 3 3 0 0 1 1.21 1.74l-2.2.41a1.36 1.36 0 0 0-.54-.79 2 2 0 0 0-1.12-.27 2.54 2.54 0 0 0-1.32.26.55.55 0 0 0-.27.47.52.52 0 0 0 .23.42 8.76 8.76 0 0 0 2.18.66 6.48 6.48 0 0 1 2.6 1 2.16 2.16 0 0 1 .73 1.73 2.66 2.66 0 0 1-1 2.08 4.48 4.48 0 0 1-3 .87 4.92 4.92 0 0 1-2.85-.73A3.36 3.36 0 0 1 57 51.9zm21.88-1.96l2.38.76a5.34 5.34 0 0 1-1.82 3 5.73 5.73 0 0 1-7.21-.7 6.33 6.33 0 0 1-1.56-4.53 6.65 6.65 0 0 1 1.57-4.72A5.38 5.38 0 0 1 76.36 42 5.06 5.06 0 0 1 80 43.36a4.8 4.8 0 0 1 1.24 2.24l-2.43.58a2.51 2.51 0 0 0-2.56-2 2.77 2.77 0 0 0-2.2 1 4.76 4.76 0 0 0-.84 3.15 5.1 5.1 0 0 0 .79 3.21 2.7 2.7 0 0 0 2.16 1 2.46 2.46 0 0 0 1.68-.62 3.61 3.61 0 0 0 1.04-1.98zm3.48-.06a4.77 4.77 0 0 1 .57-2.25A3.93 3.93 0 0 1 84.55 46a4.81 4.81 0 0 1 2.34-.57 4.4 4.4 0 0 1 3.28 1.3A4.49 4.49 0 0 1 91.45 50a4.54 4.54 0 0 1-1.29 3.32 4.36 4.36 0 0 1-3.25 1.32 5.12 5.12 0 0 1-2.31-.55 3.76 3.76 0 0 1-1.67-1.61 5.35 5.35 0 0 1-.57-2.6zm2.39.12a2.92 2.92 0 0 0 .62 2 2 2 0 0 0 3.07 0 3 3 0 0 0 .62-2 2.91 2.91 0 0 0-.62-2 2 2 0 0 0-3.07 0 2.92 2.92 0 0 0-.62 2zm8.07 4.41V42.25h2.33v12.16zm4.27 0V42.25h2.33v12.16zm9.36-2.8l2.32.39a3.81 3.81 0 0 1-1.41 1.95 4.16 4.16 0 0 1-2.42.67 3.94 3.94 0 0 1-3.4-1.5 5 5 0 0 1-.87-3 4.87 4.87 0 0 1 1.15-3.43 3.77 3.77 0 0 1 2.9-1.24 3.91 3.91 0 0 1 3.1 1.3 5.75 5.75 0 0 1 1.09 4h-5.84a2.36 2.36 0 0 0 .56 1.61 1.77 1.77 0 0 0 1.34.58 1.43 1.43 0 0 0 .92-.3 1.84 1.84 0 0 0 .56-1.03zm.13-2.36a2.24 2.24 0 0 0-.52-1.54 1.6 1.6 0 0 0-1.21-.53 1.62 1.62 0 0 0-1.26.56 2.15 2.15 0 0 0-.49 1.51zM118 48.21l-2.3.41a1.67 1.67 0 0 0-.53-1 1.59 1.59 0 0 0-1.07-.35 1.74 1.74 0 0 0-1.39.6 3.08 3.08 0 0 0-.52 2 3.57 3.57 0 0 0 .53 2.22 1.73 1.73 0 0 0 1.42.65 1.57 1.57 0 0 0 1.09-.38 2.27 2.27 0 0 0 .6-1.3l2.29.39a4.06 4.06 0 0 1-1.37 2.38 4.24 4.24 0 0 1-2.71.81 4 4 0 0 1-3.04-1.25 4.73 4.73 0 0 1-1.17-3.39 4.74 4.74 0 0 1 1.15-3.4 4.1 4.1 0 0 1 3.12-1.22 4.26 4.26 0 0 1 2.56.69 3.84 3.84 0 0 1 1.34 2.14zm5.38-2.61v1.86h-1.59V51a8.85 8.85 0 0 0 0 1.26.51.51 0 0 0 .21.29.66.66 0 0 0 .39.12 3 3 0 0 0 .94-.22l.2 1.81a4.64 4.64 0 0 1-1.84.35 2.92 2.92 0 0 1-1.14-.21 1.66 1.66 0 0 1-.74-.55 2.16 2.16 0 0 1-.33-.91 11.3 11.3 0 0 1-.07-1.64v-3.84h-1.07V45.6h1.07v-1.75l2.34-1.36v3.11zm1.16-1.2v-2.15h2.33v2.15zm0 10v-8.8h2.33v8.81zm3.72-4.52a4.77 4.77 0 0 1 .57-2.25 3.93 3.93 0 0 1 1.63-1.63 4.81 4.81 0 0 1 2.34-.57 4.4 4.4 0 0 1 3.28 1.3 4.49 4.49 0 0 1 1.28 3.27 4.54 4.54 0 0 1-1.29 3.32 4.36 4.36 0 0 1-3.25 1.32 5.12 5.12 0 0 1-2.31-.55 3.76 3.76 0 0 1-1.67-1.61 5.35 5.35 0 0 1-.58-2.6zm2.39.12a2.92 2.92 0 0 0 .62 2 2 2 0 0 0 3.07 0 3 3 0 0 0 .62-2 2.91 2.91 0 0 0-.62-2 2 2 0 0 0-3.07 0 2.92 2.92 0 0 0-.62 2zm16.09 4.41h-2.33v-4.5a7 7 0 0 0-.15-1.85 1.3 1.3 0 0 0-.49-.65 1.39 1.39 0 0 0-.81-.23 1.87 1.87 0 0 0-1.09.33 1.67 1.67 0 0 0-.66.88 7.6 7.6 0 0 0-.18 2v4h-2.33V45.6h2.17v1.29a3.61 3.61 0 0 1 4.32-1.22 2.37 2.37 0 0 1 1 .71 2.57 2.57 0 0 1 .46 1 7.27 7.27 0 0 1 .13 1.57zm7.91 0l-2.9-12.17h2.51l1.83 8.36 2.22-8.36h2.92l2.13 8.5 1.87-8.5h2.47l-3 12.17h-2.61l-2.42-9.1-2.42 9.1zm14.95-6.12l-2.12-.38a3.3 3.3 0 0 1 1.24-1.91 4.49 4.49 0 0 1 2.59-.61 5.58 5.58 0 0 1 2.32.37 2.32 2.32 0 0 1 1.07.94 4.81 4.81 0 0 1 .31 2.09v2.72a9.45 9.45 0 0 0 .11 1.71 5 5 0 0 0 .42 1.18h-2.31q-.09-.23-.22-.69-.06-.21-.08-.27a4.21 4.21 0 0 1-1.28.87 3.66 3.66 0 0 1-1.45.29 3 3 0 0 1-2.15-.74 2.46 2.46 0 0 1-.78-1.87 2.51 2.51 0 0 1 .36-1.33 2.33 2.33 0 0 1 1-.9 7.81 7.81 0 0 1 1.85-.54 12.67 12.67 0 0 0 2.27-.57v-.23a1.21 1.21 0 0 0-.33-1 2 2 0 0 0-1.25-.29 1.67 1.67 0 0 0-1 .24 1.7 1.7 0 0 0-.57.92zm3.12 1.89a14.5 14.5 0 0 1-1.42.36 4.27 4.27 0 0 0-1.27.41 1 1 0 0 0-.46.82 1.14 1.14 0 0 0 .37.85 1.28 1.28 0 0 0 .93.36 2 2 0 0 0 1.2-.41 1.46 1.46 0 0 0 .56-.77 4.6 4.6 0 0 0 .09-1.14zm4.14 4.23V42.25h2.33v12.16zm9.36-2.8l2.32.39a3.81 3.81 0 0 1-1.41 1.95 4.16 4.16 0 0 1-2.42.67 3.94 3.94 0 0 1-3.4-1.5 5 5 0 0 1-.87-3 4.87 4.87 0 0 1 1.15-3.43 3.77 3.77 0 0 1 2.9-1.24 3.91 3.91 0 0 1 3.1 1.3 5.75 5.75 0 0 1 1.09 4h-5.84a2.36 2.36 0 0 0 .56 1.61 1.77 1.77 0 0 0 1.34.58 1.43 1.43 0 0 0 .92-.3 1.85 1.85 0 0 0 .56-1.03zm.13-2.36a2.24 2.24 0 0 0-.52-1.54 1.6 1.6 0 0 0-1.21-.53 1.62 1.62 0 0 0-1.26.56 2.15 2.15 0 0 0-.49 1.51zm2.94 2.65l2.34-.36a1.72 1.72 0 0 0 .61 1 2 2 0 0 0 1.28.35 2.31 2.31 0 0 0 1.36-.33.74.74 0 0 0 .31-.62.61.61 0 0 0-.17-.44 1.86 1.86 0 0 0-.78-.31 12.58 12.58 0 0 1-3.58-1.14 2.27 2.27 0 0 1-1-2 2.44 2.44 0 0 1 .9-1.93 4.23 4.23 0 0 1 2.81-.78A4.89 4.89 0 0 1 196 46a3 3 0 0 1 1.21 1.74l-2.2.41a1.36 1.36 0 0 0-.54-.79 2 2 0 0 0-1.12-.27 2.54 2.54 0 0 0-1.32.26.55.55 0 0 0-.27.47.52.52 0 0 0 .23.42 8.76 8.76 0 0 0 2.18.66 6.49 6.49 0 0 1 2.6 1 2.16 2.16 0 0 1 .73 1.73 2.66 2.66 0 0 1-1 2.08 4.48 4.48 0 0 1-3 .87 4.92 4.92 0 0 1-2.85-.73 3.36 3.36 0 0 1-1.36-1.95z"
+                    fill="#808080"></path>
+                <path d="M0 0h34v8.9H0z" fill="#9d2191"></path>
+                <path d="M34 0h32.3v8.9H34z" fill="#f25b20"></path>
+                <path d="M53.2 0h7.31v8.9H53.2z" fill="#9d2191"></path>
+                <path d="M66.29 0h34.12v8.9H66.29z" fill="#f25b20"></path>
+                <path d="M87.7 0h7.31v8.9H87.7z" fill="#ffae00"></path>
+                <path d="M100.42 0h32.42v8.9h-32.42z" fill="#0095db"></path>
+                <path d="M110.77 0h4.76v8.9h-4.76z" fill="#ffae00"></path>
+                <path d="M132.84 0h32.42v8.9h-32.42z" fill="#95c11f"></path>
+                <path d="M165.26 0h33.27v8.9h-33.27zm-13.57 0h3.06v8.9h-3.06z" fill="#c51321"></path>
+            </symbol>
+        </symbol>
+    </svg>
+</span>
+<a href="index.html" itemprop="url" class="navbar-brand">
+    <svg aria-labelledby="logo-title logo-desc" class="logo__icon d-inline-block align-text-top" id="pcw-logo">
+        <title id="logo-title">People's Collection Wales Logo</title>
+        <desc id="logo-desc">A vector graphics of the official People's Collection Wales Logo</desc>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+    </svg>
+</a>        </div>
+
+
+        <div class="
+            col-xs-12
+            col-md-12
+            col-lg-8
+            col-xl-8
+            col-xxl-8
+            d-flex 
+            flex-column 
+            justify-content-between">
+            <div class="row">
+
+
+                <div class="
+                    col-12
+                    d-flex 
+                    justify-content-center
+                    justify-content-xs-center
+                    justify-content-sm-center 
+                    justify-content-md-center 
+                    justify-content-lg-end
+                    ">
+                    <ul class="navbar-nav d-flex flex-row" id="top-nav-links">
+                        <li class="nav-item top-right-nav">
+                            <!-- <a class="nav-link active" aria-current="page" href="#">Cymraeg</a> -->
+                            <a class="nav-link active" aria-current="page" href="#">English</a>
+                        </li>
+                        <li class="nav-item top-right-nav">
+                            <!-- <a class="nav-link" href="#" id="sign-in-button">Sign in</a> -->
+                            <a class="nav-link" href="#" id="sign-in-button">Mewngofnodi</a>
+                        </li>
+                        <li class="nav-item top-right-nav">
+                            <!-- <a class="btn btn-dark" href="#" role="button">Register</a> -->
+                            <a class="btn btn-dark" href="#" role="button">Cofrestru</a>
+                        </li>
+                    </ul>
+                    <button id="top-nav-hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".pcw-nav-menu" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 collapse navbar-collapse pcw-nav-menu">
+                    <ul class="navbar-nav flex-column flex-sm-row justify-content-center text-center" id="main-nav">
+                        <li class="nav-item" id="nav-about">
+                            <a class="nav-link nav-active text-sm-start" aria-current="page" href="#">Amdanom Ni</a>
+                        </li>
+                        <li class="nav-item" id="nav-upload">
+                            <a class="nav-link text-sm-start" href="#">Rhannu</a>
+                        </li>
+                        <li class="nav-item" id="nav-discover">
+                            <a class="nav-link text-sm-start" href="#">Y Casgliad</a>
+                        </li>
+                        <li class="nav-item" id="nav-locate">
+                            <a class="nav-link text-sm-start" href="#">Mapiau</a>
+                        </li>
+                        <li class="nav-item" id="nav-learn">
+                            <a class="nav-link text-sm-start" href="#">Addysg</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row" id="nav-lower">
+            <div class="col-6 pcw-nav-menu collapse navbar-collapse ">
+                <nav aria-label="breadcrumb" id="header-breadcrumb" class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+            </div>
+
+            <div class="col-6 pcw-nav-menu collapse navbar-collapse">
+                <form class="
+                d-flex 
+                justify-content-xs-end
+                justify-content-sm-end
+                justify-content-md-end
+                justify-content-lg-end
+                justify-content-xl-end
+                justify-content-xxl-end
+                ms-auto
+                " id="top-nav-search-form">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="nav-search" />
+                    <button class="btn btn-secondary" type="submit" aria-label="Site Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+<div class="container text-center" id="main-content" role="main">
+    <div class="row justify-content-center">
+        <div class="
+            col-xxl-8
+            col-xl-8
+            col-lg-8
+            col-md-10
+            col-sm-12
+            col-12
+            ">
+
+            <!-- Title and description -->
+            <div class="text-center mb-4">
+                <h1 class="fw-bold">What would you like to do?</h1>
+                <p class="lead">
+                    Choose from the options below to get started with your creative journey.
+                </p>
+            </div>
+
+            <!-- Cards row -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+                <!-- Card 1: Upload Images -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <!-- Icon + Title -->
+                            <div class="d-flex align-items-center mb-3">
+                                <!-- Circular grey background for icon -->
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 48px; height: 48px; background-color: rgb(240 240 240);">
+                                    <!-- Inline SVG icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-card-image" viewBox="0 0 16 16">
+                                        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                        <path
+                                            d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title mb-0">Upload Images</h5>
+                            </div>
+                            <!-- Description -->
+                            <p class="card-text">
+                                Upload your photos and images to share with others or use in your projects.
+                            </p>
+                            <!-- Button (pushed to bottom by mt-auto) -->
+                            <a href="#" class="btn btn-dark mt-auto">Upload Images</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Upload Audio -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 48px; height: 48px; background-color: rgb(240 240 240);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-soundwave" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title mb-0">Upload Audio</h5>
+                            </div>
+                            <p class="card-text">
+                                Upload podcasts, music, or voice recordings to share with your audience.
+                            </p>
+                            <a href="#" class="btn btn-dark mt-auto">Upload Audio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Upload Video -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class=" rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 48px; height: 48px; background-color: rgb(240 240 240);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-camera-video" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title mb-0">Upload Video</h5>
+                            </div>
+                            <p class="card-text">
+                                Share your video content with high-quality streaming and easy sharing options.
+                            </p>
+                            <a href="#" class="btn btn-dark mt-auto">Upload Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Upload Video -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class=" rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 48px; height: 48px; background-color: rgb(240 240 240);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title mb-0">Upload PDF Document</h5>
+                            </div>
+                            <p class="card-text">
+                                Upload PDF Document.
+                            </p>
+                            <a href="#" class="btn btn-dark mt-auto">Upload Document</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Create a Story -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 48px; height: 48px; background-color: rgb(240 240 240);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-book" viewBox="0 0 16 16">
+                                        <path
+                                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title mb-0">Create a Story</h5>
+                            </div>
+                            <p class="card-text">
+                                Craft engaging stories with text, images, and multimedia elements.
+                            </p>
+                            <a href="#" class="btn btn-dark mt-auto">Create Story</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Create a Collection -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 48px; height: 48px; background-color: rgb(240 240 240);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="bi bi-collection" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z" />
+                                    </svg>
+                                </div>
+                                <h5 class="card-title mb-0">Create a Collection</h5>
+                            </div>
+                            <p class="card-text">
+                                Organize your content into collections for easy access and sharing.
+                            </p>
+                            <a href="#" class="btn btn-dark mt-auto">Create Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+    <div class="col-auto mx-auto">
+        <div class="separator"></div>
+    </div>
+</div>
+            <h3 class="mt-3 text-start">Your uploads - saved but not published</h3>
+
+            <div class="container">
+                <div class="row">
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11802_2.jpg?itok=EGP5WtYh" class="draft-item-img-fluid rounded-start"
+                                            alt="Protest held in Liverpool against ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">Protest held in Liverpool against ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11808_2.jpg?itok=Y7W4LfQn" class="draft-item-img-fluid rounded-start"
+                                            alt="Protest held in Liverpool against ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">Protest held in Liverpool against ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11788_2.jpg?itok=QcmxetUB" class="draft-item-img-fluid rounded-start"
+                                            alt="A bleak view of Capel Celyn ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">A bleak view of Capel Celyn ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11789_2.jpg?itok=KI1rp0aq" class="draft-item-img-fluid rounded-start"
+                                            alt="Interior of the derelict chapel at ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">Interior of the derelict chapel at ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11815_2.jpg?itok=xdsN90ak" class="draft-item-img-fluid rounded-start"
+                                            alt="The last sale at Gwerngenau Farm ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">The last sale at Gwerngenau Farm ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11845_2.jpg?itok=KQCJHJLy" class="draft-item-img-fluid rounded-start"
+                                            alt="The last days of Capel Celyn School ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">The last days of Capel Celyn School ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11837_2.jpg?itok=QbOvi3Rk" class="draft-item-img-fluid rounded-start"
+                                            alt="Moving out of Garnedd Llwyd ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">Moving out of Garnedd Llwyd ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11835_2.jpg?itok=v-XMza94" class="draft-item-img-fluid rounded-start"
+                                            alt="Residents of Capel Celyn (Tryweryn ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">Residents of Capel Celyn (Tryweryn ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11832_2.jpg?itok=yFae4Pve" class="draft-item-img-fluid rounded-start"
+                                            alt="Resident of Capel Celyn (Tryweryn) ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">Resident of Capel Celyn (Tryweryn) ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-12 p-0">
+                        <div class="card mb-3">
+                            <div class="row g-0 align-items-center">
+                                <!-- Add align-items-center to align items vertically -->
+                                <!-- Image Column -->
+                                <div class="col-md-2">
+                                    <a href="#">
+                                        <img src="https://www.peoplescollection.wales/sites/default/files/styles/edit_node_thumb_larger/public/images/2014/February/GTJ11828_2.jpg?itok=g1x_dnNI" class="draft-item-img-fluid rounded-start"
+                                            alt="Dismantling the railway at Capel ...">
+                                    </a>
+                                </div>
+                                <!-- Details Column -->
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-start"><a href="#" class="draft-node-title">Dismantling the railway at Capel ...</a></h5>
+                                    </div>
+                                </div>
+                                <!-- date column -->
+                                <div class="col-md-2">
+                                    <div class="card-body">
+                                        <p class="card-text"><small class="text-muted">1hr ago</small></p>
+                                    </div>
+                                </div>
+                                <!-- Edit Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="edit.html" class="mb-2">Edit</a>
+                                    </div>
+                                </div>
+                                <!-- Delete Link Column -->
+                                <div class="col-md-1">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                                        <a href="#" class="mb-2">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+
+                <!-- Pagination -->
+                
+<nav aria-label="Page Navigation" id="pagination">
+    <!-- Detailed Pagination for lg screens and up -->
+    <ul class="pagination pagination-md justify-content-center d-none d-lg-flex">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">6</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade " id="contributeModalToolip" tabindex="-1" aria-labelledby="contributeModalToolip"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="contributeModalToolipTitle"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="contributeModalToolipBody"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="container text-center py-3 my-3 border-top">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-center">
+        <div class="col mb-3">
+            <a href="#" class="btn" id="mailing-list-link">Join our mailing list</a>
+            <ul class="list-group list-group-horizontal justify-content-center" id="footer-social-link">
+                <li class="list-group-item border-0 ms-2">
+                    <a href="#" class="social-link" aria-label="link to People's Collection Wales Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-group-item border-0 ms-2">
+                    <a href="#" class="social-link" aria-label="link to People's Collection Wales Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-twitter-x"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-group-item border-0 ms-2">
+                    <a href="#" class="social-link" aria-label="link to People's Collection Wales Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <ul class="footer-links">
+                <li><a href="">Blog</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Community Training</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <ul class="footer-links">
+                <li><a href="">Accessibility</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Copyright</a></li>
+                <li><a href="">Sitemap</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <span id="contact-us-footer-heading">Contact Us</span>
+            <ul class="footer-links">
+                <li><a href="tel:01970632500">01970 632 500</a></li>
+                <li><a href="">Email</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <a href="">
+                <img alt="Welsh Government Logo" id="gov-footer-logo"
+                    src="https://www.peoplescollection.wales/sites/default/themes/custom/pcw/assets/images/primary/footer-wag.svg" />
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

@@ -10,6 +10,7 @@ $pages = [
     'story'      => 'story.twig',
     'profile'    => 'profile.twig',
     'upload'     => 'upload.twig',
+    'upload2'     => 'upload2.twig',
     'edit'       => 'edit.twig',
     'locate'     => 'locate.twig',
     'audio'      => 'audio.twig',
